@@ -1,0 +1,7 @@
+User-agent: *
+
+
+Host: https://rybalsky.com.ua
+sitemap: https://rybalsky.com.ua/sitemap.xml
+Disallow: /bimailer/
+Disallow: /shablon_email/

@@ -1,0 +1,32 @@
+#Options +FollowSymLinks
+RewriteEngine On
+Redirect 301 /news_list_58/ http://rybalsky.com.ua/news-list-58/
+RewriteCond %{HTTP_HOST} ^www\.(.*)$
+RewriteRule ^(.*)$ https://%1/$1 [L,R=301]
+
+
+# обработка ошибки 404 Ч Not Found
+ErrorDocument 404 /err404.php
+# редирект с /index.php на /
+RewriteCond %{THE_REQUEST} ^[A-Z]{3,9}\ /indexs\.php\ HTTP/
+RewriteRule ^indexs\.php$ / [R=301,L]
+# преобразование „ѕ” 
+
+
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(.*)$ indexs.php?id=$1 [L,QSA]
+
+
+RewriteCond %{REQUEST_URI} ^(.*)/index\.php$
+RewriteRule ^(.*)index\.php$ https://%{HTTP_HOST}/$1 [R=301,L]
+
+
+FileETag MTime Size
+<ifmodule mod_expires.c>
+ <filesmatch ".(jpg|gif|png|css|js)$">
+ ExpiresActive on
+ ExpiresDefault "access plus 1 year"
+ </filesmatch>
+</ifmodule>
+

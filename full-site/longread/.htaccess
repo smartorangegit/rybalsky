@@ -1,0 +1,60 @@
+ErrorDocument 403 /404.html
+ErrorDocument 404 /404.html
+
+DirectoryIndex page2314606.html
+
+RewriteEngine On
+
+RewriteRule ^podmostovie$ page143974.html [NC]
+RewriteRule ^podmostovie/$ page143974.html [NC]
+
+RewriteRule ^nomoreblvd_partone$ page143989.html [NC]
+RewriteRule ^nomoreblvd_partone/$ page143989.html [NC]
+
+RewriteRule ^saturdayunderbridge$ page147326.html [NC]
+RewriteRule ^saturdayunderbridge/$ page147326.html [NC]
+
+RewriteRule ^pm_zoning$ page174705.html [NC]
+RewriteRule ^pm_zoning/$ page174705.html [NC]
+
+RewriteRule ^bogdankiller$ page191967.html [NC]
+RewriteRule ^bogdankiller/$ page191967.html [NC]
+
+RewriteRule ^stopplease$ page204362.html [NC]
+RewriteRule ^stopplease/$ page204362.html [NC]
+
+RewriteRule ^empirestatesuck$ page229534.html [NC]
+RewriteRule ^empirestatesuck/$ page229534.html [NC]
+
+RewriteRule ^whereareyousteve$ page240101.html [NC]
+RewriteRule ^whereareyousteve/$ page240101.html [NC]
+
+RewriteRule ^therhytmofthenight$ page252813.html [NC]
+RewriteRule ^therhytmofthenight/$ page252813.html [NC]
+
+RewriteRule ^nomercy$ page282570.html [NC]
+RewriteRule ^nomercy/$ page282570.html [NC]
+
+RewriteRule ^gladilka3$ page297564.html [NC]
+RewriteRule ^gladilka3/$ page297564.html [NC]
+
+RewriteRule ^how-to-start-dialog-with-developers$ page387650.html [NC]
+RewriteRule ^how-to-start-dialog-with-developers/$ page387650.html [NC]
+
+RewriteRule ^tepliy-berdyansk$ page550232.html [NC]
+RewriteRule ^tepliy-berdyansk/$ page550232.html [NC]
+
+RewriteRule ^pro-odeskie-sarkofagi-dlya-musora$ page578751.html [NC]
+RewriteRule ^pro-odeskie-sarkofagi-dlya-musora/$ page578751.html [NC]
+
+RewriteRule ^howtoloose$ page1196984.html [NC]
+RewriteRule ^howtoloose/$ page1196984.html [NC]
+
+RewriteRule ^lovelevelup$ page2094674.html [NC]
+RewriteRule ^lovelevelup/$ page2094674.html [NC]
+
+RewriteRule ^museumandgrandmas$ page2162734.html [NC]
+RewriteRule ^museumandgrandmas/$ page2162734.html [NC]
+
+RewriteRule ^rybalsky_faq$ page2314606.html [NC]
+RewriteRule ^rybalsky_faq/$ page2314606.html [NC]

@@ -1,0 +1,323 @@
+.header-bottom{
+  display: block!important;
+  position: relative;
+}
+.header .wrap_header{
+  height: auto;
+}
+.logo {
+  width: 180px;
+  margin: 0 auto;
+  margin-bottom: 20px;
+}
+.stroy {
+  height: auto;
+  margin: 0 auto;
+  width: 835px;
+  font-family: "PFDinTextUniversal-Light";
+}
+.header.buld.stroy{
+  float: none;
+  background-attachment: fixed;
+  background-size: cover;}
+footer {
+  position: static;}
+
+.webname.stroynews {
+  position: static;
+  margin: 50px auto;
+  text-align: center;
+  clear: both;
+  }
+.statusname {
+  font-size: 40px;
+  text-align: center;
+  margin-bottom: 40px;
+  }
+.status__1, .status__2{
+  width: 50%;
+  float: left;
+  }
+.block_left{
+  width: 225px;
+  float: left;
+  }
+.block_timebar svg{
+  border: 1px solid #d5d2ce;
+  display: block;
+  margin-bottom: 6px;
+  }
+.block_right{
+  float: right;
+  width: 360px;
+  text-align: center;
+}
+.timebar_name{
+  height: 36px;
+  margin-bottom: 6px;
+  }
+.timebar_name p{
+  font-size: 16px;
+  /* text-transform: uppercase; */
+  padding-bottom: 5px;
+  line-height: 50px;
+
+}
+.timebar_name:first-child p{
+  line-height: 1;
+  }
+.block_right h4 {
+  font-size: 20px;
+  color: #fff;
+  text-align: center;
+  margin-bottom: 28px;
+  }
+.status_info_2{
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+}
+.statusbutton {
+  display: inline-block;
+  color: white;
+  height: 46px;
+  background-color: #0035aa;
+  line-height: 50px;
+  text-align: center;
+  width: 45%;
+  }
+a.statusbutton {
+  text-decoration: none;
+}
+.statusbutton:hover {
+  background-color: #0f1157;
+}
+.status {
+  width: 1000px;
+  position: relative;
+  margin: 0 auto;
+  }
+.status h4{
+  font-size: 30px;
+  text-align: left;
+  margin-bottom: 20px;
+  }
+.status_info_1{
+  float: left;
+  }
+
+/* Правки от 28.09.17 --Андрей */
+.header-bottom .logo img {
+  width: 100%;
+  height: auto;
+}
+
+.news__buttons_item {
+  background: #0035aa;
+  min-height: 50px;
+  font-size: 16px;
+  letter-spacing: 0.025em;
+  line-height: 1.333;
+  width: 100%;
+  margin-bottom: 30px;
+  padding: 0 20px;
+}
+
+.subscribe_hod_stroitelsva {
+  position: fixed;
+  z-index: 10000;
+  width: 100%;
+  height: 100vh;
+  transition: opacity 0.5s;
+}
+
+.subscribe_hod_stroitelsva__container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 70%;
+  background-color: rgba(0, 53, 170, 0.9);
+  padding: 20px;
+}
+
+.form_podpiska_news {
+  width: 100%;
+}
+
+form.subscrip input[type="email"].subscribeForm  {
+  width: 100%;
+  font-size: 20px;
+}
+form.subscrip input[type="submit"].send_news__buttons_item {
+  width: 100%;
+}
+
+.subscrip__email_wrapper{
+  position: relative;
+}
+
+.iemal {
+  color: red;
+  position: absolute;
+  right: 24px;
+  top: 38px;
+  font-size: 30px;
+}
+
+.subscribe_hod_stroitelsva__name {
+  font-size: 30px;
+  padding-bottom: 20px;
+  letter-spacing: 2pt;
+  display: inline-block;
+  width: 92%;
+}
+.subscribe_hod_stroitelsva__close_form {
+  position: absolute;
+  top: 25px;
+  right: 20px;
+}
+
+.subscribe_hod_stroitelsva__close_form:hover {
+  cursor: pointer;
+}
+
+.subscribe_hod_stroitelsva__hidden {
+  opacity: 0;
+  top: 0;
+  left: -100%;
+}
+
+.subscribe_hod_stroitelsva__visible {
+  opacity: 1;
+  top: 0;
+  left: 0;
+}
+
+.subscribe_hod_stroitelsva__container form.subscrip input[type="submit"]{
+  background-color: transparent;
+  border: 1px solid #ffffff;
+  height: 76px;
+  margin: 10px 0;
+}
+.subscribe_hod_stroitelsva__container form.subscrip input[type="submit"]:hover {
+  background-color: #0f1157;
+}
+
+@media screen and (max-width: 1025px) and (min-width:768px){
+  .status__1, .status__2 {
+    /*float: none;*/
+    margin: 0 auto;
+  }
+  .block_left {
+    width: 140px;
+    float: left;
+}
+}
+
+
+@media only screen and (max-width:1024px) {
+  .stroy{
+    width: auto;
+  }
+  .stroy .stroy_left,
+  .stroy .stroy_right{
+    width: 300px;
+  }
+  .stroy_item{
+    width: 100%;
+    height: 190px;
+    margin-bottom: 20px;
+  }
+}
+/* Правки от 28.09.17 --Андрей */
+
+
+
+@media screen and (max-width: 768px) and (min-width: 320px){
+  /* .header.buld.stroy{
+    background: url('/img/status_mob.jpg');
+    background-size: cover;
+  } */
+  .stroy .timeline{
+    display: none;
+  }
+  .header.buld {
+    padding-bottom: 0px;
+    }
+  .header.buld.stroy .logo {
+    display: none;
+    }
+  .header.status {
+    background: url(/img/status.jpg);
+    background-size: auto 100%;
+    background-attachment: fixed;
+}
+  .statusname {
+    position: static;
+    padding-top: 0px;
+    margin-bottom: 20px;
+  }
+  .status {
+      width: 100%;
+      float: none;
+      padding-top: 0;
+      margin-top: 0;
+  }
+  .status_info_1 {
+      width: 100%;
+      float: none;
+  }
+  .timebar_name p {
+      font-size: 11px;
+      padding-bottom: 0px;
+  }
+  .timebar_name {
+      height: 35px;
+      margin-bottom: 3px;
+  }
+  .block_left{
+    width: 70px;
+  }
+  .status_info_2 {
+    width: 100%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+  .statusbutton {
+    width: 100%;
+    height: 40px;
+    line-height: 40px;
+    margin: 12px auto;
+}
+  .status__1, .status__2 {
+    width: 100%;
+    float: none;
+}
+  .block_timebar{
+  width: 200px;
+  float: right;
+}
+.stroy .triangle, .triangle_left{display: none;}
+#fr1 {
+  max-width: 100% !important;
+}
+.iemal {
+  top: 16px;
+}
+.subscribe_hod_stroitelsva__name {
+  font-size: 18px;
+}
+.subscribe_hod_stroitelsva__close_form {
+  top: 9px;
+}
+.subscribe_hod_stroitelsva__close_form svg{
+  width: 20px;
+}
+
+  }
