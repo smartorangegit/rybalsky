@@ -120,7 +120,7 @@
 				  <p class="commercProperty__paragraph"><?=$mes['cp-text18_2'];?></p>
               </div>
               <div class="commercProperty__image">
-                  <img src="/img/commercial/file_256.jpg" alt="Office">
+                  <img src="/img/commercial/file_256.jpg" alt="<?=$mes['pl-mes1-kom']?>" title="<?=$mes['pl-mes1-kom']?>">
               </div>
             </div>
         </div>
@@ -129,7 +129,7 @@
         <div>
             <div class="commercProperty__container">
               <div class="commercProperty__image">
-                <img src="/img/commercial/office.jpg" alt="dentist">
+                <img src="/img/commercial/office.jpg" alt="<?=$mes['pl-mes1-kom']?>" title="<?=$mes['pl-mes1-kom']?>">
               </div>
               <div class="commercProperty__text">
                 <h2 class="commercProperty__heading"><?=$mes['cp-text19'];?></h2>
@@ -162,7 +162,7 @@
                   </style> -->
               </div>
               <div class="commercProperty__image">
-                  <img src="/img/commercial/r14.jpg" alt="Office">
+                  <img src="/img/commercial/r14.jpg" alt="<?=$mes['pl-mes1-kom']?>" title="<?=$mes['pl-mes1-kom']?>">
               </div>
           </div>
         <!-- </div> -->
@@ -171,7 +171,7 @@
         <div>
             <div class="commercProperty__container">
               <div class="commercProperty__image">
-                <img src="/img/commercial/restaraunt.jpg" alt="dentist">
+                <img src="/img/commercial/restaraunt.jpg" alt="<?=$mes['pl-mes1-kom']?>" title="<?=$mes['pl-mes1-kom']?>">
               </div>
               <div class="commercProperty__text">
                 <h2 class="commercProperty__heading"><?=$mes['cp-text30'];?></h2>
@@ -194,7 +194,7 @@
 
               </div>
               <div class="commercProperty__image">
-                  <img src="/img/commercial/dentist.jpg" alt="Office">
+                  <img src="/img/commercial/dentist.jpg" alt="<?=$mes['pl-mes1-kom']?>" title="<?=$mes['pl-mes1-kom']?>">
               </div>
             </div>
         </div>
@@ -203,7 +203,7 @@
         <div>
             <div class="commercProperty__container">
               <div class="commercProperty__image">
-                <img src="/img/commercial/comm_005.jpg" alt="dentist">
+                <img src="/img/commercial/comm_005.jpg" alt="<?=$mes['pl-mes1-kom']?>" title="<?=$mes['pl-mes1-kom']?>">
               </div>
               <div class="commercProperty__text">
                 <h2 class="commercProperty__heading"><?=$mes['cp-text37'];?></h2>

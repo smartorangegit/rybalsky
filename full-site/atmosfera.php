@@ -62,7 +62,7 @@
           <div class="atmo__top">
             <div class="atmoinfo__box">
             <div class="atmo__img">
-              <img src="/img/atm_svg/sfera.svg" alt="">
+              <img src="/img/atm_svg/sfera.svg" alt="SFERA Living System (ATMOSFERA)" title="SFERA Living System (ATMOSFERA)">
 
             </div>
               <div class="text__block">
