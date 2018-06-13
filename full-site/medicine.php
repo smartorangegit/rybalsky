@@ -51,7 +51,7 @@
 			<p class="content__text"><?=$mes['o-mes26']?></p>
           </div>
           <div class="content-image-wrap">
-            <img src="/img/commercial/medicine.jpg" alt="image" class="content__image">
+            <img src="/img/commercial/medicine.jpg" alt="<?=$mes['menu-mes32']?>" title="<?=$mes['menu-mes32']?>" class="content__image">
           </div>
         </div>
 
@@ -61,19 +61,19 @@
       <p><?=$mes['cp-text46']?></p>
       <ul>
         <li class="bold__link">
-          <img src="/img/commercial/sale_min.jpg" alt="">
+          <img src="/img/commercial/sale_min.jpg" alt="<?=$mes['pl-mes1-kom']?>" title="<?=$mes['pl-mes1-kom']?>">
           <a href="<?=$l?>kommercheskaya/">
           <?=$mes['pl-mes1-kom']?></a></li>
         <li class="bold__link">
-          <img src="/img/commercial/rent_min.jpg" alt="">
+          <img src="/img/commercial/rent_min.jpg" alt="<?=$mes['pl-mes1-ar']?>" title="<?=$mes['pl-mes1-ar']?>">
           <a href="<?=$l?>commercial-lease/">
           <?=$mes['pl-mes1-ar']?></a></li>
         <li>
-          <img src="/img/commercial/office_min.jpg" alt="">
+          <img src="/img/commercial/office_min.jpg" alt="<?=$mes['cp-text2']?>" title="<?=$mes['cp-text2']?>">
           <a href="<?=$l?>office/">
           <?=$mes['cp-text2']?></a></li>
         <li>
-          <img src="/img/commercial/trade_min.jpg" alt="">
+          <img src="/img/commercial/trade_min.jpg" alt="<?=$mes['cp-text3']?>" title="<?=$mes['cp-text3']?>">
           <a href="<?=$l?>trading/">
           <?=$mes['cp-text3']?></a></li>
        <? /*  <li>
@@ -81,7 +81,7 @@
           <a href="<?=$l?>medicine/">
           <?=$mes['cp-text4']?></a></li> */ ?>
         <li>
-          <img src="/img/commercial/rest_min.jpg" alt="">
+          <img src="/img/commercial/rest_min.jpg" alt="<?=$mes['cp-text1']?>" title="<?=$mes['cp-text1']?>">
           <a href="<?=$l?>restaurant/">
           <?=$mes['cp-text1']?></a></li>
       </ul>

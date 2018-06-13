@@ -119,12 +119,12 @@
         				  <p class="commercProperty__paragraph"><?=$mes['cp-text45'];?></p> -->
               </div>
               <div class="commercProperty__image">
-                  <img src="/img/commercial/rent_1.jpg" alt="Office">
+                  <img src="/img/commercial/rent_1.jpg" alt="<?=$mes['pl-mes1-ar']?>" title="<?=$mes['pl-mes1-ar']?>">
               </div>
             </div>
             <div class="commercProperty__container">
               <div class="commercProperty__image">
-                  <img src="/img/commercial/rent_2.jpg" alt="Office">
+                  <img src="/img/commercial/rent_2.jpg" alt="<?=$mes['pl-mes1-ar']?>" title="<?=$mes['pl-mes1-ar']?>">
               </div>
               <div class="commercProperty__text">
                 <!-- <h2 class="commercProperty__heading"><?=$mes['cp-text41'];?></h2>
