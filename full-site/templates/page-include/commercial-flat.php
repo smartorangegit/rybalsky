@@ -28,10 +28,14 @@ $level=$s['level'];
 $types='0'.$s['type'];
 $level_floor=$s['floor'];
 
-for($m=0; $m<54; $m++): 
+/*for($m=0; $m<54; $m++): 
   $mas1[$m]=$mes['pl-mes'][$m];		
-endfor;
+endfor;*/
 
+ $mas1[0]=$mes['pl-mes'][0];		
+
+ $mas3=[];
+ 
 $mas2=[$s['all_room'],$s['life_room'],$s['room1'],$s['room2'],$s['room3'],$s['room4'],$s['room5'],
 $s['room6'],$s['room7'],$s['room8'],$s['room9'],$s['room10'],$s['room11'],$s['room12'],$s['room13'],$s['room14'],$s['room15'],
 $s['room16'],$s['room17'],$s['room18'],$s['room19'],$s['room20']];
@@ -42,6 +46,9 @@ if (PLAN=='plan') {
 } else {
   $text_pdf=$mes['pl-mes26'];
 }
+$mas3[] = $s['all_room'];
+
+
 if($s['level']>1) {
   $result = $db->prepare("SELECT room1,room2,room3,room4,room5,room6,room7,room8,room9,room10,
   room11,room12,room13,room14,room15,room16,room17,room18,room19,room20,
@@ -55,9 +62,9 @@ if($s['level']>1) {
   $result->close(); 	
 	 /* 30-05-2018 Блок Площа	м.кв 
 	 $i=count($mas2); /*для 2-го рівня*/ 
-	  /*$mas2[$i]='<br>';
+	 // $mas2[$i]='<br>';
 
-	  foreach($sl as $key=>$k){ 
+	/*  foreach($sl as $key=>$k){ 
 		$i++;
 			//для 3-го рівня з 21 стовпчика
 		  if($key=='room21' AND $s['level']>2){
@@ -66,12 +73,13 @@ if($s['level']>1) {
 		}
 				$mas2[$i]=$k;
 	  }
-	*/
-
+	
+		*/
+	$mas1[] = $mes['kv-mes3'].' -1';	
+	$mas3[] = $sl['room1'];				
 }
-
-//echo TABLE;
-//print_r($mas2);
+$mas1[]=$mes['kv-mes3'].' 1';	
+$mas3[] = $s['room1'];	
 
 $result = $db->prepare("SELECT img, sort   FROM `section` WHERE `sec`=$sec AND buld=$plan  AND `floor`=$poverx ");
 $result->execute();     
@@ -331,11 +339,11 @@ $originPage = explode('/', $_SERVER['REQUEST_URI'])[$parametr];
                     </tr>
                   </thead>
                   <tbody>
-                    <? foreach($mas2 as $k=>$n): ?>
+                    <? foreach($mas3 as $k=>$n): ?>
                       <? if(!empty($n)):?>
                         <tr>
                           <td><?= $mas1[$k]?></td>
-                          <td><?= $mas2[$k]?></td>
+                          <td><?= $mas3[$k]?></td>
                         </tr>
                       <? endif;?>
                     <? endforeach;?>
