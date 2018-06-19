@@ -27,7 +27,7 @@ if(strripos($_POST['urls'][0],'plan') !== false && count($_POST['urls'][0])==5){
    <?php
    //  setcookie("Name", "Value");
    ?>
-     <?/* include('preloader_saga.php'); */?>
+     <? include('preloader_saga.php'); ?>
    <!-- начало верхнего меню -->
            <div class="top-menu">
              <div class="top-menu__container">
