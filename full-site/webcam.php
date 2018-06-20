@@ -97,9 +97,9 @@
     </a>
     <!-- Camera 2 end -->
     <!-- Camera 3 start -->
-    <a data-fancybox data-type="iframe" data-caption="Вид с вебкамеры №3" data-src="https://macparts.kiev.ua:8417/player.html" href="javascript:;" class="call_web call_web4">
+    <!-- <a data-fancybox data-type="iframe" data-caption="Вид с вебкамеры №3" data-src="https://macparts.kiev.ua:8417/player.html" href="javascript:;" class="call_web call_web4">
       <use xlink:href="#camera" transform="matrix(0.12829204,0,0,0.12829204,1195.9965,559.50623)"></use>
-    </a>
+    </a> -->
     <!-- Camera 3 end -->
     <!-- Camera 4 start -->
     <a data-fancybox data-type="iframe" data-caption="Вид с вебкамеры №4" data-src="https://macparts.kiev.ua:8412/player.html" xlink:href="javascript:;" class="call_web call_web1">
