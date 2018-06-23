@@ -262,7 +262,7 @@
                              <p><a class="ringo-phone" id="tT" href="tel:123123">(044) 290-73-88</a></p>
                            </div> */ ?>
 						   <div class="commercial__number">
-						     <p class="bigger"><?=$mes['c-mes31']?></p>
+						     <p class="bigger"><?=$mes['c-mes33']?></p>
                              <p><a class="ringo-commerce" id="tT_" href="tel:0443911800">(044) 391-18-00</a></p>
 						   </div>
                            <div class="contacts__adress">
