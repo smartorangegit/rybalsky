@@ -85,24 +85,24 @@
               <?=$mes['сease']?> 1<br>
               <?=$mes['work_to']?> 0,000 - 100%<br>
               <?=$mes['carcass']?> - 98,00%<br>
-              <?=$mes['brickwork']?> - 96%<br>
+              <?=$mes['brickwork']?> - 97%<br>
               <?=$mes['interior_fittings']?> - 0%
             </div>
             <!--Секція 2-->
             <div class="tool_sec">
               <?=$mes['сease']?> 2<br>
               <?=$mes['work_to']?> 0,000 - 100%<br>
-              <?=$mes['carcass']?> - 98%<br>
-              <?=$mes['brickwork']?> - 96,5%<br>
+              <?=$mes['carcass']?> - 99%<br>
+              <?=$mes['brickwork']?> - 97%<br>
               <?=$mes['interior_fittings']?> - 0%
             </div>
             <!--Секція 3-->
             <div class="tool_sec">
               <?=$mes['сease']?> 3<br>
               <?=$mes['work_to']?> 0,000 - 100%<br>
-              <?=$mes['carcass']?> - 93%<br>
-              <?=$mes['brickwork']?> - 38%<br>
-              <?=$mes['interior_fittings']?> - 0%
+              <?=$mes['carcass']?> - 100%<br>
+              <?=$mes['brickwork']?> - 93%<br>
+              <?=$mes['interior_fittings']?> - 59%
             </div>
             <!--Секція 4-->
             <div class="tool_sec">
@@ -125,7 +125,7 @@
               <?=$mes['сease']?> 6<br>
               <?=$mes['work_to']?> 0,000 - 100%<br>
               <?=$mes['carcass']?> - 98,00%<br>
-              <?=$mes['brickwork']?> - 94%<br>
+              <?=$mes['brickwork']?> - 96%<br>
               <?=$mes['interior_fittings']?> - 0%
             </div>
           </div>
@@ -143,22 +143,22 @@
             <!--Секція 2-->
             <div class="tool_sec">
               <?=$mes['сease']?> 2<br>
-              <?=$mes['windows']?> - 16,67%<br><?=$mes['facade']?> - 55%
+              <?=$mes['windows']?> - 85%<br><?=$mes['facade']?> - 66%
             </div>
             <!--Секція 3-->
             <div class="tool_sec">
               <?=$mes['сease']?> 3<br>
-              <?=$mes['windows']?> - 96,67%<br><?=$mes['facade']?> - 76%
+              <?=$mes['windows']?> - 96,67%<br><?=$mes['facade']?> - 90%
             </div>
             <!--Секція 4-->
             <div class="tool_sec">
               <?=$mes['сease']?> 4<br>
-              <?=$mes['windows']?> - 96,67%<br><?=$mes['facade']?> - 55%
+              <?=$mes['windows']?> - 96,67%<br><?=$mes['facade']?> - 68%
             </div>
             <!--Секція 5-->
             <div class="tool_sec">
               <?=$mes['сease']?> 5<br>
-              <?=$mes['windows']?> - 51%<br><?=$mes['facade']?> - 0%
+              <?=$mes['windows']?> - 52%<br><?=$mes['facade']?> - 0%
             </div>
             <!--Секція 6-->
             <div class="tool_sec">
@@ -179,12 +179,12 @@
             <!--Секція 2-->
             <div class="tool_sec">
               <?=$mes['сease']?> 2<br>
-              <?=$mes['inside']?> - 62%<br><?=$mes['exterior']?> - 23%
+              <?=$mes['inside']?> - 64%<br><?=$mes['exterior']?> - 23%
             </div>
             <!--Секція 3-->
             <div class="tool_sec">
               <?=$mes['сease']?> 3<br>
-              <?=$mes['inside']?> - 86%<br><?=$mes['exterior']?> - 23%
+              <?=$mes['inside']?> - 82%<br><?=$mes['exterior']?> - 23%
             </div>
             <!--Секція 4-->
             <div class="tool_sec">
@@ -247,23 +247,23 @@
               <?=$mes['сease']?> 2<br>
               <?=$mes['work_to']?> 0,000 - 99% <br>
               <?=$mes['carcass']?> - 98%<br>
-              <?=$mes['brickwork']?> - 33%<br>
+              <?=$mes['brickwork']?> - 39%<br>
               <?=$mes['interior_fittings']?> - 0%
             </div>
             <!--Секція 3-->
             <div class="tool_sec">
               <?=$mes['сease']?> 3<br>
               <?=$mes['work_to']?> 0,000 - 99,00%<br>
-              <?=$mes['carcass']?> - 69%<br>
-              <?=$mes['brickwork']?> - 18%<br> 
+              <?=$mes['carcass']?> - 75%<br>
+              <?=$mes['brickwork']?> - 31%<br> 
               <?=$mes['interior_fittings']?> - 0%
             </div>
             <!--Секція 4-->
             <div class="tool_sec">
               <?=$mes['сease']?> 4<br>
               <?=$mes['work_to']?> 0,000 - 99% <br>
-              <?=$mes['carcass']?> - 87%<br>
-              <?=$mes['brickwork']?> - 43%<br>
+              <?=$mes['carcass']?> - 89%<br>
+              <?=$mes['brickwork']?> - 49%<br>
               <?=$mes['interior_fittings']?> - 0%
             </div>
             <!--Секція 5-->
@@ -292,7 +292,7 @@
             <!--Секція 1-->
             <div class="tool_sec">
               <?=$mes['сease']?> 1<br>
-              <?=$mes['windows']?> - 2,5%<br><?=$mes['inside']?> - 18%
+              <?=$mes['windows']?> - 2,5%<br><?=$mes['inside']?> - 44,5%
             </div>
             <!--Секція 2-->
             <div class="tool_sec">
@@ -312,12 +312,12 @@
             <!--Секція 5-->
             <div class="tool_sec">
               <?=$mes['сease']?> 5<br>
-              <?=$mes['windows']?> - 53%<br><?=$mes['inside']?> - 42%
+              <?=$mes['windows']?> - 52%<br><?=$mes['inside']?> - 79%
             </div>
             <!--Секція 6-->
             <div class="tool_sec">
               <?=$mes['сease']?> 6<br>
-              <?=$mes['windows']?> - 60,00%<br><?=$mes['inside']?> - 75%
+              <?=$mes['windows']?> - 60,00%<br><?=$mes['inside']?> - 90%
             </div>
           </div>
         </div></span>
@@ -328,7 +328,7 @@
             <!--Секція 1-->
             <div class="tool_sec">
               <?=$mes['сease']?> 1<br>
-              <?=$mes['inside']?> - 0%<br><?=$mes['exterior']?> - 23%
+              <?=$mes['inside']?> - 11%<br><?=$mes['exterior']?> - 23%
             </div>
             <!--Секція 2-->
             <div class="tool_sec">
@@ -348,12 +348,12 @@
             <!--Секція 5-->
             <div class="tool_sec">
               <?=$mes['сease']?> 5<br>
-              <?=$mes['inside']?> - 23%<br><?=$mes['exterior']?> - 23%
+              <?=$mes['inside']?> - 74%<br><?=$mes['exterior']?> - 23%
             </div>
             <!--Секція 6-->
             <div class="tool_sec">
               <?=$mes['сease']?> 6<br>
-              <?=$mes['inside']?> - 53%<br><?=$mes['exterior']?> - 23%
+              <?=$mes['inside']?> - 77%<br><?=$mes['exterior']?> - 23%
             </div>
           </div>
         </div></span>
@@ -402,9 +402,41 @@
 a.fancybox[data-fancybox="group37"][data-caption="<?=\$mes['s-mes52']?>"][href="/img/quart/28_02_2018/$.jpg"]*33.
 */?>
 <!-- начало блока -->
+<div class="stroy_item stroy_item_left stroy49">
+  <div class="stroy_overlay" id='49'>
+    <a id='group49' href="/img/quart/23_06_2018/1.jpg" class="fancybox" data-fancybox="group49" data-caption="<?=$mes['s-mes64']?>"></a>
+    <a href="/img/quart/23_06_2018/2.jpg" class="fancybox" data-fancybox="group49" data-caption="<?=$mes['s-mes64']?>"></a>
+    <a href="/img/quart/23_06_2018/3.jpg" class="fancybox" data-fancybox="group49" data-caption="<?=$mes['s-mes64']?>"></a>
+    <a href="/img/quart/23_06_2018/4.jpg" class="fancybox" data-fancybox="group49" data-caption="<?=$mes['s-mes64']?>"></a>
+    <a href="/img/quart/23_06_2018/5.jpg" class="fancybox" data-fancybox="group49" data-caption="<?=$mes['s-mes64']?>"></a>
+    <a href="/img/quart/23_06_2018/6.jpg" class="fancybox" data-fancybox="group49" data-caption="<?=$mes['s-mes64']?>"></a>
+    <a href="/img/quart/23_06_2018/7.jpg" class="fancybox" data-fancybox="group49" data-caption="<?=$mes['s-mes64']?>"></a>
+	<a href="/img/quart/23_06_2018/8.jpg" class="fancybox" data-fancybox="group49" data-caption="<?=$mes['s-mes64']?>"></a>
+	<a href="/img/quart/23_06_2018/9.jpg" class="fancybox" data-fancybox="group49" data-caption="<?=$mes['s-mes64']?>"></a>
+	<a href="/img/quart/23_06_2018/10.jpg" class="fancybox" data-fancybox="group49" data-caption="<?=$mes['s-mes64']?>"></a>
+	<a href="/img/quart/23_06_2018/11.jpg" class="fancybox" data-fancybox="group49" data-caption="<?=$mes['s-mes64']?>"></a>
+	<a href="/img/quart/23_06_2018/12.jpg" class="fancybox" data-fancybox="group49" data-caption="<?=$mes['s-mes64']?>"></a>
+	<a href="/img/quart/23_06_2018/13.jpg" class="fancybox" data-fancybox="group49" data-caption="<?=$mes['s-mes64']?>"></a>
+	<a href="/img/quart/23_06_2018/14.jpg" class="fancybox" data-fancybox="group49" data-caption="<?=$mes['s-mes64']?>"></a>
+	<a href="/img/quart/23_06_2018/15.jpg" class="fancybox" data-fancybox="group49" data-caption="<?=$mes['s-mes64']?>"></a>
+	<a href="/img/quart/23_06_2018/16.jpg" class="fancybox" data-fancybox="group49" data-caption="<?=$mes['s-mes64']?>"></a>
+	<a href="/img/quart/23_06_2018/17.jpg" class="fancybox" data-fancybox="group49" data-caption="<?=$mes['s-mes64']?>"></a>
+	<a href="/img/quart/23_06_2018/18.jpg" class="fancybox" data-fancybox="group49" data-caption="<?=$mes['s-mes64']?>"></a>
+	<a href="/img/quart/23_06_2018/19.jpg" class="fancybox" data-fancybox="group49" data-caption="<?=$mes['s-mes64']?>"></a>
+	<a href="/img/quart/23_06_2018/20.jpg" class="fancybox" data-fancybox="group49" data-caption="<?=$mes['s-mes64']?>"></a>
+
+ </div>
+  <figcaption>
+    <p class="stroy_date"><?=$mes['s-mes64']?></p>
+    <p class="stroy_name"></p>
+  </figcaption>
+  <style>.stroy49 {background-image: url(/img/quart/23_06_2018/1.jpg);}</style>					  <!-- элемент timeline -->
+</div>
+<!-- конец блока -->
+<!-- начало блока -->
 <div class="stroy_item stroy_item_left stroy48">
   <div class="stroy_overlay" id='48'>
-    <a id='group48' href="/img/quart/18_06_2018/1.jpg" class="fancybox" data-fancybox="group47" data-caption="<?=$mes['s-mes63']?>"></a>
+    <a id='group48' href="/img/quart/18_06_2018/1.jpg" class="fancybox" data-fancybox="group48" data-caption="<?=$mes['s-mes63']?>"></a>
     <a href="/img/quart/18_06_2018/2.jpg" class="fancybox" data-fancybox="group48" data-caption="<?=$mes['s-mes63']?>"></a>
     <a href="/img/quart/18_06_2018/3.jpg" class="fancybox" data-fancybox="group48" data-caption="<?=$mes['s-mes63']?>"></a>
     <a href="/img/quart/18_06_2018/4.jpg" class="fancybox" data-fancybox="group48" data-caption="<?=$mes['s-mes63']?>"></a>
@@ -1708,12 +1740,12 @@ width: 100%;
 }
 
 .block_hod-stroitelstva {
-	height: 289px;
+	height: 480px;
 	margin-bottom: 368px;
 }
 @media screen and (max-width:786px){
 .block_hod-stroitelstva {
-	height: 585px;
+	height: 912px;
 }	
 }
 </style>
