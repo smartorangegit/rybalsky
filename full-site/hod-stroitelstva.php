@@ -109,7 +109,7 @@
               <?=$mes['сease']?> 4<br>
               <?=$mes['work_to']?> 0,000 - 100%<br>
               <?=$mes['carcass']?> - 99,10%<br>
-              <?=$mes['brickwork']?> - 104%<br>
+              <?=$mes['brickwork']?> - 100%<br>
               <?=$mes['interior_fittings']?> - 0%
             </div>
             <!--Секція 5-->
