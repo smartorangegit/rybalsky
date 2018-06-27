@@ -5,8 +5,8 @@
   <meta charset="utf-8">
 	<meta name="robots" content="index, follow">
   <meta name="viewport" content="width=device-width">
-  <meta name="description" content="<?=$mes['val-description']; ?>">
-  <title><?=$mes['val0']?></title>
+  <meta name="description" content="<?=$mes['commercial-lease-description']; ?>">
+  <title><?=$mes['commercial-lease-title']?></title>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
   <link rel="canonical" href="https://<?php echo $_SERVER['SERVER_NAME'].$_SERVER['REQUEST_URI']; ?>"/>
   <link rel="stylesheet" type="text/css" href="/css/intlTelInput.css" />

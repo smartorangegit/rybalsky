@@ -5,9 +5,9 @@
   <meta charset="utf-8">
   <meta name="robots" content="index, follow">
   <meta name="viewport" content="width=device-width">
-  <meta name="description" content="<?=$mes['a-mes-description']; ?>">
+  <meta name="description" content="<?=$mes['trading-description']; ?>">
   <?php /*Google Tag Manager*/ include_once('include/gtm1.php'); ?>
-  <title> <?=$mes['a-mes0']?></title>
+  <title> <?=$mes['trading-title']?></title>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
   <link rel="canonical" href="https://<?php echo $_SERVER['SERVER_NAME'].$_SERVER['REQUEST_URI']; ?>"/>
   <?php

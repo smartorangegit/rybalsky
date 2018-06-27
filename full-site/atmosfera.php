@@ -5,8 +5,8 @@
   <meta charset="utf-8">
 	<meta name="robots" content="index, follow">
   <meta name="viewport" content="width=device-width">
-	<meta name="description" content="<?=$mes['kv-mes-description-12']; ?>">
-  <title>SFERA Living System</title>
+	<meta name="description" content="<?=$mes['atmosfera-description']; ?>">
+  <title><?=$mes['atmosfera-title']; ?></title>
 	<link rel="canonical" href="https://<?php echo $_SERVER['SERVER_NAME'].$_SERVER['REQUEST_URI']; ?>"/>
 	<?php //alternateAdd($_SERVER["REQUEST_URI"]);
 	   $url_origin = $_SERVER["REQUEST_URI"];
