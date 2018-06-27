@@ -7,7 +7,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta name="description" content="<?=$mes['p-mes-description'];?>">
 	<title><?=$mes['p-mes0']?></title>
-	<link rel="canonical" href="https://<?php echo $_SERVER['SERVER_NAME'].$_SERVER['REQUEST_URI']; ?>"/>
+    <link rel="canonical" href="https://<?php echo strtok($_SERVER['SERVER_NAME'].$_SERVER['REQUEST_URI'], '?'); ?>"/>
 	<!-- <link href='https://fonts.googleapis.com/css?family=Roboto:400,300,700' rel='stylesheet' type='text/css'> -->
 	<?php /*Google Tag Manager*/ include_once('include/gtm1.php'); ?>
 	<?php /*Google Tag Manager*/ include_once('include/gtm2.php'); ?>

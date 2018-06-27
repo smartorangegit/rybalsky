@@ -7,7 +7,7 @@
   <meta name="viewport" content="width=device-width">
 	<meta name="description" content="<?=$mes['kv-mes-description-6']; ?>">
   <title><?=$mes['kv-mes-title-6']?></title>
-  <link rel="canonical" href="https://<?php echo $_SERVER['SERVER_NAME']; ?>"/>
+    <link rel="canonical" href="https://<?php echo strtok($_SERVER['SERVER_NAME'].$_SERVER['REQUEST_URI'], '?'); ?>"/>
   <link rel="stylesheet" type="text/css" href="/css/intlTelInput.css" />
   <link rel="stylesheet" type="text/css" href="/css/style.css" />
 	<?php //alternateAdd($_SERVER["REQUEST_URI"]);

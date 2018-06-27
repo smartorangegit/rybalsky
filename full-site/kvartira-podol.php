@@ -28,7 +28,7 @@ $result = $db->prepare("SELECT floor, visible,number,buld,sec,level,all_room,lif
   <meta name="viewport" content="width=device-width">
 	<meta name="description" content="<?=$mes['kv-mes-description-13']; ?>">
   <title><?=$mes['kv-mes-title-13']?></title>
-  <link rel="canonical" href="https://<?php echo $_SERVER['SERVER_NAME'].$_SERVER['REQUEST_URI']; ?>"/>
+    <link rel="canonical" href="https://<?php echo strtok($_SERVER['SERVER_NAME'].$_SERVER['REQUEST_URI'], '?'); ?>"/>
 	<?php //alternateAdd($_SERVER["REQUEST_URI"]);
 	   $url_origin = $_SERVER["REQUEST_URI"];
 	   $url_str = explode("/",$url_origin);

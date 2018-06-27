@@ -10,6 +10,7 @@
 		<link rel="stylesheet" type="text/css" href="/css/style.css" />
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 		<script src="/js/scripts.js"></script>
+		<meta name="robots" content="noindex, follow">
 	<?php /*Google Tag Manager*/ include_once('include/gtm1.php'); ?>
 </head>
 	<style media="screen">

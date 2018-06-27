@@ -49,7 +49,7 @@ $result = $db->prepare("SELECT floor, visible,number,buld,sec,level,all_room,lif
 	<meta name="description" content="<?=$mes['fil-description']; ?>">
   <title><?=$mes['fil-title']?></title>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-  <link rel="canonical" href="https://<?php echo $_SERVER['SERVER_NAME'].$_SERVER['REQUEST_URI']; ?>"/>
+    <link rel="canonical" href="https://<?php echo strtok($_SERVER['SERVER_NAME'].$_SERVER['REQUEST_URI'], '?'); ?>"/>
   <!-- <link rel="stylesheet" type="text/css" href="/css/style.css" /> -->
 	<?php alternateAdd($_SERVER["REQUEST_URI"]);?>
   <?php /*Google Tag Manager*/ include_once('include/gtm1.php'); ?>

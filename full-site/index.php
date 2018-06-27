@@ -9,7 +9,7 @@
 	  <meta name="description" content="<?=$mes['v01-description']; ?>">
     <title><?=$mes['i-mes0']?></title>
     <?php /*Google Tag Manager*/ include_once('include/gtm1.php'); ?>
-    <link rel="canonical" href="https://<?php echo $_SERVER['SERVER_NAME'].$_SERVER['REQUEST_URI']; ?>"/>
+    <link rel="canonical" href="https://<?php echo strtok($_SERVER['SERVER_NAME'].$_SERVER['REQUEST_URI'], '?'); ?>"/>
     <link rel="stylesheet" type="text/css" href="/css/intlTelInput.css?v=1.21" />
     <link rel="stylesheet" type="text/css" href="/css/style.css?v=1.21" />
     <link rel="alternate" hreflang="ru" href="https://rybalsky.com.ua/ru/" />

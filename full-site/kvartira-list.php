@@ -30,7 +30,7 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 
    <link rel="stylesheet" type="text/css" href="/css/intlTelInput.css" />
-	<link rel="canonical" href="https://<?php echo $_SERVER['SERVER_NAME'].$_SERVER['REQUEST_URI']; ?>"/>
+    <link rel="canonical" href="https://<?php echo strtok($_SERVER['SERVER_NAME'].$_SERVER['REQUEST_URI'], '?'); ?>"/>
 	<?php //alternateAdd($_SERVER["REQUEST_URI"]);
 	  $url_origin = $_SERVER["REQUEST_URI"];
 	  $url_str = explode("/",$url_origin);

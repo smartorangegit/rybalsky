@@ -9,7 +9,7 @@
   <title><?=$mes['s-mes-title']; ?></title>
   <?php /*Google Tag Manager*/ include_once('include/gtm1.php'); ?>
   <script src="/js/scroll/jquery-2.1.4.js"></script>
-  <link rel="canonical" href="https://<?php echo $_SERVER['SERVER_NAME'].$_SERVER['REQUEST_URI']; ?>"/>
+    <link rel="canonical" href="https://<?php echo strtok($_SERVER['SERVER_NAME'].$_SERVER['REQUEST_URI'], '?'); ?>"/>
   <link rel="stylesheet" type="text/css" href="/css/intlTelInput.css?v=1.21" />
   <link rel="stylesheet" type="text/css" href="/css/style.css?v=1.21" />
   <link rel="stylesheet" type="text/css" href="/css/hodstroit.css" />

@@ -12,7 +12,7 @@
     <!--[if IE]>
 		<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
 	  <![endif]-->
-     <link rel="canonical" href="https://<?php echo $_SERVER['SERVER_NAME'].$_SERVER['REQUEST_URI']; ?>"/>
+    <link rel="canonical" href="https://<?php echo strtok($_SERVER['SERVER_NAME'].$_SERVER['REQUEST_URI'], '?'); ?>"/>
      <link rel="stylesheet" type="text/css" href="/css/intlTelInput.css" />
     <link rel="stylesheet" type="text/css" href="/css/style.css" />
 	<?php

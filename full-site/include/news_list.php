@@ -65,7 +65,7 @@ if($_POST['lang']==''){$lg='ua';}else{$lg=substr($_POST['lang'], 0,2);}
 	<!-- <link rel="stylesheet" type="text/css" href="/css/menu.css" /> -->
 	<link rel="stylesheet" type="text/css" href="/css/style.css"/>
 
-	<link rel="canonical" href="https://<?php echo $_SERVER['SERVER_NAME'].$_SERVER['REQUEST_URI']; ?>"/>
+    <link rel="canonical" href="https://<?php echo strtok($_SERVER['SERVER_NAME'].$_SERVER['REQUEST_URI'], '?'); ?>"/>
 
 	<script src="/js/scroll/jquery-2.1.4.js"></script>
 	<?

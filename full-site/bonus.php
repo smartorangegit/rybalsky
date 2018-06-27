@@ -66,7 +66,7 @@ $result = $db->prepare("SELECT floor, visible,number,buld,sec,level,all_room,lif
   <!-- <meta name="format-detection" content="telephone=no"> -->
   <title><?=$mes['fil-title']?></title>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-  <link rel="canonical" href="https://<?php echo $_SERVER['SERVER_NAME'].$_SERVER['REQUEST_URI']; ?>"/>
+    <link rel="canonical" href="https://<?php echo strtok($_SERVER['SERVER_NAME'].$_SERVER['REQUEST_URI'], '?'); ?>"/>
 	<?php alternateAdd($_SERVER["REQUEST_URI"]);?>
   <?php /*Google Tag Manager*/ include_once('include/gtm1.php'); ?>
   <script src="/js/jquery-1.12.0.min.js"></script>
