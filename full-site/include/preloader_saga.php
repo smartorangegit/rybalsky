@@ -82,8 +82,7 @@
       
 
 
-  <svg version="1.1" class="loading" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-     viewBox="0 0 89.231 101.538" style="enable-background:new 0 0 89.231 101.538;" xml:space="preserve">
+  <svg version="1.1" class="loading" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 89.231 101.538" style="enable-background:new 0 0 89.231 101.538;" xml:space="preserve">
     <g>
       <text class="svg-loading-circle__text" x = "32%" y = "57%">0%</text>
       <circle class="svg-loading-circle" cx="44.423" cy="53.659" r="37.5"/>
@@ -297,66 +296,66 @@
 
     <script>
       var sagapreloaderAnimation = (function() {
-        function init() {
-            sessionStorage.setItem('preloaderRan', true);
-            var preloaderContainer = document.querySelector('.preloader-container');
-            var circle = document.querySelector('.svg-circle');
-            var loadingCircle = document.querySelector('.svg-loading-circle');
-            var loadingCircleText = document.querySelector('.svg-loading-circle__text');
-            //var loadingCircleContainer = document.querySelector('.svg-loading-circle-container');
-            //var currentPercent = 0;
+        var preloaderContainer = document.querySelector('.preloader-container');
+          function init() {
+              // sessionStorage.setItem('preloaderRan', true);
+              var circle = document.querySelector('.svg-circle');
+              var loadingCircle = document.querySelector('.svg-loading-circle');
+              var loadingCircleText = document.querySelector('.svg-loading-circle__text');
 
-            var currentOffset = 236;
-            var startingOffset = currentOffset;
-            var step = 2.5;
+              var currentOffset = 236;
+              var startingOffset = currentOffset;
+              var step = 2.5;
 
-            preloaderContainer.style.display = 'block';
+              preloaderContainer.style.display = 'block';
 
-            // var showPercent = window.setInterval(function() {
-            //     if (currentPercent < 100) {
-            //     currentPercent += 1;
-            //     } else {
-            //     currentPercent = 100;
-            //     clearInterval(showPercent);
-            //     preloaderContainer.classList.add('remove-svg');
-            //     }
-            //     // Updates a div that displays the current percent
-            //     loadingCircleText.innerHTML = currentPercent + '%';
-            // }, 40);
+              // js based animation starts here
+              circle.addEventListener('animationstart', animateLoadingCircle);
+              function calculatePercents(current) {
+                  return Math.ceil((100 - (current / startingOffset) * 100));
+              };
+              function animateLoadingCircle() {
+                  currentOffset -= step;
+                  loadingCircle.style.strokeDashoffset = currentOffset;
+                  if(currentOffset >= 0) {
+                      loadingCircleText.innerHTML = calculatePercents(currentOffset) + '%';
+                      requestAnimationFrame(animateLoadingCircle);
+                  } else {
+                      preloaderContainer.classList.add('remove-svg');
+                  }
+              };
 
-            // loadingCircleContainer.addEventListener('animationend', function(e) {
-            //     if(e.target.classList.contains('svg-loading-circle-container')) {
-            //         sessionStorage.setItem('preloaderRan', true);
-            //     }
-            // });
+          };
 
-            // js based animation starts here
-            circle.addEventListener('animationstart', animateLoadingCircle);
-            function calculatePercents(current) {
-                return Math.ceil((100 - (current / startingOffset) * 100));
-            };
-            function animateLoadingCircle() {
-                currentOffset -= step;
-                loadingCircle.style.strokeDashoffset = currentOffset;
-                if(currentOffset >= 0) {
-                    loadingCircleText.innerHTML = calculatePercents(currentOffset) + '%';
-                    requestAnimationFrame(animateLoadingCircle);
-                } else {
-                    preloaderContainer.classList.add('remove-svg');
-                }
-            };
+          function checkDate() {
+            if(localStorage.getItem('preloader')===null) {
+              localStorage.setItem('preloader', Date.now());
+              return true;
+            }
+            var hour = 3600 * 1000;  
+            if(Date.now() - localStorage.getItem('preloader') < hour) {
+              return false;
+            } else {
+              localStorage.setItem('preloader', Date.now());
+              return true;
+            }
+          }
 
-        };
+          return {
+            init: init,
+            preloaderContainer: preloaderContainer,
+            checkDate: checkDate
+          };
 
-        return {
-            init: init
-        };
+      })();
 
-    })();
+      // if(!sessionStorage.getItem('preloaderRan')) {
+      //     sagapreloaderAnimation.init();
+      // }
 
-if(!sessionStorage.getItem('preloaderRan')) {
-    sagapreloaderAnimation.init();
-}
-
-      // preloaderAnimation
+      if(sagapreloaderAnimation.checkDate()) {
+        sagapreloaderAnimation.init();
+      } else {
+        sagapreloaderAnimation.preloaderContainer.style.display = 'none';
+      }
     </script>
