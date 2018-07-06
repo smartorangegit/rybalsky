@@ -187,6 +187,8 @@ function sound_off () {
             <div class="item"><img <?AltImgAdd($mes['i-mes0']);?>  src="/img/r11.jpg"></div>
             <div class="item"><img <?AltImgAdd($mes['i-mes0']);?>  src="/img/r12.jpg"></div>
             <div class="item"><img <?AltImgAdd($mes['i-mes0']);?>  src="/img/r13.jpg"></div>
+			<div class="item"><img <?AltImgAdd($mes['i-mes0']);?>  src="/img/r15.jpg"></div>
+
           </div>
         </div>
         <div class="wrap_header_abs">
