@@ -85,7 +85,7 @@
               <?=$mes['сease']?> 1<br>
               <?=$mes['work_to']?> 0,000 - 100%<br>
               <?=$mes['carcass']?> - 98,00%<br>
-              <?=$mes['brickwork']?> - 97%<br>
+              <?=$mes['brickwork']?> - 100%<br>
               <?=$mes['interior_fittings']?> - 0%
             </div>
             <!--Секція 2-->
@@ -94,7 +94,7 @@
               <?=$mes['work_to']?> 0,000 - 100%<br>
               <?=$mes['carcass']?> - 99%<br>
               <?=$mes['brickwork']?> - 97%<br>
-              <?=$mes['interior_fittings']?> - 0%
+              <?=$mes['interior_fittings']?> - 30%
             </div>
             <!--Секція 3-->
             <div class="tool_sec">
@@ -102,7 +102,7 @@
               <?=$mes['work_to']?> 0,000 - 100%<br>
               <?=$mes['carcass']?> - 100%<br>
               <?=$mes['brickwork']?> - 93%<br>
-              <?=$mes['interior_fittings']?> - 59%
+              <?=$mes['interior_fittings']?> - 76%
             </div>
             <!--Секція 4-->
             <div class="tool_sec">
@@ -143,7 +143,7 @@
             <!--Секція 2-->
             <div class="tool_sec">
               <?=$mes['сease']?> 2<br>
-              <?=$mes['windows']?> - 85%<br><?=$mes['facade']?> - 66%
+              <?=$mes['windows']?> - 88%<br><?=$mes['facade']?> - 66%
             </div>
             <!--Секція 3-->
             <div class="tool_sec">
@@ -153,7 +153,7 @@
             <!--Секція 4-->
             <div class="tool_sec">
               <?=$mes['сease']?> 4<br>
-              <?=$mes['windows']?> - 96,67%<br><?=$mes['facade']?> - 68%
+              <?=$mes['windows']?> - 96,67%<br><?=$mes['facade']?> - 68,4%
             </div>
             <!--Секція 5-->
             <div class="tool_sec">
@@ -179,7 +179,7 @@
             <!--Секція 2-->
             <div class="tool_sec">
               <?=$mes['сease']?> 2<br>
-              <?=$mes['inside']?> - 64%<br><?=$mes['exterior']?> - 23%
+              <?=$mes['inside']?> - 68%<br><?=$mes['exterior']?> - 23%
             </div>
             <!--Секція 3-->
             <div class="tool_sec">
@@ -189,7 +189,7 @@
             <!--Секція 4-->
             <div class="tool_sec">
               <?=$mes['сease']?> 4<br>
-              <?=$mes['inside']?> - 43%<br><?=$mes['exterior']?> - 23%
+              <?=$mes['inside']?> - 60%<br><?=$mes['exterior']?> - 23%
             </div>
             <!--Секція 5-->
             <div class="tool_sec">
@@ -247,23 +247,23 @@
               <?=$mes['сease']?> 2<br>
               <?=$mes['work_to']?> 0,000 - 99% <br>
               <?=$mes['carcass']?> - 98%<br>
-              <?=$mes['brickwork']?> - 39%<br>
+              <?=$mes['brickwork']?> - 58%<br>
               <?=$mes['interior_fittings']?> - 0%
             </div>
             <!--Секція 3-->
             <div class="tool_sec">
               <?=$mes['сease']?> 3<br>
               <?=$mes['work_to']?> 0,000 - 99,00%<br>
-              <?=$mes['carcass']?> - 75%<br>
-              <?=$mes['brickwork']?> - 31%<br> 
+              <?=$mes['carcass']?> - 88%<br>
+              <?=$mes['brickwork']?> - 51%<br> 
               <?=$mes['interior_fittings']?> - 0%
             </div>
             <!--Секція 4-->
             <div class="tool_sec">
               <?=$mes['сease']?> 4<br>
               <?=$mes['work_to']?> 0,000 - 99% <br>
-              <?=$mes['carcass']?> - 89%<br>
-              <?=$mes['brickwork']?> - 49%<br>
+              <?=$mes['carcass']?> - 90%<br>
+              <?=$mes['brickwork']?> - 59%<br>
               <?=$mes['interior_fittings']?> - 0%
             </div>
             <!--Секція 5-->
@@ -292,7 +292,7 @@
             <!--Секція 1-->
             <div class="tool_sec">
               <?=$mes['сease']?> 1<br>
-              <?=$mes['windows']?> - 2,5%<br><?=$mes['inside']?> - 44,5%
+              <?=$mes['windows']?> - 40%<br><?=$mes['inside']?> - 44,5%
             </div>
             <!--Секція 2-->
             <div class="tool_sec">
@@ -312,7 +312,7 @@
             <!--Секція 5-->
             <div class="tool_sec">
               <?=$mes['сease']?> 5<br>
-              <?=$mes['windows']?> - 52%<br><?=$mes['inside']?> - 79%
+              <?=$mes['windows']?> - 53%<br><?=$mes['inside']?> - 85%
             </div>
             <!--Секція 6-->
             <div class="tool_sec">
@@ -328,7 +328,7 @@
             <!--Секція 1-->
             <div class="tool_sec">
               <?=$mes['сease']?> 1<br>
-              <?=$mes['inside']?> - 11%<br><?=$mes['exterior']?> - 23%
+              <?=$mes['inside']?> - 18%<br><?=$mes['exterior']?> - 23%
             </div>
             <!--Секція 2-->
             <div class="tool_sec">

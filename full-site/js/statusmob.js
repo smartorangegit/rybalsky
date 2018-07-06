@@ -54,7 +54,7 @@ $("#container3").Progress({
 
 //Будинок 3 Загально Будівельні
 $("#container1_0").Progress({
-  percent: 89, // 89%
+  percent: 90, // 90%
   width: 200,
   height: 36,
   backgroundColor: 'transparent',
@@ -99,7 +99,7 @@ $("#container1_2").Progress({
 
 //Будинок 3 Мережі
 $("#container1_3").Progress({
-  percent: 21, // 21%
+  percent: 22, // 22%
   width: 200,
   height: 36,
   backgroundColor: 'transparent',
@@ -144,7 +144,7 @@ $("#container2_1").Progress({
 
 //Будинок 9 Фасад
 $("#container2_2").Progress({
-  percent: 31, // 31%
+  percent: 34, // 34%
   width: 200,
   height: 36,
   backgroundColor: 'transparent',
@@ -158,7 +158,7 @@ $("#container2_2").Progress({
 });
 //Будинок 9 Мережі
 $("#container2_3").Progress({
-  percent: 18, // 18%
+  percent: 19, // 19%
   width: 200,
   height: 36,
   backgroundColor: 'transparent',
