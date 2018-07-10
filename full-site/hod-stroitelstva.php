@@ -1839,6 +1839,13 @@ height: auto;
 .block_top {margin-bottom:0px;}
 }
 @media screen and (max-width: 768px){
+  .tooltip-content {
+    font-size: 10px;
+    width: 320px;
+    margin: 0 0 0% 50%;
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+  }
 .header .wrap_header {
 width: 300px;
 }

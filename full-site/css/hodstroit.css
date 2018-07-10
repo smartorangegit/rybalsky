@@ -14,7 +14,6 @@
   height: auto;
   margin: 0 auto;
   width: 835px;
-  /* width: 100%; */
   font-family: "PFDinTextUniversal-Light";
 }
 .header.buld.stroy{
@@ -51,12 +50,12 @@ footer {
   font-size: 16px;
 }
 
-.block_right h4 {
+/* .block_right h4 {
   font-size: 20px;
   color: #fff;
   text-align: center;
   margin-bottom: 28px;
-  }
+  } */
 .status_info_2{
   width: 100%;
   display: -webkit-box;
@@ -114,9 +113,9 @@ a.statusbutton {
     align-items: center;
     -webkit-align-items: center;
   }
-.status_info_1{
+/* .status_info_1{
   float: left;
-  }
+  } */
 
 /* Правки от 28.09.17 --Андрей */
 .header-bottom .logo img {
@@ -216,18 +215,6 @@ form.subscrip input[type="submit"].send_news__buttons_item {
   background-color: #0f1157;
 }
 
-@media screen and (max-width: 1025px) and (min-width:768px){
-  .status__1, .status__2 {
-    /*float: none;*/
-    margin: 0 auto;
-  }
-  .block_left {
-    width: 140px;
-    float: left;
-}
-}
-
-
 @media only screen and (max-width:1024px) {
   .stroy{
     width: auto;
@@ -246,11 +233,20 @@ form.subscrip input[type="submit"].send_news__buttons_item {
 
 
 
-@media screen and (max-width: 768px) and (min-width: 320px){
-  /* .header.buld.stroy{
-    background: url('/img/status_mob.jpg');
-    background-size: cover;
-  } */
+@media screen and (max-width: 768px){
+  .block_hod-stroitelstva {
+    column-count: 1;
+    -webkit-column-count: 1;
+    line-height: 1.2;
+}
+.timebar__item {
+    width: 100%;
+    flex-direction: column;
+    -webkit-flex-direction: column;
+  }
+  .timebar_name{
+    margin-bottom: 8px;
+  }
   .stroy .timeline{
     display: none;
   }
@@ -280,18 +276,7 @@ form.subscrip input[type="submit"].send_news__buttons_item {
       width: 100%;
       float: none;
   }
-  .timebar_name p {
-      font-size: 11px;
-      padding-bottom: 0px;
-  }
-  .timebar_name {
-      height: 35px;
-      margin-bottom: 3px;
-  }
-  .block_left{
-    width: 70px;
-  }
-  .status_info_2 {
+.status_info_2 {
     width: 100%;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -304,14 +289,7 @@ form.subscrip input[type="submit"].send_news__buttons_item {
     line-height: 40px;
     margin: 12px auto;
 }
-  .status__1, .status__2 {
-    width: 100%;
-    float: none;
-}
-  .block_timebar{
-  width: 200px;
-  float: right;
-}
+
 .stroy .triangle, .triangle_left{display: none;}
 #fr1 {
   max-width: 100% !important;
