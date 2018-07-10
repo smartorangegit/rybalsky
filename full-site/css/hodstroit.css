@@ -14,6 +14,7 @@
   height: auto;
   margin: 0 auto;
   width: 835px;
+  /* width: 100%; */
   font-family: "PFDinTextUniversal-Light";
 }
 .header.buld.stroy{
@@ -34,38 +35,22 @@ footer {
   text-align: center;
   margin-bottom: 40px;
   }
-.status__1, .status__2{
-  width: 50%;
-  float: left;
-  }
-.block_left{
-  width: 225px;
-  float: left;
+  .block_hod-stroitelstva {
+  margin-bottom: 30px;
+  column-count: 2;
+  column-gap: 40px;
+  -webkit-column-count: 2;
+  -webkit-column-gap: 40px;
+  line-height: 1.2;
   }
 .block_timebar svg{
   border: 1px solid #d5d2ce;
   display: block;
-  margin-bottom: 6px;
   }
-.block_right{
-  float: right;
-  width: 360px;
-  text-align: center;
-}
 .timebar_name{
-  height: 36px;
-  margin-bottom: 6px;
-  }
-.timebar_name p{
   font-size: 16px;
-  /* text-transform: uppercase; */
-  padding-bottom: 5px;
-  line-height: 50px;
-
 }
-.timebar_name:first-child p{
-  line-height: 1;
-  }
+
 .block_right h4 {
   font-size: 20px;
   color: #fff;
@@ -102,8 +87,32 @@ a.statusbutton {
   }
 .status h4{
   font-size: 30px;
-  text-align: left;
+  text-align: center;
   margin-bottom: 20px;
+  padding: 12px 0;
+  background: #0035aa;
+  }
+  .name_p{
+    margin-bottom: 12px;
+    font-size: 20px;
+    font-weight: 800;
+  }
+  .block_timebar{
+    display: flex;
+    flex-wrap: wrap;
+    display: -webkit-flex;
+    -webkit-flex-wrap: wrap;
+    background: rgba(0,53,170,.4);
+    margin-bottom: 30px;
+  }
+  .timebar__item{
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    box-sizing: border-box;
+    align-items: center;
+    -webkit-align-items: center;
   }
 .status_info_1{
   float: left;

@@ -55,311 +55,465 @@
   </div>
 
   <div class="block_bottom clearfix">
+
     <div class="status__1">
       <h4><?=$mes['stat-15']?> 3</h4>
-	 <div class="block_hod-stroitelstva">  
-		<?=$mes['block_hod-stroitelstva-3']?>
-	</div> 
-      <div class="block_left">
-        <div class="timebar_name">
-          <?=$mes['stat-7']?>
-        </div>
-        <div class="timebar_name">
-          <p><?=$mes['stat-8']?></p>
-        </div>
-        <div class="timebar_name">
-          <p><?=$mes['stat-9']?></p>
-        </div>
-        <div class="timebar_name">
-          <p><?=$mes['stat-10']?></p>
-        </div>
-      </div>
+    	 <div class="block_hod-stroitelstva">
+    		<?=$mes['block_hod-stroitelstva-3']?>
+    	</div>
 
       <div class="block_timebar">
-                                                          <!-- ДОМ 3 -->
-        <span class="tooltip toolti p-effect-1"><span class="tooltip-item"><svg id="container1_0"></svg></span>
-        <div class="tooltip-content clearfix">
-          <div class="tooltip-text">
-            <div class="tool_sec">
-            <!--Секція 1-->
-              <?=$mes['сease']?> 1<br>
-              <?=$mes['work_to']?> 0,000 - 100%<br>
-              <?=$mes['carcass']?> - 98,00%<br>
-              <?=$mes['brickwork']?> - 100%<br>
-              <?=$mes['interior_fittings']?> - 0%
-            </div>
-            <!--Секція 2-->
-            <div class="tool_sec">
-              <?=$mes['сease']?> 2<br>
-              <?=$mes['work_to']?> 0,000 - 100%<br>
-              <?=$mes['carcass']?> - 99%<br>
-              <?=$mes['brickwork']?> - 97%<br>
-              <?=$mes['interior_fittings']?> - 30%
-            </div>
-            <!--Секція 3-->
-            <div class="tool_sec">
-              <?=$mes['сease']?> 3<br>
-              <?=$mes['work_to']?> 0,000 - 100%<br>
-              <?=$mes['carcass']?> - 100%<br>
-              <?=$mes['brickwork']?> - 93%<br>
-              <?=$mes['interior_fittings']?> - 76%
-            </div>
-            <!--Секція 4-->
-            <div class="tool_sec">
-              <?=$mes['сease']?> 4<br>
-              <?=$mes['work_to']?> 0,000 - 100%<br>
-              <?=$mes['carcass']?> - 99,10%<br>
-              <?=$mes['brickwork']?> - 100%<br>
-              <?=$mes['interior_fittings']?> - 0%
-            </div>
-            <!--Секція 5-->
-            <div class="tool_sec">
-              <?=$mes['сease']?> 5<br>
-              <?=$mes['work_to']?> 0,000 - 100%<br>
-              <?=$mes['carcass']?> - 100%<br>
-              <?=$mes['brickwork']?> - 91%<br>
-              <?=$mes['interior_fittings']?> - 0%
-            </div>
-            <!--Секція 6-->
-            <div class="tool_sec">
-              <?=$mes['сease']?> 6<br>
-              <?=$mes['work_to']?> 0,000 - 100%<br>
-              <?=$mes['carcass']?> - 98,00%<br>
-              <?=$mes['brickwork']?> - 96%<br>
-              <?=$mes['interior_fittings']?> - 0%
-            </div>
-          </div>
-        </div></span>
-        <svg id="container1_1"></svg>
-        <span class="tooltip toolti p-effect-1"><span class="tooltip-item"><svg id="container1_2"></svg></span>
-        <!--Фасад-->
-        <div class="tooltip-content clearfix">
-          <div class="tooltip-text">
-            <!--Секція 1-->
-            <div class="tool_sec">
-              <?=$mes['сease']?> 1<br>
-              <?=$mes['windows']?> - 0%<br><?=$mes['facade']?> - 0%
-            </div>
-            <!--Секція 2-->
-            <div class="tool_sec">
-              <?=$mes['сease']?> 2<br>
-              <?=$mes['windows']?> - 88%<br><?=$mes['facade']?> - 66%
-            </div>
-            <!--Секція 3-->
-            <div class="tool_sec">
-              <?=$mes['сease']?> 3<br>
-              <?=$mes['windows']?> - 96,67%<br><?=$mes['facade']?> - 90%
-            </div>
-            <!--Секція 4-->
-            <div class="tool_sec">
-              <?=$mes['сease']?> 4<br>
-              <?=$mes['windows']?> - 96,67%<br><?=$mes['facade']?> - 68,4%
-            </div>
-            <!--Секція 5-->
-            <div class="tool_sec">
-              <?=$mes['сease']?> 5<br>
-              <?=$mes['windows']?> - 52%<br><?=$mes['facade']?> - 0%
-            </div>
-            <!--Секція 6-->
-            <div class="tool_sec">
-              <?=$mes['сease']?> 6<br>
-              <?=$mes['windows']?> - 0%<br><?=$mes['facade']?> - 0%
-            </div>
-          </div>
-        </div></span>
-        <span class="tooltip toolti p-effect-1"><span class="tooltip-item"><svg id="container1_3"></svg></span>
-        <!--Мережі-->
-        <div class="tooltip-content clearfix">
-          <div class="tooltip-text">
-            <!--Секція 1-->
-            <div class="tool_sec">
-              <?=$mes['сease']?> 1<br>
-              <?=$mes['inside']?> - 0%<br><?=$mes['exterior']?> - 0%
-            </div>
-            <!--Секція 2-->
-            <div class="tool_sec">
-              <?=$mes['сease']?> 2<br>
-              <?=$mes['inside']?> - 68%<br><?=$mes['exterior']?> - 23%
-            </div>
-            <!--Секція 3-->
-            <div class="tool_sec">
-              <?=$mes['сease']?> 3<br>
-              <?=$mes['inside']?> - 82%<br><?=$mes['exterior']?> - 23%
-            </div>
-            <!--Секція 4-->
-            <div class="tool_sec">
-              <?=$mes['сease']?> 4<br>
-              <?=$mes['inside']?> - 60%<br><?=$mes['exterior']?> - 23%
-            </div>
-            <!--Секція 5-->
-            <div class="tool_sec">
-              <?=$mes['сease']?> 5<br>
-              <?=$mes['inside']?> - 0%<br><?=$mes['exterior']?> - 0%
-            </div>
-            <!--Секція 6-->
-            <div class="tool_sec">
-              <?=$mes['сease']?> 6<br>
-              <?=$mes['inside']?> - 0%<br><?=$mes['exterior']?> - 0%
-            </div>
-          </div>
-        </div></span>
 
-        <!-- <svg id="container1_0"></svg>
-        <svg id="container1_1"></svg>
-        <svg id="container1_2"></svg>
-        <svg id="container1_3"></svg> -->
+        <!-- ДОМ 3 -->
+        <div class="timebar__item">
+          <div class="timebar_name">
+            <?=$mes['stat-7']?>
+          </div>
+          <div class="tooltip toolti p-effect-1"><span class="tooltip-item"><svg id="container1_0"></svg></span>
+            <div class="tooltip-content clearfix">
+              <div class="tooltip-text">
+                <div class="tool_sec">
+                  <!--Секція 1-->
+                  <?=$mes['сease']?> 1<br>
+                  <?=$mes['work_to']?> 0,000 - 100%<br>
+                  <?=$mes['carcass']?> - 98,00%<br>
+                  <?=$mes['brickwork']?> - 100%<br>
+                  <?=$mes['interior_fittings']?> - 0%
+                </div>
+                <!--Секція 2-->
+                <div class="tool_sec">
+                  <?=$mes['сease']?> 2<br>
+                  <?=$mes['work_to']?> 0,000 - 100%<br>
+                  <?=$mes['carcass']?> - 99%<br>
+                  <?=$mes['brickwork']?> - 97%<br>
+                  <?=$mes['interior_fittings']?> - 30%
+                </div>
+                <!--Секція 3-->
+                <div class="tool_sec">
+                  <?=$mes['сease']?> 3<br>
+                  <?=$mes['work_to']?> 0,000 - 100%<br>
+                  <?=$mes['carcass']?> - 100%<br>
+                  <?=$mes['brickwork']?> - 93%<br>
+                  <?=$mes['interior_fittings']?> - 76%
+                </div>
+                <!--Секція 4-->
+                <div class="tool_sec">
+                  <?=$mes['сease']?> 4<br>
+                  <?=$mes['work_to']?> 0,000 - 100%<br>
+                  <?=$mes['carcass']?> - 99,10%<br>
+                  <?=$mes['brickwork']?> - 100%<br>
+                  <?=$mes['interior_fittings']?> - 0%
+                </div>
+                <!--Секція 5-->
+                <div class="tool_sec">
+                  <?=$mes['сease']?> 5<br>
+                  <?=$mes['work_to']?> 0,000 - 100%<br>
+                  <?=$mes['carcass']?> - 100%<br>
+                  <?=$mes['brickwork']?> - 91%<br>
+                  <?=$mes['interior_fittings']?> - 0%
+                </div>
+                <!--Секція 6-->
+                <div class="tool_sec">
+                  <?=$mes['сease']?> 6<br>
+                  <?=$mes['work_to']?> 0,000 - 100%<br>
+                  <?=$mes['carcass']?> - 98,00%<br>
+                  <?=$mes['brickwork']?> - 96%<br>
+                  <?=$mes['interior_fittings']?> - 0%
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="timebar__item">
+          <div class="timebar_name">
+            <p><?=$mes['stat-8']?></p>
+          </div>
+          <div class="">
+            <svg id="container1_1"></svg>
+          </div>
+
+        </div>
+        <div class="timebar__item">
+          <div class="timebar_name">
+            <p><?=$mes['stat-9']?></p>
+          </div>
+          <div class="tooltip toolti p-effect-1"><span class="tooltip-item"><svg id="container1_2"></svg></span>
+          <!--Фасад-->
+            <div class="tooltip-content clearfix">
+              <div class="tooltip-text">
+                <!--Секція 1-->
+                <div class="tool_sec">
+                  <?=$mes['сease']?> 1<br>
+                  <?=$mes['windows']?> - 0%<br><?=$mes['facade']?> - 0%
+                </div>
+                <!--Секція 2-->
+                <div class="tool_sec">
+                  <?=$mes['сease']?> 2<br>
+                  <?=$mes['windows']?> - 88%<br><?=$mes['facade']?> - 66%
+                </div>
+                <!--Секція 3-->
+                <div class="tool_sec">
+                  <?=$mes['сease']?> 3<br>
+                  <?=$mes['windows']?> - 96,67%<br><?=$mes['facade']?> - 90%
+                </div>
+                <!--Секція 4-->
+                <div class="tool_sec">
+                  <?=$mes['сease']?> 4<br>
+                  <?=$mes['windows']?> - 96,67%<br><?=$mes['facade']?> - 68,4%
+                </div>
+                <!--Секція 5-->
+                <div class="tool_sec">
+                  <?=$mes['сease']?> 5<br>
+                  <?=$mes['windows']?> - 52%<br><?=$mes['facade']?> - 0%
+                </div>
+                <!--Секція 6-->
+                <div class="tool_sec">
+                  <?=$mes['сease']?> 6<br>
+                  <?=$mes['windows']?> - 0%<br><?=$mes['facade']?> - 0%
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="timebar__item">
+          <div class="timebar_name">
+            <p><?=$mes['stat-10']?></p>
+          </div>
+          <div class="tooltip toolti p-effect-1"><span class="tooltip-item"><svg id="container1_3"></svg></span>
+          <!--Мережі-->
+            <div class="tooltip-content clearfix">
+              <div class="tooltip-text">
+                <!--Секція 1-->
+                <div class="tool_sec">
+                  <?=$mes['сease']?> 1<br>
+                  <?=$mes['inside']?> - 0%<br><?=$mes['exterior']?> - 0%
+                </div>
+                <!--Секція 2-->
+                <div class="tool_sec">
+                  <?=$mes['сease']?> 2<br>
+                  <?=$mes['inside']?> - 68%<br><?=$mes['exterior']?> - 23%
+                </div>
+                <!--Секція 3-->
+                <div class="tool_sec">
+                  <?=$mes['сease']?> 3<br>
+                  <?=$mes['inside']?> - 82%<br><?=$mes['exterior']?> - 23%
+                </div>
+                <!--Секція 4-->
+                <div class="tool_sec">
+                  <?=$mes['сease']?> 4<br>
+                  <?=$mes['inside']?> - 60%<br><?=$mes['exterior']?> - 23%
+                </div>
+                <!--Секція 5-->
+                <div class="tool_sec">
+                  <?=$mes['сease']?> 5<br>
+                  <?=$mes['inside']?> - 0%<br><?=$mes['exterior']?> - 0%
+                </div>
+                <!--Секція 6-->
+                <div class="tool_sec">
+                  <?=$mes['сease']?> 6<br>
+                  <?=$mes['inside']?> - 0%<br><?=$mes['exterior']?> - 0%
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
       </div>
     </div>
+
+
+
     <div class="status__2">
       <h4><?=$mes['stat-15']?> 9</h4>
-	  <div class="block_hod-stroitelstva"> 
+	  <div class="block_hod-stroitelstva">
 		<?=$mes['block_hod-stroitelstva-9']?>
 	  </div>
-      <div class="block_left">
-        <div class="timebar_name">
-          <?=$mes['stat-7']?>
-        </div>
-        <div class="timebar_name">
-          <p><?=$mes['stat-8']?></p>
-        </div>
-        <div class="timebar_name">
-          <p><?=$mes['stat-9']?></p>
-        </div>
-        <div class="timebar_name">
-          <p><?=$mes['stat-10']?></p>
-        </div>
-      </div>
+
       <div class="block_timebar">
+
+        <div class="timebar__item">
+          <div class="timebar_name">
+            <?=$mes['stat-7']?>
+          </div>
+          <div class="tooltip toolti p-effect-1"><span class="tooltip-item"><svg id="container2_0"></svg></span>
+            <div class="tooltip-content clearfix">
+              <div class="tooltip-text">
+                <!--Секція 1-->
+                <div class="tool_sec">
+                  <?=$mes['сease']?> 1<br>
+                  <?=$mes['work_to']?> 0,000 - 100%<br>
+                  <?=$mes['carcass']?> - 99,60%<br>
+                  <?=$mes['brickwork']?> - 80%<br>
+                  <?=$mes['interior_fittings']?> - 0%
+                </div>
+                <!--Секція 2-->
+                <div class="tool_sec">
+                  <?=$mes['сease']?> 2<br>
+                  <?=$mes['work_to']?> 0,000 - 99% <br>
+                  <?=$mes['carcass']?> - 98%<br>
+                  <?=$mes['brickwork']?> - 58%<br>
+                  <?=$mes['interior_fittings']?> - 0%
+                </div>
+                <!--Секція 3-->
+                <div class="tool_sec">
+                  <?=$mes['сease']?> 3<br>
+                  <?=$mes['work_to']?> 0,000 - 99,00%<br>
+                  <?=$mes['carcass']?> - 88%<br>
+                  <?=$mes['brickwork']?> - 51%<br>
+                  <?=$mes['interior_fittings']?> - 0%
+                </div>
+                <!--Секція 4-->
+                <div class="tool_sec">
+                  <?=$mes['сease']?> 4<br>
+                  <?=$mes['work_to']?> 0,000 - 99% <br>
+                  <?=$mes['carcass']?> - 90%<br>
+                  <?=$mes['brickwork']?> - 59%<br>
+                  <?=$mes['interior_fittings']?> - 0%
+                </div>
+                <!--Секція 5-->
+                <div class="tool_sec">
+                  <?=$mes['сease']?> 5<br>
+                  <?=$mes['work_to']?> 0,000 - 100%  <br>
+                  <?=$mes['carcass']?> - 99,80%<br>
+                  <?=$mes['brickwork']?> - 85%<br>
+                  <?=$mes['interior_fittings']?> - 0%
+                </div>
+                <!--Секція 6-->
+                <div class="tool_sec">
+                  <?=$mes['сease']?> 6<br>
+                  <?=$mes['work_to']?> 0,000 - 100% <br>
+                  <?=$mes['carcass']?> - 99,60%<br>
+                  <?=$mes['brickwork']?> - 88%<br>
+                  <?=$mes['interior_fittings']?> - 0%
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="timebar__item">
+          <div class="timebar_name">
+            <p><?=$mes['stat-8']?></p>
+          </div>
+          <div class="">
+            <svg id="container2_1"></svg>
+          </div>
+        </div>
+
+        <div class="timebar__item">
+          <div class="timebar_name">
+            <p><?=$mes['stat-9']?></p>
+          </div>
+          <div class="tooltip toolti p-effect-1"><span class="tooltip-item"><svg id="container2_2"></svg></span>
+            <div class="tooltip-content clearfix"><!--Фасад-->
+              <div class="tooltip-text">
+                <div class="tool_sec"><!--Секція 1-->
+                  <?=$mes['сease']?> 1<br>
+                  <?=$mes['windows']?> - 40%<br><?=$mes['inside']?> - 44,5%
+                </div>
+                <div class="tool_sec"><!--Секція 2-->
+                  <?=$mes['сease']?> 2<br>
+                  <?=$mes['windows']?> - 0%<br><?=$mes['inside']?> - 0%
+                </div>
+                <div class="tool_sec"><!--Секція 2-->
+                  <?=$mes['сease']?> 3<br>
+                  <?=$mes['windows']?> - 0%<br><?=$mes['inside']?> - 0%
+                </div>
+                <div class="tool_sec"><!--Секція 4-->
+                  <?=$mes['сease']?> 4<br>
+                  <?=$mes['windows']?> - 0%<br><?=$mes['inside']?> - 0%
+                </div>
+                <div class="tool_sec"><!--Секція 5-->
+                  <?=$mes['сease']?> 5<br>
+                  <?=$mes['windows']?> - 53%<br><?=$mes['inside']?> - 85%
+                </div>
+                <div class="tool_sec"><!--Секція 6-->
+                  <?=$mes['сease']?> 6<br>
+                  <?=$mes['windows']?> - 60,00%<br><?=$mes['inside']?> - 90%
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="timebar__item">
+          <div class="timebar_name">
+            <p><?=$mes['stat-10']?></p>
+          </div>
+          <div class="tooltip toolti p-effect-1"><span class="tooltip-item"><svg id="container2_3"></svg></span>
+            <div class="tooltip-content clearfix"><!--Мережі-->
+              <div class="tooltip-text">
+                <div class="tool_sec"><!--Секція 1-->
+                  <?=$mes['сease']?> 1<br>
+                  <?=$mes['inside']?> - 18%<br><?=$mes['exterior']?> - 23%
+                </div>
+                <div class="tool_sec"><!--Секція 2-->
+                  <?=$mes['сease']?> 2<br>
+                  <?=$mes['inside']?> - 0%<br><?=$mes['exterior']?> - 0%
+                </div>
+                <div class="tool_sec"><!--Секція 3-->
+                  <?=$mes['сease']?> 3<br>
+                  <?=$mes['inside']?> - 0%<br><?=$mes['exterior']?> - 0%
+                </div>
+                <div class="tool_sec"><!--Секція 4-->
+                  <?=$mes['сease']?> 4<br>
+                  <?=$mes['inside']?> - 0%<br><?=$mes['exterior']?> - 0%
+                </div>
+                <div class="tool_sec"><!--Секція 5-->
+                  <?=$mes['сease']?> 5<br>
+                  <?=$mes['inside']?> - 74%<br><?=$mes['exterior']?> - 23%
+                </div>
+                <div class="tool_sec"><!--Секція 6-->
+                  <?=$mes['сease']?> 6<br>
+                  <?=$mes['inside']?> - 77%<br><?=$mes['exterior']?> - 23%
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
                                                         <!-- ДОМ 9 -->
-        <span class="tooltip toolti p-effect-1"><span class="tooltip-item"><svg id="container2_0"></svg></span>
-        <div class="tooltip-content clearfix">
-          <div class="tooltip-text">
-            <!--Секція 1-->
-            <div class="tool_sec">
-              <?=$mes['сease']?> 1<br>
-              <?=$mes['work_to']?> 0,000 - 100%<br>
-              <?=$mes['carcass']?> - 99,60%<br>
-              <?=$mes['brickwork']?> - 80%<br>
-              <?=$mes['interior_fittings']?> - 0%
-            </div>
-            <!--Секція 2-->
-            <div class="tool_sec">
-              <?=$mes['сease']?> 2<br>
-              <?=$mes['work_to']?> 0,000 - 99% <br>
-              <?=$mes['carcass']?> - 98%<br>
-              <?=$mes['brickwork']?> - 58%<br>
-              <?=$mes['interior_fittings']?> - 0%
-            </div>
-            <!--Секція 3-->
-            <div class="tool_sec">
-              <?=$mes['сease']?> 3<br>
-              <?=$mes['work_to']?> 0,000 - 99,00%<br>
-              <?=$mes['carcass']?> - 88%<br>
-              <?=$mes['brickwork']?> - 51%<br> 
-              <?=$mes['interior_fittings']?> - 0%
-            </div>
-            <!--Секція 4-->
-            <div class="tool_sec">
-              <?=$mes['сease']?> 4<br>
-              <?=$mes['work_to']?> 0,000 - 99% <br>
-              <?=$mes['carcass']?> - 90%<br>
-              <?=$mes['brickwork']?> - 59%<br>
-              <?=$mes['interior_fittings']?> - 0%
-            </div>
-            <!--Секція 5-->
-            <div class="tool_sec">
-              <?=$mes['сease']?> 5<br>
-              <?=$mes['work_to']?> 0,000 - 100%  <br>
-              <?=$mes['carcass']?> - 99,80%<br>
-              <?=$mes['brickwork']?> - 85%<br>
-              <?=$mes['interior_fittings']?> - 0%
-            </div>
-            <!--Секція 6-->
-            <div class="tool_sec">
-              <?=$mes['сease']?> 6<br>
-              <?=$mes['work_to']?> 0,000 - 100% <br>
-              <?=$mes['carcass']?> - 99,60%<br>
-              <?=$mes['brickwork']?> - 88%<br>
-              <?=$mes['interior_fittings']?> - 0%
-            </div>
-          </div>
-        </div></span>
-        <svg id="container2_1"></svg>
-        <span class="tooltip toolti p-effect-1"><span class="tooltip-item"><svg id="container2_2"></svg></span>
-        <!--Фасад-->
-        <div class="tooltip-content clearfix">
-          <div class="tooltip-text">
-            <!--Секція 1-->
-            <div class="tool_sec">
-              <?=$mes['сease']?> 1<br>
-              <?=$mes['windows']?> - 40%<br><?=$mes['inside']?> - 44,5%
-            </div>
-            <!--Секція 2-->
-            <div class="tool_sec">
-              <?=$mes['сease']?> 2<br>
-              <?=$mes['windows']?> - 0%<br><?=$mes['inside']?> - 0%
-            </div>
-            <!--Секція 3-->
-            <div class="tool_sec">
-              <?=$mes['сease']?> 3<br>
-              <?=$mes['windows']?> - 0%<br><?=$mes['inside']?> - 0%
-            </div>
-            <!--Секція 4-->
-            <div class="tool_sec">
-              <?=$mes['сease']?> 4<br>
-              <?=$mes['windows']?> - 0%<br><?=$mes['inside']?> - 0%
-            </div>
-            <!--Секція 5-->
-            <div class="tool_sec">
-              <?=$mes['сease']?> 5<br>
-              <?=$mes['windows']?> - 53%<br><?=$mes['inside']?> - 85%
-            </div>
-            <!--Секція 6-->
-            <div class="tool_sec">
-              <?=$mes['сease']?> 6<br>
-              <?=$mes['windows']?> - 60,00%<br><?=$mes['inside']?> - 90%
-            </div>
-          </div>
-        </div></span>
-        <span class="tooltip toolti p-effect-1"><span class="tooltip-item"><svg id="container2_3"></svg></span>
-        <!--Мережі-->
-        <div class="tooltip-content clearfix">
-          <div class="tooltip-text">
-            <!--Секція 1-->
-            <div class="tool_sec">
-              <?=$mes['сease']?> 1<br>
-              <?=$mes['inside']?> - 18%<br><?=$mes['exterior']?> - 23%
-            </div>
-            <!--Секція 2-->
-            <div class="tool_sec">
-              <?=$mes['сease']?> 2<br>
-              <?=$mes['inside']?> - 0%<br><?=$mes['exterior']?> - 0%
-            </div>
-            <!--Секція 3-->
-            <div class="tool_sec">
-              <?=$mes['сease']?> 3<br>
-              <?=$mes['inside']?> - 0%<br><?=$mes['exterior']?> - 0%
-            </div>
-            <!--Секція 4-->
-            <div class="tool_sec">
-              <?=$mes['сease']?> 4<br>
-              <?=$mes['inside']?> - 0%<br><?=$mes['exterior']?> - 0%
-            </div>
-            <!--Секція 5-->
-            <div class="tool_sec">
-              <?=$mes['сease']?> 5<br>
-              <?=$mes['inside']?> - 74%<br><?=$mes['exterior']?> - 23%
-            </div>
-            <!--Секція 6-->
-            <div class="tool_sec">
-              <?=$mes['сease']?> 6<br>
-              <?=$mes['inside']?> - 77%<br><?=$mes['exterior']?> - 23%
-            </div>
-          </div>
-        </div></span>
 
       </div>
     </div>
+
+    <div class="status__5">
+      <h4><?=$mes['stat-15']?> 5</h4>
+       <div class="block_hod-stroitelstva">
+        <?=$mes['block_hod-stroitelstva-5']?>
+      </div>
+
+      <div class="block_timebar">
+
+        <!-- ДОМ 5 -->
+        <div class="timebar__item">
+          <div class="timebar_name">
+            <?=$mes['stat-7']?>
+          </div>
+          <div class="tooltip toolti p-effect-1"><span class="tooltip-item"><svg id="container5_0"></svg></span>
+            <div class="tooltip-content clearfix">
+              <div class="tooltip-text">
+                <div class="tool_sec">
+                  <!--Секція 1-->
+                  <?=$mes['сease']?> 1<br>
+                  <?=$mes['work_to']?> 0,000 - 35%<br>
+                  <?=$mes['carcass']?> - 0%<br>
+                  <?=$mes['brickwork']?> - 0%<br>
+                  <?=$mes['interior_fittings']?> - 0%
+                </div>
+                <!--Секція 2-->
+                <div class="tool_sec">
+                  <?=$mes['сease']?> 2<br>
+                  <?=$mes['work_to']?> 0,000 - 30%<br>
+                  <?=$mes['carcass']?> - 0%<br>
+                  <?=$mes['brickwork']?> - 0%<br>
+                  <?=$mes['interior_fittings']?> - 0%
+                </div>
+                <!--Секція 3-->
+                <div class="tool_sec">
+                  <?=$mes['сease']?> 3<br>
+                  <?=$mes['work_to']?> 0,000 - 15%<br>
+                  <?=$mes['carcass']?> - 0%<br>
+                  <?=$mes['brickwork']?> - 0%<br>
+                  <?=$mes['interior_fittings']?> - 0%
+                </div>
+                <!--Секція 4-->
+                <div class="tool_sec">
+                  <?=$mes['сease']?> 4<br>
+                  <?=$mes['work_to']?> 0,000 - 0%<br>
+                  <?=$mes['carcass']?> - 0%<br>
+                  <?=$mes['brickwork']?> - 0%<br>
+                  <?=$mes['interior_fittings']?> - 0%
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="timebar__item">
+          <div class="timebar_name">
+            <p><?=$mes['stat-8']?></p>
+          </div>
+          <div class="">
+            <svg id="container5_1"></svg>
+          </div>
+
+        </div>
+        <div class="timebar__item">
+          <div class="timebar_name">
+            <p><?=$mes['stat-9']?></p>
+          </div>
+          <div class="tooltip toolti p-effect-1"><span class="tooltip-item"><svg id="container5_2"></svg></span>
+          <!--Фасад-->
+            <div class="tooltip-content clearfix">
+              <div class="tooltip-text">
+                <!--Секція 1-->
+                <div class="tool_sec">
+                  <?=$mes['сease']?> 1<br>
+                  <?=$mes['windows']?> - 0%<br><?=$mes['facade']?> - 0%
+                </div>
+                <!--Секція 2-->
+                <div class="tool_sec">
+                  <?=$mes['сease']?> 2<br>
+                  <?=$mes['windows']?> - 0%<br><?=$mes['facade']?> - 0%
+                </div>
+                <!--Секція 3-->
+                <div class="tool_sec">
+                  <?=$mes['сease']?> 3<br>
+                  <?=$mes['windows']?> - 0%<br><?=$mes['facade']?> - 0%
+                </div>
+                <!--Секція 4-->
+                <div class="tool_sec">
+                  <?=$mes['сease']?> 4<br>
+                  <?=$mes['windows']?> - 0%<br><?=$mes['facade']?> - 0%
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="timebar__item">
+          <div class="timebar_name">
+            <p><?=$mes['stat-10']?></p>
+          </div>
+          <div class="tooltip toolti p-effect-1"><span class="tooltip-item"><svg id="container5_3"></svg></span>
+          <!--Мережі-->
+            <div class="tooltip-content clearfix">
+              <div class="tooltip-text">
+                <!--Секція 1-->
+                <div class="tool_sec">
+                  <?=$mes['сease']?> 1<br>
+                  <?=$mes['inside']?> - 0%<br><?=$mes['exterior']?> - 0%
+                </div>
+                <!--Секція 2-->
+                <div class="tool_sec">
+                  <?=$mes['сease']?> 2<br>
+                  <?=$mes['inside']?> - 0%<br><?=$mes['exterior']?> - 0%
+                </div>
+                <!--Секція 3-->
+                <div class="tool_sec">
+                  <?=$mes['сease']?> 3<br>
+                  <?=$mes['inside']?> - 0%<br><?=$mes['exterior']?> - 0%
+                </div>
+                <!--Секція 4-->
+                <div class="tool_sec">
+                  <?=$mes['сease']?> 4<br>
+                  <?=$mes['inside']?> - 0%<br><?=$mes['exterior']?> - 0%
+                </div>
+
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+
+
+
+
+
   </div>
   <div class="status_info_2">
    <?php /* <a class="statusbutton" href="#hodstroyki"><?=$mes['stat-5']?></a> */?>
@@ -607,7 +761,7 @@ a.fancybox[data-fancybox="group37"][data-caption="<?=\$mes['s-mes52']?>"][href="
 	<a href="/img/quart/15_05_2018/22.jpg" class="fancybox" data-fancybox="group44" data-caption="<?=$mes['s-mes59']?>"></a>
 	<a href="/img/quart/15_05_2018/23.jpg" class="fancybox" data-fancybox="group44" data-caption="<?=$mes['s-mes59']?>"></a>
 	<a href="/img/quart/15_05_2018/24.jpg" class="fancybox" data-fancybox="group44" data-caption="<?=$mes['s-mes59']?>"></a>
-	
+
     </div>
   <figcaption>
     <p class="stroy_date"><?=$mes['s-mes59']?></p>
@@ -629,7 +783,7 @@ a.fancybox[data-fancybox="group37"][data-caption="<?=\$mes['s-mes52']?>"][href="
     <a href="/img/quart/02_05_2018/7.jpg" class="fancybox" data-fancybox="group43" data-caption="<?=$mes['s-mes58']?>"></a>
 	<a href="/img/quart/02_05_2018/8.jpg" class="fancybox" data-fancybox="group43" data-caption="<?=$mes['s-mes58']?>"></a>
 	<a href="/img/quart/02_05_2018/9.jpg" class="fancybox" data-fancybox="group43" data-caption="<?=$mes['s-mes58']?>"></a>
-	
+
     </div>
   <figcaption>
     <p class="stroy_date"><?=$mes['s-mes58']?></p>
@@ -1779,14 +1933,11 @@ width: 100%;
   }
 }
 
-.block_hod-stroitelstva {
-	height: 480px;
-	margin-bottom: 368px;
-}
+
 @media screen and (max-width:786px){
-.block_hod-stroitelstva {
+/* .block_hod-stroitelstva {
 	height: 912px;
-}	
+}	 */
 }
 </style>
 
@@ -1814,14 +1965,6 @@ $(".fancybox").fancybox({
 </script>
 <script src="/js/jquery.progress.js"></script>
 <script src="/js/statusmob.js"></script>
-<!-- <script>
-if(window.screen.width > 1024) {
-document.write('<script src="/js/status.js"><\/script>');
-}
-if(window.screen.width < 1024){
-document.write('<script src="/js/statusmob.js"><\/script>');
-}
-</script> -->
 <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
 <script src="/js/scripts.js?v=1.21"></script>
 <?php /*Google Tag Manager*/ include_once('include/gtm2.php'); ?>

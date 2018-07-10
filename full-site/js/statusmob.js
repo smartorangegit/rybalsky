@@ -170,3 +170,62 @@ $("#container2_3").Progress({
   increaseSpeed: 1,
   animate: true
 });
+
+//Будинок 5 Загально Будівельні
+$("#container5_0").Progress({
+  percent: 7, // 84%
+  width: 200,
+  height: 36,
+  backgroundColor: 'transparent',
+  barColor: '#0035aa',
+  fontColor: '#fff',
+  radius: 0,
+  fontSize: 14,
+  increaseTime: 1000.00/60.00,
+  increaseSpeed: 1,
+  animate: true
+});
+
+//Будинок 5 Благоустрій
+$("#container5_1").Progress({
+  percent: 0, // 26%
+  width: 200,
+  height: 36,
+  backgroundColor: 'transparent',
+  barColor: '#0035aa',
+  fontColor: '#fff',
+  radius: 0,
+  fontSize: 14,
+  increaseTime: 1000.00/60.00,
+  increaseSpeed: 1,
+  animate: true
+});
+
+//Будинок 5 Фасад
+$("#container5_2").Progress({
+  percent: 0, // 34%
+  width: 200,
+  height: 36,
+  backgroundColor: 'transparent',
+  barColor: '#0035aa',
+  fontColor: '#fff',
+  radius: 0,
+  fontSize: 14,
+  increaseTime: 1000.00/60.00,
+  increaseSpeed: 1,
+  animate: true
+});
+//Будинок 5 Мережі
+$("#container5_3").Progress({
+  percent: 0, // 19%
+  width: 200,
+  height: 36,
+  backgroundColor: 'transparent',
+  barColor: '#0035aa',
+  fontColor: '#fff',
+  radius: 0,
+  fontSize: 14,
+  increaseTime: 1000.00/60.00,
+  increaseSpeed: 1,
+  animate: true
+});
