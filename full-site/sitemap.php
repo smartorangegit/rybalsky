@@ -71,7 +71,7 @@
                       <li><a href="<?=$l.$menu_t[10]?>"><?=$menu['text'][10]?></a></li>
                       <li><a href="<?=$l.$menu_t[11]?>"><?=$menu['text'][11]?></a></li>
                       <li><a href="<?=$l.$menu_t[16]?>"><?=$menu['text'][16]?></a></li>
-					  <li><a href="<?=$l?>juridicheskaja-informacija/"><?=$mes['jur-mes-menu']?></a></li>
+					  <li><a href="<?=$l?>documents/"><?=$mes['jur-mes-menu']?></a></li>
                     </ul>
                   </div>
 
