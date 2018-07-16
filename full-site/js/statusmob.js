@@ -173,7 +173,7 @@ $("#container2_3").Progress({
 
 //Будинок 5 Загально Будівельні
 $("#container5_0").Progress({
-  percent: 7, // 84%
+  percent: 8, // 84%
   width: 200,
   height: 36,
   backgroundColor: 'transparent',
