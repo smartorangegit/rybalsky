@@ -14,16 +14,28 @@
 	<?php /*Google Tag Manager*/ include_once('include/gtm1.php'); ?>
 </head>
 	<style media="screen">
-	html, body{height: 100%; min-height: 100%;}
-	.clearfix{clear: both; display: table;}
-	body {width: 100%; min-height: 100%;	background: url('/img/build.jpg');	background-size: cover; overflow-x: hidden;}
+	html, body{height: 100%;}
+
+	.clearfix::after{clear: both; display: table;}
+	.container{min-height: 100%; background: url('/img/build.jpg');	background-size: cover;}
+	.main_content{padding-top: 120px; text-align: center;}
+	footer{ margin-top: -44px;}
+
+	.block_single .bx-wrapper .bx-controls-direction a svg,
+	.block_double .bx-wrapper .bx-controls-direction a svg
+	 {
+    width: 100%;
+    height: 100%;
+    max-width: 12px;
+    max-height: 12px;
+}
+	/* body {width: 100%; min-height: 100%;	background: url('/img/build.jpg');	background-size: cover; overflow-x: hidden;}
 	.thank-mess {text-align: -webkit-center;top: 5vh;font-size: 44px;margin: 0 auto;font-family: sans-serif;color: white;width: 100%;position: absolute;left: 0;}
 	.thank-mess p {max-width: 70%}
 	.logo {	width: 180px;}
 	a#open_my_menu img{ display: block; margin: 0 auto; padding-top: 20px;}
 	.container{  min-height: 100%;  padding-top: 30px;  box-sizing: border-box;  padding-bottom: 100px;  height: 100%;min-height: 600px;}
   .wrapper{  max-width: 1200px;  margin: 0 auto;  height: 100%;}
-  footer{ position: static; width: 100%;  height: 50px;  margin-top: -50px;}
   .main_content{height:70vh; width: 100%;display: flex; flex-direction: row; align-items: flex-end; justify-content: space-between; position: relative;  }
   .top-menu{width: 100%; height: 78px;padding-top: 0; }
   .text_block{  width: 600px;  height: auto;  min-height: 400px;  background-color: pink;  flex-basis: auto;}
@@ -36,7 +48,7 @@
 		.top-menu {width: 100%;height: auto;padding-top: 0; max-width: 300px;margin: 0 auto;}
 		.main_content {  flex-direction: column-reverse; height: auto; align-items: center;}
 		footer {height: auto;margin-top: 0;}
-	}
+	} */
   </style>
   <body>
 		<?php /*Google Tag Manager*/ include_once('include/gtm2.php'); ?>
