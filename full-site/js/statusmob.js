@@ -54,7 +54,7 @@ $("#container3").Progress({
 
 //Будинок 3 Загально Будівельні
 $("#container1_0").Progress({
-  percent: 90, // 90%
+  percent: 91, // 91%
   width: 200,
   height: 36,
   backgroundColor: 'transparent',
@@ -84,7 +84,7 @@ $("#container1_1").Progress({
 
 //Будинок 3 Фасад
 $("#container1_2").Progress({
-  percent: 42, // 34%
+  percent: 43, // 43%
   width: 200,
   height: 36,
   backgroundColor: 'transparent',
@@ -173,7 +173,7 @@ $("#container2_3").Progress({
 
 //Будинок 5 Загально Будівельні
 $("#container5_0").Progress({
-  percent: 8, // 84%
+  percent: 10, // 10%
   width: 200,
   height: 36,
   backgroundColor: 'transparent',
