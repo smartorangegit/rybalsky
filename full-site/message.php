@@ -100,12 +100,7 @@
 							</a>
 						</li>
 					</ul>
-					<!-- <div class="developer_box-controls developer_box-controls_prev-slide">
-						<svg viewBox="0 0 40 40" width="30" height="30" fill="#ffffff"><path d="M10,20 L30,20 L10,20 L18,28 L10,20 L18,12 L10,20"></path></svg>
-					</div>
-					<div class="developer_box-controls developer_box-controls_next-slide">
-						<svg viewBox="0 0 40 40" width="30" height="30" fill="#ffffff"><path d="M30,20 L10,20 L30,20 L22,28 L30,20 L22,12 L30,20"></path></svg>
-					</div> -->
+
 				</div>
       </div>
     </div>
