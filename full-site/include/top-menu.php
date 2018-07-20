@@ -227,6 +227,7 @@ if(strripos($_POST['urls'][0],'plan') !== false && count($_POST['urls'][0])==5){
                     <li><a class="menu__link" href="<?=$l.$menu_t[10]?>"><?=$menu['text'][10]?></a></li>
                     <li><a class="menu__link" href="<?=$l.$menu_t[11]?>"><?=$menu['text'][11]?></a></li>
                     <li><a class="menu__link" href="<?=$l.$menu_t[16]?>"><?=$menu['text'][16]?></a></li>
+					<li><a class="menu__link" href="<?=$l?>ctc/">Client Technical Control</a></li>
                   </ul>
                 </div>
 
