@@ -227,7 +227,7 @@
                 font-size: 1.875em; line-height: 1.3; letter-spacing: .025em; text-align:center;}
               .bolder{font-weight: bold;}
               .ctc__top, .ctc__box, .ctc__footer{
-                width: 100%;  max-width: 900px;  padding: 0 10px; }
+                width: 100%;  max-width: 900px;  padding: 0 10px; margin: 0 auto;}
               .ctc__box{ margin: 30px auto;}
 
               .ctc__footer, .ctc__box{
