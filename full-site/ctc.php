@@ -214,6 +214,7 @@
               </div>
 
               <style media="screen">
+              .content_atmosfera *{box-sizing: border-box;}
               .hidden_box{ height: 0px; overflow: hidden; }
               .content_wrap { width: 100%; max-width: 1200px; padding: 50px 10px; margin: 50px auto 30px; line-height: 1.6;}
               .content_name{
@@ -226,7 +227,9 @@
                 font-size: 1.875em; line-height: 1.3; letter-spacing: .025em; text-align:center;}
               .bolder{font-weight: bold;}
               .ctc__top, .ctc__box, .ctc__footer{
-                width: 100%;  max-width: 900px;  padding: 0 10px;  margin: 30px auto;}
+                width: 100%;  max-width: 900px;  padding: 0 10px; }
+              .ctc__box{ margin: 30px auto;}
+
               .ctc__footer, .ctc__box{
                 display: flex; display: -webkit-flex; justify-content: space-between; -webkit-justify-content: space-between;}
               .ctc_item{  width: 25%;  text-align: center;  padding: 20px;}
@@ -243,7 +246,7 @@
                 .ctc__footer, .ctc__box{flex-direction: column; -webkit-flex-direction: column;}
                 .ctc__footer .ctc_img, .ctc__box  .ctc_img{width: 100%; left: 0;}
                 .ctc__content { width: 100%;column-count: 1; -moz-column-count: 1; -webkit-column-count: 1; }
-                .ctc__top, .ctc__box, .ctc__footer{margin-top: 10px;}
+                .ctc__top, .ctc__box, .ctc__footer{margin-top: 10px; padding: 0 20px;}
                 .ctc__box .ctc_icon{ max-height: 82px!important;}
                 .ctc_item{width: 100%;}
                 .ctc_img.icon_man{top:-20px;}
