@@ -154,8 +154,9 @@ if(strripos($_POST['urls'][0],'plan') !== false && count($_POST['urls'][0])==5){
             </div>
             <!--<div style="clear:both"></div>-->
           </div> <!--top-menu__container-->
+		  <?$l="/".$_POST['lang'];?>
           <div class="promotions_btn">
-            <a href="/rybalsky-robyt-kvartyry-dostupnyshymy/" class="promotions_btn__link"><?=$mes['menu-mes19'];?></a>
+            <a href="<?=$l?>rybalsky-robyt-kvartyry-dostupnyshymy/" class="promotions_btn__link"><?=$mes['menu-mes19'];?></a>
           </div>
         </div>
 
