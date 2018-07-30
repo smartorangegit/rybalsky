@@ -39,8 +39,8 @@
       <div class="transport__container">
         <div class="transport__text buldog_text">
 		<img src="/img/animal-space/buldog.jpg" style="display:none;" alt="<?=$mes['animal-space-h1']?>">
-          <h2 class="transport__sub-heading transport__sub-heading-project"><?=$mes['animal-space-h2-buldog']?></h2>
-			<?=$mes['animal-space-text-buldog']?>		
+          
+			<?=$mes['animal-space-text-kote']?>		
 		</div>
         <div class="transport__image ruh-transportu">
         </div>
@@ -53,7 +53,8 @@
         <div class="values__text">
           <!-- <div class="transport__sub-heading transport__sub-heading-values"></div> -->
 		  <img src="/img/animal-space/kote.jpg" style="display:none;" alt="<?=$mes['animal-space-h1']?>">
-		<?=$mes['animal-space-text-kote']?>		
+		  <h2 class="transport__sub-heading transport__sub-heading-project"><?=$mes['animal-space-h2-buldog']?></h2>
+		<?=$mes['animal-space-text-buldog']?>		
 		</div>
       </div>
     </section>
