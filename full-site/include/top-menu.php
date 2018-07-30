@@ -187,6 +187,7 @@ if(strripos($_POST['urls'][0],'plan') !== false && count($_POST['urls'][0])==5){
                       <?/*простир для инвестиций
 					  <li><a class="menu__link" href="<?=$l.$menu_t[5]?>"><?=$menu['text'][5]?></a></li>*/?>
                       <li><a class="menu__link" href="<?=$l.$menu_t[6]?>"><?=$menu['text'][6]?></a></li>
+					  <li><a class="menu__link" href="<?=$l?>animal-space/"><?=$mes['animal-space-h1']?></a></li>
           					  <li><a class="menu__link" href="<?=$l?>transport-infrastructure/"><?=$mes['menu-mes33']?></a></li>
           					  <li><a class="menu__link" href="<?=$l?>atmosfera/">SFERA Living System</a></li>
                     </ul>
