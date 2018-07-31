@@ -144,7 +144,7 @@ $("#container2_1").Progress({
 
 //Будинок 9 Фасад
 $("#container2_2").Progress({
-  percent: 34, // 34%
+  percent: 35, // 35%
   width: 200,
   height: 36,
   backgroundColor: 'transparent',
