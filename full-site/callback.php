@@ -102,6 +102,10 @@
                   <p><?=$mes['c-mes22']?></p>
                   <p><?=$mes['c-mes23']?>  <?=$mes['c-mes24']?></p>
                 </div>
+				<div class="contact_market_first" style="margin-top:6px;">
+                  <p><?=$mes['i-mesService-department']?></p>
+                  <p>(044) 494 04 00</p>
+				</div>
               </div>
             </div>
           </div>
