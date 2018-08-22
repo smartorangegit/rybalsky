@@ -554,6 +554,43 @@
 a.fancybox[data-fancybox="group37"][data-caption="<?=\$mes['s-mes52']?>"][href="/img/quart/28_02_2018/$.jpg"]*33.
 */?>
 <!-- начало блока -->
+<div class="stroy_item stroy_item_left stroy57">
+  <div class="stroy_overlay" id='57'>
+    <a id='group57' href="/img/quart/20_08_2018/1.jpg" class="fancybox" data-fancybox="group57" data-caption="<?=$mes['s-mes72']?>"></a>
+    <a href="/img/quart/20_08_2018/2.jpg" class="fancybox" data-fancybox="group57" data-caption="<?=$mes['s-mes72']?>"></a>
+    <a href="/img/quart/20_08_2018/3.jpg" class="fancybox" data-fancybox="group57" data-caption="<?=$mes['s-mes72']?>"></a>
+    <a href="/img/quart/20_08_2018/4.jpg" class="fancybox" data-fancybox="group57" data-caption="<?=$mes['s-mes72']?>"></a>
+    <a href="/img/quart/20_08_2018/5.jpg" class="fancybox" data-fancybox="group57" data-caption="<?=$mes['s-mes72']?>"></a>
+    <a href="/img/quart/20_08_2018/6.jpg" class="fancybox" data-fancybox="group57" data-caption="<?=$mes['s-mes72']?>"></a>
+    <a href="/img/quart/20_08_2018/7.jpg" class="fancybox" data-fancybox="group57" data-caption="<?=$mes['s-mes72']?>"></a>
+	<a href="/img/quart/20_08_2018/8.jpg" class="fancybox" data-fancybox="group57" data-caption="<?=$mes['s-mes72']?>"></a>
+	<a href="/img/quart/20_08_2018/9.jpg" class="fancybox" data-fancybox="group57" data-caption="<?=$mes['s-mes72']?>"></a>
+	<a href="/img/quart/20_08_2018/10.jpg" class="fancybox" data-fancybox="group57" data-caption="<?=$mes['s-mes72']?>"></a>
+	<a href="/img/quart/20_08_2018/11.jpg" class="fancybox" data-fancybox="group57" data-caption="<?=$mes['s-mes72']?>"></a>
+	<a href="/img/quart/20_08_2018/12.jpg" class="fancybox" data-fancybox="group57" data-caption="<?=$mes['s-mes72']?>"></a>
+	<a href="/img/quart/20_08_2018/13.jpg" class="fancybox" data-fancybox="group57" data-caption="<?=$mes['s-mes72']?>"></a>
+	
+	<a href="/img/quart/20_08_2018/14.jpg" class="fancybox" data-fancybox="group57" data-caption="<?=$mes['s-mes72']?>"></a>
+	<a href="/img/quart/20_08_2018/15.jpg" class="fancybox" data-fancybox="group57" data-caption="<?=$mes['s-mes72']?>"></a>
+	<a href="/img/quart/20_08_2018/16.jpg" class="fancybox" data-fancybox="group57" data-caption="<?=$mes['s-mes72']?>"></a>
+	<a href="/img/quart/20_08_2018/17.jpg" class="fancybox" data-fancybox="group57" data-caption="<?=$mes['s-mes72']?>"></a>
+	<a href="/img/quart/20_08_2018/18.jpg" class="fancybox" data-fancybox="group57" data-caption="<?=$mes['s-mes72']?>"></a>
+	<a href="/img/quart/20_08_2018/19.jpg" class="fancybox" data-fancybox="group57" data-caption="<?=$mes['s-mes72']?>"></a>
+	<a href="/img/quart/20_08_2018/20.jpg" class="fancybox" data-fancybox="group57" data-caption="<?=$mes['s-mes72']?>"></a>
+	<a href="/img/quart/20_08_2018/21.jpg" class="fancybox" data-fancybox="group57" data-caption="<?=$mes['s-mes72']?>"></a>
+	<a href="/img/quart/20_08_2018/22.jpg" class="fancybox" data-fancybox="group57" data-caption="<?=$mes['s-mes72']?>"></a>
+
+
+
+</div>
+  <figcaption>
+    <p class="stroy_date"><?=$mes['s-mes72']?></p>
+    <p class="stroy_name"></p>
+  </figcaption>
+  <style>.stroy57 {background-image: url(/img/quart/20_08_2018/1.jpg);}</style>					  <!-- элемент timeline -->
+</div>
+<!-- конец блока -->
+<!-- начало блока -->
 <div class="stroy_item stroy_item_left stroy56">
   <div class="stroy_overlay" id='56'>
     <a id='group56' href="/img/quart/16_08_2018/1.jpg" class="fancybox" data-fancybox="group56" data-caption="<?=$mes['s-mes71']?>"></a>
