@@ -10,5 +10,6 @@ full-site/img
 full-site/pdf
 full-site/_old_pages
 full-site/video
-
+sass_and_less_to_css_gulp/node_modules
+sass_and_less_to_css_gulp/package-lock.json
 

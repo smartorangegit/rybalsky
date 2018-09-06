@@ -1,6 +1,9 @@
 // var clock2;
 
-  $(document).ready(function() {
+(function(){
+    
+  //$(document).ready(initClock);  
+  function initClock() {
     var clock2;
     var deadline = 'April 23 2018 23:59:59 GMT+02:00';
     // console.log(deadline);
@@ -15,24 +18,24 @@
           callbacks: {
             stop: function() {
               $('.message').html('The clock has stopped!')
-			  console.log('ttt')
+        console.log('ttt')
             }
           }
       });			 
-		 if(time1 > 0){
+     if(time1 > 0){
 
-	  clock2.setTime(time1);
+    clock2.setTime(time1);
       clock2.setCountdown(true);
       clock2.start(); 
-		  }else{
-			$('.modal_window__clock').attr('style', 'display:none;');
-		  }  
+      }else{
+      $('.modal_window__clock').attr('style', 'display:none;');
+      }  
 
 
 
 
       $(".underprice").click(function(){
-      	$(".mesage").css("right","-15px")
+        $(".mesage").css("right","-15px")
         $(this).fadeOut('slow')
       });
 
@@ -41,5 +44,7 @@
         $(".underprice").fadeIn('slow') */
          $('.modal_window__clock').css('display','none')
       });
+  };
 
-  });
+})()
+

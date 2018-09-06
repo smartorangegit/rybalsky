@@ -15,6 +15,7 @@ body{
   overflow-x: hidden;
 }
 .loader {
+    display: none;
     position: fixed;
     background: #fff;
     width: 100%;
@@ -2867,3 +2868,5 @@ ul.bxslider {
 /*adaptive for office page*/
 
 // END_styles for office.php
+
+@import 'preloader';

@@ -335,6 +335,7 @@ body {
   overflow-x: hidden; }
 
 .loader {
+  display: none;
   position: fixed;
   background: #fff;
   width: 100%;
@@ -467,8 +468,8 @@ body {
   left: 0;
   top: 0;
   width: 100%;
-  background: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.5) 0%, transparent 100%);
-  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5) 0%, transparent 100%);
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0)));
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0) 100%);
   z-index: 9999;
   transition: 0.4s;
   -webkit-transition: 0.4s; }
@@ -699,14 +700,11 @@ body {
     box-sizing: border-box;
     padding: 30px;
     -webkit-column-count: 1;
-    -moz-column-count: 1;
     column-count: 1;
     -webkit-column-gap: 30px;
-    -moz-column-gap: 30px;
     column-gap: 30px; }
   .main-content--2 .modal_window_wrap__opened {
     -webkit-column-count: 2;
-    -moz-column-count: 2;
     column-count: 2; }
   .main-content--2 .modal_window_wrap h1 {
     font-size: 24px;
@@ -2946,7 +2944,6 @@ form.subscrip_i input[type="email"]::-webkit-input-placeholder {
       margin: 10vh 0 0 0; }
   .main-content--2 .modal_window_wrap__opened {
     -webkit-column-count: 1;
-    -moz-column-count: 1;
     column-count: 1; }
   .content {
     display: -ms-flexbox;
