@@ -2234,10 +2234,10 @@ $(".fancybox").fancybox({
 
 
 </script>
-<script src="/js/jquery.progress.js"></script>
-<script src="/js/statusmob.js"></script>
-<script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
-<script src="/js/scripts.js?v=1.21"></script>
+<script defer src="/js/jquery.progress.js"></script>
+<script defer src="/js/statusmob.js"></script>
+<!-- <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script> -->
+<script defer src="/js/scripts.js?v=1.21"></script>
 <?php /*Google Tag Manager*/ include_once('include/gtm2.php'); ?>
 </body>
 </html>
