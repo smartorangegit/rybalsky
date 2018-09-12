@@ -31,64 +31,61 @@
   <link rel="stylesheet" type="text/css" href="/css/kvartira.css" />
 </head>
 <style media="screen">
-  body{ height: 100%;}
-  .container{
-    min-height: 100%;
-    background: url("/img/app-bg.jpg") center 0 no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
-  }
-  .more_news_link a{
-    color: white;
-    text-decoration: none;
-    font-size: 24px;
-    display: block;
-  }
-  .more_news_link a:hover{color: #0035AA;}
   footer{ margin-top: 0;}
 </style>
 <body>
-  <div class="container">
+  <div class="parking">
       <?php /*Google Tag Manager*/ include_once('include/gtm2.php'); ?>
     <div class="loader">
        <div class="loader__background">
            <div class="loader__inner"><img <?AltImgAdd($mes['alt-logo'])?>  src="/img/icons/rb_logo_white.png"></div>
         </div>
     </div>
-    <!-- <section> -->
-      <div class="wrap_header">
-        <?php include_once('include/top-menu.php'); ?>
-		    <?php include_once('include/call_my.php'); ?>
-        <div class="clearfix"></div>
-      </div>
-      <div class="kvartira__container">
-      <div class="logo__container">
-        <div class="logo pcscreen">
-          <a href="/<?=$_POST['lang']?>">
-            <img <?AltImgAdd($mes['alt-logo'])?>  src="/img/rybalsky-logo<?echo"-".(substr($_POST['lang'], 0, 2));?>.svg"  />
-          </a>
-        </div>
-      </div>
-      <div class="table-wraper">
-        <div class="table-body__bottom-text">
-		        <?=$mes['kv-mes-text-11']?>
-
-			<div class="news_nav">
-		      <div class="more_news_link">
-                <p><?=$mes['q-mes22']?></p>
-                <a href="<?=$l.'kvartira-podol/'?>"><?=$mes['mes-name-8']?></a>
-                <a href="<?=$l.'vidovaya/'?>"><?=$mes['mes-name-7']?></a>
-                <a href="<?=$l.'novostroyka-center/'?>"><?=$mes['mes-name-5']?></a>
-                <a href="<?=$l.'novostroyka-podol/'?>"><?=$mes['mes-name-3']?></a>
-                <a href="<?=$l.'naberejnaya/'?>"><?=$mes['mes-name-1']?></a>
-                <a href="<?=$l.'top-planirovok/'?>"><?=$mes['mes-name']?></a>
-              </div>
-			</div>
-        </div>
-      </div>
-      <div class="emty" ></div>
+    <div class="parking__hero">
+      <h1 class="parking__hero-heading"><?=$mes['parking-heading']?></h1>
     </div>
-  <!-- </section> -->
+    <div class="parking__container parking__container_1">
+      <div class="parking__text">
+          <h2 class="parking__sub-heading"><?=$mes['parking-sub-heading-1']?></h2>
+          <p><?=$mes['parking-text-1']?></p>
+      </div>
+      <div class="parking__image"></div>
+    </div>
+    <div class="parking__container parking__container_2">
+        <div class="parking__image"></div>
+        <div class="parking__text">
+            <h2 class="parking__sub-heading"><?=$mes['parking-sub-heading-2']?></h2>
+            <p><?=$mes['parking-text-2']?></p>
+        </div>
+    </div>
+    <div class="parking__container parking__container_3">
+        <div class="parking__text">
+            <h2 class="parking__sub-heading"><?=$mes['parking-sub-heading-3']?></h2>
+            <p><?=$mes['parking-text-3']?></p>
+        </div>
+        <div class="parking__image"></div>
+    </div>
+    <div class="parking__container parking__container_4">
+        <div class="parking__image"></div>
+        <div class="parking__text">
+            <h2 class="parking__sub-heading"><?=$mes['parking-sub-heading-4']?></h2>
+            <p><?=$mes['parking-text-4']?></p>
+        </div>
+    </div>
+    <div class="parking__container parking__container_5">
+        <div class="parking__text">
+            <h2 class="parking__sub-heading"><?=$mes['parking-sub-heading-5']?></h2>
+            <p><?=$mes['parking-text-5']?></p>
+        </div>
+        <div class="parking__image"></div>
+    </div>
+    <div class="parking__container parking__container_6 parking__container_last">
+        <div class="parking__image"></div>
+        <div class="parking__text">
+            <h2 class="parking__sub-heading"><?=$mes['parking-sub-heading-6']?></h2>
+            <p><?=$mes['parking-text-6']?></p>
+        </div>
+    </div>
 	</div>
   <footer>
     <div class="foot-wrap">
@@ -102,5 +99,11 @@
       <span><?=$mes['v02']?></span>
     </div>
   </footer>
+  <?php /*Контактна форма*/ include_once('include/call_my.php'); ?>
+  <!-- Google Tag Manager (noscript) -->
+ 
+ <?php /*Google Tag Manager*/ include_once('include/gtm2.php'); ?>
+ <?php /*Меню*/ $page="place"; include_once('include/top-menu.php'); ?>
+ 
 </body>
 </html>
