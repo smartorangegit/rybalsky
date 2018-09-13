@@ -51,7 +51,7 @@
   <link rel="stylesheet" type="text/css" href="/css/kvartira.css" />
   </head>
   <body style="color:#000;">
-    <div class="container">
+    <div>
       <?php /*Google Tag Manager*/ include_once('include/gtm2.php'); ?>
       <div class="loader">
         <div class="loader__background">
