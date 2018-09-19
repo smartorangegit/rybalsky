@@ -6234,3 +6234,104 @@ path.svg-inner_a_1_2 {animation-delay: 2.3s;}
 
 
 /* Preloader saga end */
+
+.parking__hero {
+  width: 100%;
+  height: 320px;
+  background: url(/img/parking/parking_bg.jpeg) center no-repeat;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  }
+.parking__hero:before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 320px;
+    background: rgba(0,0,0,0.3);
+}
+
+.parking__hero-heading {
+  font-size: 40px; 
+  z-index:1;
+  }
+
+.parking__container {
+  padding-top: 40px;
+  max-width: 1200px;
+  margin: 34px auto 0;
+  display: flex;
+  justify-content: space-between; 
+  align-items: center;
+  }
+
+.parking__image {
+  margin-right: 10px;
+  width: 48%;
+  /* width: 528px; */
+  /* height: 356px; */
+  /* background: url(/img/project/projectImage.jpg.pagespeed.ce.XuDCkSwncQ.jpg) center no-repeat; */
+  background-size: cover; 
+  box-sizing: border-box;
+ }
+ .parking__image img {
+	 max-width: 100%;
+	 width: 100%;
+ }
+
+
+.parking__text {
+  color: #292937;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 24px;
+  letter-spacing: .8px;
+  margin: 0 10px;
+  /* max-width: 600px;  */
+  width: 48%;
+  box-sizing: border-box;
+  }
+
+.parking__text p {
+  font-family: "PFDinTextUniversal-Light";
+  line-height: 1.5;
+  letter-spacing: 1px;
+  font-size: 16px; 
+  margin-top: 0.4em;
+  }
+
+.parking__text a {
+  text-decoration: none;
+  color: #0035aa; }
+
+.parking__sub-heading {
+  text-align: center;
+  color: #0035aa;
+  font-size: 36px;
+  line-height: 1.1;
+  margin-bottom: 15px; }
+
+.parking__container_last {
+  margin-bottom: 50px; }
+
+@media screen and (max-width: 767px) {
+  .parking__container_1,
+  .parking__container_3,
+  .parking__container_5 {
+    flex-direction: column; }
+  .parking__container_2,
+  .parking__container_4,
+  .parking__container_6 {
+    flex-direction: column-reverse; }
+  .parking__text {
+    margin: 0px auto 20px auto;
+    padding: 0px 20px;
+	width: 100%;
+	}
+  .parking__image {
+    /* width: 320px; */
+	width: 100%;
+    /* height: 200px; */
+    margin: 0 auto; } }
