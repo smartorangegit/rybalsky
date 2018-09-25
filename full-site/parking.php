@@ -46,46 +46,69 @@
     </div>
     <div class="parking__container parking__container_1">
       <div class="parking__text">
-          <h2 class="parking__sub-heading"><?=$mes['parking-sub-heading-1']?></h2>
-          <p><?=$mes['parking-text-1']?></p>
+          <div class="parking__sub-heading"></div>
+          <?=$mes['parking-text-1']?>
       </div>
-      <div class="parking__image"></div>
+      <div class="parking__image parking__image_1">
+		<img src="/img/parking/parking_1.jpg" alt="<?=$mes['parking-sub-heading-1']?>" title="<?=$mes['parking-sub-heading-1']?>">
+	  </div>
     </div>
     <div class="parking__container parking__container_2">
-        <div class="parking__image"></div>
+        <div class="parking__image parking__image_2">
+			<img src="/img/parking/parking_2.jpg" alt="<?=$mes['parking-sub-heading-2']?>" title="<?=$mes['parking-sub-heading-2']?>">
+		</div>
         <div class="parking__text">
             <h2 class="parking__sub-heading"><?=$mes['parking-sub-heading-2']?></h2>
-            <p><?=$mes['parking-text-2']?></p>
+            <?=$mes['parking-text-2']?>
         </div>
     </div>
     <div class="parking__container parking__container_3">
         <div class="parking__text">
             <h2 class="parking__sub-heading"><?=$mes['parking-sub-heading-3']?></h2>
-            <p><?=$mes['parking-text-3']?></p>
+            <?=$mes['parking-text-3']?>
         </div>
-        <div class="parking__image"></div>
+        <div class="parking__image parking__image_3">
+			<img src="/img/parking/parking_4.jpg" alt="<?=$mes['parking-sub-heading-3']?>" title="<?=$mes['parking-sub-heading-3']?>">
+		</div>
     </div>
     <div class="parking__container parking__container_4">
-        <div class="parking__image"></div>
+        <div class="parking__image parking__image_4">
+			<img src="/img/parking/parking_6.jpg" alt="<?=$mes['parking-sub-heading-4']?>" title="<?=$mes['parking-sub-heading-4']?>">
+		</div>
         <div class="parking__text">
             <h2 class="parking__sub-heading"><?=$mes['parking-sub-heading-4']?></h2>
-            <p><?=$mes['parking-text-4']?></p>
+            <?=$mes['parking-text-4']?>
         </div>
     </div>
     <div class="parking__container parking__container_5">
         <div class="parking__text">
             <h2 class="parking__sub-heading"><?=$mes['parking-sub-heading-5']?></h2>
-            <p><?=$mes['parking-text-5']?></p>
+            <?=$mes['parking-text-5']?>
         </div>
-        <div class="parking__image"></div>
+        <div class="parking__image parking__image_5">
+		<img src="/img/parking/parking_3.jpg" alt="<?=$mes['parking-sub-heading-5']?>" title="<?=$mes['parking-sub-heading-5']?>">
+		</div>
     </div>
     <div class="parking__container parking__container_6 parking__container_last">
-        <div class="parking__image"></div>
+        <div class="parking__image parking__image_6">
+			<img src="/img/parking/parking_5.jpg" alt="<?=$mes['parking-sub-heading-6']?>" title="<?=$mes['parking-sub-heading-6']?>">
+		</div>
         <div class="parking__text">
             <h2 class="parking__sub-heading"><?=$mes['parking-sub-heading-6']?></h2>
-            <p><?=$mes['parking-text-6']?></p>
+            <?=$mes['parking-text-6']?>
         </div>
     </div>
+        <div class="call-button button-flat">
+          <a href="/<?=$_POST['lang']?>kvartira/"><?=$mes['menu-mes7']?></a>
+		  <style>
+		  .button-flat {
+			display: block;
+			width: 100%;
+			max-width: 250px;
+			margin: 20px auto;
+		  }
+		  </style>
+        </div>
 	</div>
   <footer>
     <div class="foot-wrap">
@@ -104,6 +127,6 @@
  
  <?php /*Google Tag Manager*/ include_once('include/gtm2.php'); ?>
  <?php /*Меню*/ $page="place"; include_once('include/top-menu.php'); ?>
- 
+
 </body>
 </html>
