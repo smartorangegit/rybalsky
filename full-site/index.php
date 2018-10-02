@@ -213,7 +213,7 @@ function sound_off () {
                     </div>
                   <?php /*Меню*/ $page="/"; include_once('include/top-menu.php'); ?>
                   <?/*Для того чтобы включть счетчик FlipClock расскоменить инклюд, библиотеку внизу и запуск в файле clock.js*/?>
-                  <!-- <?php /*timer*/ include_once('include/timer.php'); ?> -->
+                  <?php /*timer*/   include_once('include/timer.php');   ?>
                    <div class="nomobile">
                      <?php /*Меню Стрелки include_once('include/arrow.php'); */?>
                    </div>
@@ -592,7 +592,7 @@ function sound_off () {
 
       </script>
       <script src="/js/jquery.bxslider.min.js"></script>
-      <!-- <script src="/flipclock.js"></script> -->
+      <script src="/flipclock.js"></script>
       <script>
       // Из-за поведения FireFox при клике назад данная страница не выполняла JS данная приблуда перезагружает станицу
       // https://developer.mozilla.org/ru/docs/Web/API/WindowEventHandlers/onunload

@@ -70,9 +70,225 @@
       </div>
     </section>
 
-	<section class="values__section">
+
+	<!--slider -->
+<div class="wrapper animal-slider_wrapper">
+	<input type="radio" name="point" id="slide1" checked>
+	<input type="radio" name="point" id="slide2">
+	<input type="radio" name="point" id="slide3">
+	<input type="radio" name="point" id="slide4">
+	<input type="radio" name="point" id="slide5">
+	<input type="radio" name="point" id="slide6">
+	<input type="radio" name="point" id="slide7">
+	<input type="radio" name="point" id="slide8">
+	<input type="radio" name="point" id="slide9">
+	<input type="radio" name="point" id="slide10">
+	<input type="radio" name="point" id="slide11">
+	<input type="radio" name="point" id="slide12">
+	<input type="radio" name="point" id="slide13">
+	<input type="radio" name="point" id="slide14">
+	<input type="radio" name="point" id="slide15">
+	<input type="radio" name="point" id="slide16">
+	<input type="radio" name="point" id="slide17">
+	<div class="slider">
+		<div class="slides slide1"></div>
+		<div class="slides slide2"></div>
+		<div class="slides slide3"></div>
+		<div class="slides slide4"></div>
+		<div class="slides slide5"></div>
+		<div class="slides slide6"></div>
+		<div class="slides slide7"></div>
+		<div class="slides slide8"></div>
+		<div class="slides slide9"></div>
+		<div class="slides slide10"></div>
+		<div class="slides slide11"></div>
+		<div class="slides slide12"></div>
+		<div class="slides slide13"></div>
+		<div class="slides slide14"></div>
+		<div class="slides slide15"></div>
+		<div class="slides slide16"></div>
+		<div class="slides slide17"></div>
+	</div>
+	<div class="controls">
+		<label for="slide1"></label>
+		<label for="slide2"></label>
+		<label for="slide3"></label>
+		<label for="slide4"></label>
+		<label for="slide5"></label>
+		<label for="slide6"></label>
+		<label for="slide7"></label>
+		<label for="slide8"></label>
+		<label for="slide9"></label>
+		<label for="slide10"></label>
+		<label for="slide11"></label>
+		<label for="slide12"></label>
+		<label for="slide13"></label>
+		<label for="slide14"></label>
+		<label for="slide15"></label>
+		<label for="slide16"></label>
+		<label for="slide17"></label>
+	</div>
+</div>
+	<section class="values__section animals__section">
  
     </section>
+<style>
+* {
+	margin: 0;
+	padding: 0;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-o-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+body {
+	/* background-image: url(http://habrastorage.org/files/996/d76/d04/996d76d0410d422fa54cc433ce7ead2a.png); */
+}
+
+.wrapper {
+	height: 445px;
+	margin: 100px auto 0;
+	position: relative;
+	width: 668px;
+}
+
+.slider {
+	height: inherit;
+	overflow: hidden;
+	position: relative;
+	width: inherit;
+	-webkit-box-shadow: 0 0 20px rgba(0, 0, 0, .5);
+	-moz-box-shadow: 0 0 20px rgba(0, 0, 0, .5);
+	-o-box-shadow: 0 0 20px rgba(0, 0, 0, .5);
+	box-shadow: 0 0 20px rgba(0, 0, 0, .5);
+}
+
+.slides {
+	background-position: center;
+	height: inherit;
+	opacity: 0;
+	position: absolute;
+	width: inherit;
+	z-index: 0;
+	-webkit-transform: scale(1.5);
+	-moz-transform: scale(1.5);
+	-o-transform: scale(1.5);
+	transform: scale(1.5);
+	-webkit-transition: transform ease-in-out .5s, opacity ease-in-out .5s;
+	-moz-transition: transform ease-in-out .5s, opacity ease-in-out .5s;
+	-o-transition: transform ease-in-out .5s, opacity ease-in-out .5s;
+	transition: transform ease-in-out .5s, opacity ease-in-out .5s;
+	background-size: cover;
+}
+
+.slide1 { background-image: url(/img/animal-space/slider/1.jpg); }
+.slide2 { background-image: url(/img/animal-space/slider/2.jpg); }
+.slide3 { background-image: url(/img/animal-space/slider/3.jpg); }
+.slide4 { background-image: url(/img/animal-space/slider/4.jpg); }
+.slide5 { background-image: url(/img/animal-space/slider/5.jpg); }
+.slide6 { background-image: url(/img/animal-space/slider/6.jpg); }
+.slide7 { background-image: url(/img/animal-space/slider/7.jpg); }
+.slide8 { background-image: url(/img/animal-space/slider/8.jpg); }
+.slide9 { background-image: url(/img/animal-space/slider/9.jpg); }
+.slide10 { background-image: url(/img/animal-space/slider/10.jpg); }
+.slide11 { background-image: url(/img/animal-space/slider/11.jpg); }
+.slide12 { background-image: url(/img/animal-space/slider/12.jpg); }
+.slide13 { background-image: url(/img/animal-space/slider/13.jpg); }
+.slide14 { background-image: url(/img/animal-space/slider/14.jpg); }
+.slide15 { background-image: url(/img/animal-space/slider/15.jpg); }
+.slide16 { background-image: url(/img/animal-space/slider/16.jpg); }
+.slide17 { background-image: url(/img/animal-space/slider/17.jpg); }
+
+#slide1:checked ~ .slider > .slide1,
+#slide2:checked ~ .slider > .slide2,
+#slide3:checked ~ .slider > .slide3,
+#slide4:checked ~ .slider > .slide4,
+#slide5:checked ~ .slider > .slide5, 
+#slide6:checked ~ .slider > .slide6,
+#slide7:checked ~ .slider > .slide7,
+#slide8:checked ~ .slider > .slide8,
+#slide9:checked ~ .slider > .slide9,
+#slide10:checked ~ .slider > .slide10,
+#slide11:checked ~ .slider > .slide11,
+#slide12:checked ~ .slider > .slide12,
+#slide13:checked ~ .slider > .slide13,
+#slide14:checked ~ .slider > .slide14,
+#slide15:checked ~ .slider > .slide15,
+#slide16:checked ~ .slider > .slide16,
+#slide17:checked ~ .slider > .slide17 {
+	opacity: 1;
+	z-index: 1;
+	-webkit-transform: scale(1);
+	-moz-transform: scale(1);
+	-o-transform: scale(1);
+	transform: scale(1);
+}
+
+.wrapper > input {
+	display: none;
+}
+
+.wrapper .controls {
+	left: 50%;
+	margin-left: 3px;
+	/* position: absolute; */
+}
+
+.wrapper label {
+	cursor: pointer;
+	display: inline-block;
+	height: 8px;
+	margin: 25px 10px 0 16px;
+	position: relative;
+	width: 8px;
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	-o-border-radius: 50%;
+	border-radius: 50%;
+	-webkit-transition: background ease-in-out .5s;
+	-moz-transition: background ease-in-out .5s;
+	-o-transition: background ease-in-out .5s;
+	transition: background ease-in-out .5s;
+}
+
+.wrapper label:hover, 
+#slide1:checked ~ .controls label:nth-of-type(1),
+#slide2:checked ~ .controls label:nth-of-type(2),
+#slide3:checked ~ .controls label:nth-of-type(3),
+#slide4:checked ~ .controls label:nth-of-type(4),
+#slide5:checked ~ .controls label:nth-of-type(5),
+#slide6:checked ~ .controls label:nth-of-type(6),
+#slide7:checked ~ .controls label:nth-of-type(7),
+#slide8:checked ~ .controls label:nth-of-type(8),
+#slide9:checked ~ .controls label:nth-of-type(9),
+#slide10:checked ~ .controls label:nth-of-type(10),
+#slide11:checked ~ .controls label:nth-of-type(11),
+#slide12:checked ~ .controls label:nth-of-type(12),
+#slide13:checked ~ .controls label:nth-of-type(13),
+#slide14:checked ~ .controls label:nth-of-type(14),
+#slide15:checked ~ .controls label:nth-of-type(15),
+#slide16:checked ~ .controls label:nth-of-type(16),
+#slide17:checked ~ .controls label:nth-of-type(17) {
+	background: #0035aa;
+}
+
+.wrapper label:after {
+	border: 2px solid #0035aa; //border: 2px solid #ddd;
+	content: " ";
+	display: block;
+	height: 12px;
+	left: -4px;
+	position: absolute;
+	top: -4px;
+	width: 12px;
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	-o-border-radius: 50%;
+	border-radius: 50%;
+}
+</style>
+	<!--end slider -->
     <footer>
       <div class="foot-wrap">
         <div class="allright">
@@ -137,7 +353,8 @@ content: "";position:absolute;width: 100%;height: 320px;background: rgba(0,0,0,0
 
 .transport__image {
   margin-right: 10px;
-  width: 568px;
+	width: 100%;
+  max-width: 568px;
   height: 378px;
   /* margin-top: 65px; */
   background-size: cover;
@@ -158,7 +375,8 @@ content: "";position:absolute;width: 100%;height: 320px;background: rgba(0,0,0,0
 
 .values__image {
   margin-left: 10px;
-  width: 528px;
+  width: 100%;
+	max-width: 528px;
   height: 359px;
   /* margin-top: 65px; */
   background-repeat: no-repeat;
@@ -167,16 +385,19 @@ content: "";position:absolute;width: 100%;height: 320px;background: rgba(0,0,0,0
 }
 .parking {
 	background-image: url("/img/animal-space/kote.jpg");
-	background-size: 100% 100%;
+	background-size: cover;
+	background-position: center;
 }
 .pesh-prostir {
 	background-image: url("/img/animal-space/taksik.jpg");
-	background-size: 100% 100%;
+	background-size: cover;
+	background-position: center;
 }
 
 .ruh-transportu {
 	background-image: url("/img/animal-space/buldog.jpg");
-	background-size: 100% 100%;
+	background-size: cover;
+	background-position: center;
 	margin-top: 45px;
 }
 
@@ -235,12 +456,14 @@ content: "";position:absolute;width: 100%;height: 320px;background: rgba(0,0,0,0
   }
 
 .transport__image {
-    width: 320px;
+    max-width: 320px;
+		width: 100%;
     height: 213px;
     margin: 0 auto;
   }
   .values__image {
-	width: 320px;
+		width: 100%;
+		max-width: 320px;
     height: 217px;
     margin: 0 auto;  
   }
@@ -257,6 +480,25 @@ content: "";position:absolute;width: 100%;height: 320px;background: rgba(0,0,0,0
 h2 {line-height: 93%;}
 .transport__hero__heading {padding-left: 10%;
 }
+}
+
+@media only screen and (max-width: 767px) {
+	.animal-slider_wrapper {
+		width: 100%;
+		padding: 0 10px;
+	}
+	.wrapper .controls {
+		text-align: center;
+	}
+	.animals__section {
+		margin-bottom: 80px;
+	}
+
+}
+@media only screen and (max-width: 400px) {
+	.animals__section {
+		margin-bottom: 120px;
+	}
 }
   </style>
     </footer>

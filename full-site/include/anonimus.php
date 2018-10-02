@@ -1,7 +1,7 @@
 <?php
 $mass = $_POST["anonymous-feedback__message"]."\n";
 
-$to = "sergeykhistovoy@gmail.com";
+$to = "marketing@saga-development.com.ua";
 $subject = "Анонимный отзыв";
 $txt = $mass;
 $headers = "From: rybalsky.com.ua" . "\r\n";

@@ -12,7 +12,7 @@
 <?php /*Google Tag Manager*/ include_once('include/gtm2.php'); ?>
   <script src="/js/jquery-1.12.0.min.js"></script>
   <script src="/js/scripts.js"></script>
-    <link rel="canonical" href="https://<?php echo strtok($_SERVER['SERVER_NAME'].$_SERVER['REQUEST_URI'], '?'); ?>"/>
+  <link rel="canonical" href="https://<?php echo $_SERVER['SERVER_NAME'].$_SERVER['REQUEST_URI']; ?>"/>
   <link rel="stylesheet" href="/flipclock.css">
   <link rel="stylesheet" type="text/css" href="/css/style.css" />
 	<?php

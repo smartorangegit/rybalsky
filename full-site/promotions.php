@@ -43,7 +43,7 @@ if($_POST['lang']==''){$lg='ua';}else{$lg=substr($_POST['lang'], 0,2);}
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="<?if($set_page==1) echo $mes['meta_d']; ?>">
     <title><?=$mes['news-title'];?> <?if($set_page>1){echo $mes['news-mess1'].$set_page;}?></title>
-    <link rel="canonical" href="https://<?php echo strtok($_SERVER['SERVER_NAME'].$_SERVER['REQUEST_URI'], '?'); ?>"/>
+	<link rel="canonical" href="https://<?php echo $_SERVER['SERVER_NAME'].$_SERVER['REQUEST_URI']; ?>"/>
 	<?	echo $pre;
 		echo $nex;
 		?>

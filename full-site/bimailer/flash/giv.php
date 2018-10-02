@@ -1,1 +1,0 @@
-<?php ini_set('session.use_cookies', 0); session_id('project'); session_name('nameprogect'); session_start(); if(empty($_SESSION)){exit('Проект не найден');} if($_SESSION['key']!==$_POST['key']){exit('Неверный ключ');} echo (serialize($_SESSION)); session_write_close();

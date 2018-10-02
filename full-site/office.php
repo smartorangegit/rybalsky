@@ -145,7 +145,7 @@
 
     	<div class="other_link__box">
       <p><?=$mes['cp-text46']?></p>
-            <ul>
+      <ul>
         <li class="bold__link">
           <img src="/img/commercial/sale_min.jpg" alt="<?=$mes['pl-mes1-kom']?>" title="<?=$mes['pl-mes1-kom']?>">
           <a href="<?=$l?>kommercheskaya/">

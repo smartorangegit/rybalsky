@@ -188,3 +188,44 @@ $(document).ready(function(){
             form('#fr2');
         }
     });
+//xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+
+    // Кнопка заказать звонок
+    $(document).on('click','#call_ma_please_ctc',function() {
+        $('#call_my_forms_ctc').addClass('call_my_visible');
+        preventBodyFromScrollig();
+    });
+    // Закрыть форму заказа звонка
+    $(document).on('click', '.call_my_close', function() {
+        $('#call_my_forms_ctc').removeClass('call_my_visible');
+        returnScrollToBody();
+    });
+
+    function call(){
+        $('#call_my_forms_ctc').css({
+          'opacity':'1',
+          'left':'0',
+          'top': '0',
+		  'display':'block'
+      });
+    }
+//xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+    // Кнопка оставить заявку на проведения ивента
+    $(document).on('click','#call_ma_please_events',function() {
+        $('#call_my_forms_events').addClass('call_my_visible');
+        preventBodyFromScrollig();
+    });
+    // Закрыть форму оставить заявку на проведения ивента
+    $(document).on('click', '.call_my_close', function() {
+        $('#call_my_forms_events').removeClass('call_my_visible');
+        returnScrollToBody();
+    });
+
+    function call(){
+        $('#call_my_forms_events').css({
+          'opacity':'1',
+          'left':'0',
+          'top': '0',
+		  'display':'block'
+      });
+    }

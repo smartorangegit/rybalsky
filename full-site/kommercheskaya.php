@@ -54,7 +54,7 @@
             .noActive_block{fill:#B3B3B3;}
             .noActive_text, .text__3, .text__2{fill:#666666;}
             </style>
-            <a xmlns:xlink="http://www.w3.org/1999/xlink" style="cursor:pointer;" class="op_ajax" href="/<?=$_POST['lang'].'kommercheskaya/">
+            <a xmlns:xlink="http://www.w3.org/1999/xlink" style="cursor:pointer;" class="op_ajax" href="/<?=$_POST['lang'].'kommercheskaya/'?>">
               <polygon class="activeArrowBg" points="14.2,59 145.2,59 157.2,39 145.2,19 14.2,19 "/>
             </a>
             <?=$mes['tl-mes1']?>
@@ -407,6 +407,7 @@
           <a class="footer__jurdoc_link" href="/<?=$_POST['lang']?>documents/"><?=$mes['jur-mes-menu']?></a>
           <span><?=$mes['v02']?></span>
         </div>
+		
       </footer>
 
 

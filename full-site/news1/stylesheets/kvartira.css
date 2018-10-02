@@ -1,0 +1,220 @@
+/* line 2, ../sass/kvartira.scss */
+* {
+  box-sizing: border-box;
+}
+
+/* line 5, ../sass/kvartira.scss */
+html {
+  height: 100%;
+  width: 100%;
+}
+
+/* line 9, ../sass/kvartira.scss */
+body {
+  color: #fff;
+  height: 100%;
+  font-family: "PFDinTextUniversal-Medium";
+}
+
+/* line 15, ../sass/kvartira.scss */
+section {
+  position: relative;
+  background: url("../img/app-bg.jpg") center 0 no-repeat;
+  width: 100%;
+  min-height: 100%;
+  background-size: cover;
+}
+
+/* line 22, ../sass/kvartira.scss */
+.logo {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+
+/* line 28, ../sass/kvartira.scss */
+.kvartira__container {
+  margin: auto;
+  max-width: 1200px;
+  position: relative;
+}
+
+/* line 34, ../sass/kvartira.scss */
+.kvartira__list {
+  padding-top: 70px;
+  padding-bottom: 20px;
+}
+
+/* line 39, ../sass/kvartira.scss */
+.kvartira__item {
+  width: 14%;
+  text-align: center;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+/* line 46, ../sass/kvartira.scss */
+.active {
+  text-transform: uppercase;
+  font-size: 32px;
+  width: 51%;
+  text-align: left;
+}
+
+/* line 53, ../sass/kvartira.scss */
+.kvartira__link {
+  text-decoration: none;
+  color: #fff;
+}
+
+/* line 58, ../sass/kvartira.scss */
+.table-wraper {
+  max-width: 815px;
+  margin: auto;
+  position: relative;
+}
+
+/* line 64, ../sass/kvartira.scss */
+.float-img {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+/* line 69, ../sass/kvartira.scss */
+.kvartira__table {
+  padding-top: 10px;
+  background: rgba(0, 0, 0, 0.25);
+}
+/* line 72, ../sass/kvartira.scss */
+.kvartira__table table {
+  width: 100%;
+}
+/* line 76, ../sass/kvartira.scss */
+.kvartira__table tr {
+  position: relative;
+}
+/* line 80, ../sass/kvartira.scss */
+.kvartira__table th {
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 18px;
+  width: 16.5%;
+  padding-bottom: 5px;
+}
+/* line 87, ../sass/kvartira.scss */
+.kvartira__table td {
+  width: 16.5%;
+  text-align: center;
+  padding: 10px 10px;
+}
+
+/* line 97, ../sass/kvartira.scss */
+.table-body__list:nth-child(1) {
+  /* &:hover {
+  	&:before {
+  		display: block;
+  		z-index: 999;
+  	}
+  } */
+}
+/* line 98, ../sass/kvartira.scss */
+.table-body__list:nth-child(1):before {
+  bottom: -10px;
+}
+
+/* line 112, ../sass/kvartira.scss */
+.table-body__list:nth-child(2):before {
+  content: "";
+  position: absolute;
+  backgroutopnd: url(/img/logo-.svg);
+  background-size: cover;
+  width: 110px;
+  height: 140px;
+  display: none;
+  bottom: -10px;
+  left: 50%;
+  margin-left: -55px;
+}
+/* line 126, ../sass/kvartira.scss */
+.table-body__list:nth-child(2):hover:before {
+  display: block;
+  z-index: 999;
+}
+
+/* line 133, ../sass/kvartira.scss */
+.table-body__list:nth-child(3):before {
+  content: "";
+  position: absolute;
+  background: url(/img/logo-.svg);
+  background-size: cover;
+  width: 110px;
+  height: 140px;
+  display: none;
+  bottom: -10px;
+  left: 50%;
+  margin-left: -55px;
+}
+/* line 147, ../sass/kvartira.scss */
+.table-body__list:nth-child(3):hover:before {
+  display: block;
+  z-index: 999;
+}
+
+/* line 155, ../sass/kvartira.scss */
+.table-body__list {
+  position: relative;
+  width: 100%;
+}
+/* line 3, ../sass/mixins.scss */
+.table-body__list:before, .table-body__list:after {
+  content: "";
+  display: table;
+}
+/* line 8, ../sass/mixins.scss */
+.table-body__list:after {
+  clear: both;
+}
+/* line 161, ../sass/kvartira.scss */
+.table-body__list:before {
+  content: "";
+  position: absolute;
+  background: url(../img/logo-.svg);
+  background-size: cover;
+  width: 110px;
+  height: 140px;
+  display: none;
+  top: -150px;
+  left: 50%;
+  margin-left: -55px;
+}
+/* line 174, ../sass/kvartira.scss */
+.table-body__list:hover {
+  background: #0135AB;
+}
+/* line 176, ../sass/kvartira.scss */
+.table-body__list:hover:before {
+  display: block;
+  z-index: 999;
+}
+
+/* line 184, ../sass/kvartira.scss */
+.table-body {
+  max-height: 500px;
+  overflow: auto;
+}
+
+/* line 190, ../sass/kvartira.scss */
+.table-body__item {
+  float: left;
+  width: 16.6%;
+  text-align: center;
+}
+
+/* line 198, ../sass/kvartira.scss */
+.table-body__link {
+  text-decoration: none;
+  color: #fff;
+  display: block;
+  line-height: 3.3em;
+}

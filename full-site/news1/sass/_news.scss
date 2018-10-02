@@ -1,0 +1,163 @@
+@import "mixins";
+* {
+	box-sizing: border-box;
+}
+body, html {
+	height: 100%;
+	width: 100%;
+}
+
+section {
+	background: url('../img/news-bg.jpg') 0 0 repeat-y;
+	background-size: cover;
+	color: #fff;
+	height: 100%;
+	overflow: auto;
+}
+
+header {
+	
+	position: fixed;
+	width: 100%;
+	-webkit-border-bottom: 1px solid rgba(0, 0, 0, 0.5) ;
+	-moz-border-bottom: 1px solid rgba(0, 0, 0, 0.5) ;
+	-ms-border-bottom: 1px solid rgba(0, 0, 0, 0.5) ;
+	-o-border-bottom: 1px solid rgba(0, 0, 0, 0.5) ;
+	border-bottom: 1px solid rgba(0, 0, 0, 0.5) ;
+}
+
+.news__time_list {
+	@include clearfix;
+}
+
+.news__time_item {
+	position: relative;
+	float: left;
+	padding-right: 45px;
+	img {
+		padding-right: 10px;
+		position: absolute;
+		bottom: 2px;
+		left: 0;
+	}
+	span {
+		padding-left: 30px;
+	}
+}
+
+.side__img {
+	height: 235px;
+	width: 180px;
+}
+
+.news__wraper {
+	max-width: 1180px;
+	margin: auto;
+	margin-top: 88px;
+	padding-top: 50px;
+	@include clearfix;
+}
+.side__logo, .news__text {
+	float: left;
+}
+
+.side__logo {
+	width: 16.6%;
+	margin-top: 22%
+}
+
+.news__text {
+	max-width: 980px;
+	@include clearfix;
+}
+
+.news__time {
+	font-size: 18px;
+	letter-spacing: 0.025em;
+}
+
+.news__title {
+	@include title;
+	margin-top: 10px;
+}
+
+.news__item_text {
+	@include clearfix;
+	margin-top: 22px;
+	line-height: 1.333;
+	font-size: 18px;
+}
+
+.news__author {
+	margin-top: 30px;
+}
+
+.news__author {
+	float: right;
+	text-align: right;
+	margin-right: 30px;
+}
+
+.news__buttons_list {
+	@include clearfix;
+	margin-top: 30px;
+}
+
+.news__buttons_item {
+	background: #0035aa;
+	min-height: 50px;
+	font-size: 18px;
+	letter-spacing: 0.025em;
+	line-height: 1.333;
+	img {
+		padding-right: 8px;
+	}
+}
+
+.news__buttons_item:nth-child(1) {
+	float: left;
+	width: 43.9%;
+}
+
+.news__buttons_item:nth-child(2) {
+	float: right;
+	width: 54.1%;
+}
+
+.news__buttons_link {
+	display: block;
+	text-decoration: none;
+	color: #fff;
+	line-height: 50px;
+	text-align: center;
+}
+
+.news__last-news_title {
+	font-size: 18px;
+	line-height: 1.667;
+	text-transform: uppercase;
+	margin-top: 20px;
+}
+
+.news__post_item {
+	margin-top: 25px;
+}
+
+.news__post_link {
+	display: block;
+	text-decoration: none;
+	color: #fff;
+	margin-bottom: 5px;
+	@include title;
+
+	&:hover {
+		text-decoration: underline;
+	}
+}
+
+.news__post_time{
+	font-size: 14px;
+	letter-spacing: 0.025em;
+	line-height: 1.714;
+}
+

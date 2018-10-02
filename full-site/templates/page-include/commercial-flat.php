@@ -33,11 +33,7 @@ $level_floor=$s['floor'];
 endfor;*/
 
  $mas1[0]=$mes['pl-mes'][0];		
-<<<<<<< HEAD
 
-=======
- $mas1[1]=$mes['kv-mes3'].' 1';	
->>>>>>> a8e033592db985489f054336a9d3329ed3f847c5
  $mas3=[];
  
 $mas2=[$s['all_room'],$s['life_room'],$s['room1'],$s['room2'],$s['room3'],$s['room4'],$s['room5'],
@@ -51,11 +47,7 @@ if (PLAN=='plan') {
   $text_pdf=$mes['pl-mes26'];
 }
 $mas3[] = $s['all_room'];
-<<<<<<< HEAD
 
-=======
-$mas3[] = $s['room1'];	
->>>>>>> a8e033592db985489f054336a9d3329ed3f847c5
 
 if($s['level']>1) {
   $result = $db->prepare("SELECT room1,room2,room3,room4,room5,room6,room7,room8,room9,room10,
@@ -86,12 +78,8 @@ if($s['level']>1) {
 	$mas1[] = $mes['kv-mes3'].' -1';	
 	$mas3[] = $sl['room1'];				
 }
-<<<<<<< HEAD
 $mas1[]=$mes['kv-mes3'].' 1';	
 $mas3[] = $s['room1'];	
-=======
-
->>>>>>> a8e033592db985489f054336a9d3329ed3f847c5
 
 $result = $db->prepare("SELECT img, sort   FROM `section` WHERE `sec`=$sec AND buld=$plan  AND `floor`=$poverx ");
 $result->execute();     

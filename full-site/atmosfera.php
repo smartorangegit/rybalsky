@@ -28,6 +28,9 @@
   <link rel="stylesheet" type="text/css" href="/css/intlTelInput.css" />
   <link rel="stylesheet" type="text/css" href="/css/style.css" />
   <!-- <link rel="stylesheet" type="text/css" href="/css/kvartira.css" /> -->
+  		<meta property="og:title" content="<?=$mes['atmosfera-title']; ?>" />
+		<meta property="og:description" content="<?=$mes['atmosfera-description']; ?>" />
+		<meta property="og:image" content="https://<?=$_SERVER['SERVER_NAME']?>/img/logo-w.png"/>
 </head>
 <body>
   <style media="screen">

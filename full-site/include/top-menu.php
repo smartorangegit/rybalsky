@@ -189,6 +189,7 @@ if(strripos($_POST['urls'][0],'plan') !== false && count($_POST['urls'][0])==5){
 					  <li><a class="menu__link" href="<?=$l?>animal-space/"><?=$mes['animal-space-h1']?></a></li>
           					  <li><a class="menu__link" href="<?=$l?>transport-infrastructure/"><?=$mes['menu-mes33']?></a></li>
           					  <li><a class="menu__link" href="<?=$l?>parking/"><?=$mes['parking-heading']?></a></li>
+							  <li><a class="menu__link" href="<?=$l?>events/"><?=$mes['events-menu']?></a></li>
                     </ul>
                 </div>
 
