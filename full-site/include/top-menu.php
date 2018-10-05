@@ -204,7 +204,8 @@ if(strripos($_POST['urls'][0],'plan') !== false && count($_POST['urls'][0])==5){
 	                 </ul>
 	                 <a class="menu__link" href="<?=$l?>filter/"><?=$mes['menu-mes23']?></a>
 	                 <a class="menu__link" href="<?=$l?>rassrochka/"><?=$mes['ras-mes-menu']?></a>
-                 </div>
+					 <a class="menu__link" href="<?=$l?>service-department/"><?=$mes['service-menu']?></a>
+				</div>
 	               <div class="left_top_item">
   	                <span class='bigger__nolink realty-block__heading'><?=$mes['menu-mes26']?></span>
   	                 <a class="menu__link" href="<?=$l?>kommercheskaya/"><?=$mes['menu-mes27']?></a>

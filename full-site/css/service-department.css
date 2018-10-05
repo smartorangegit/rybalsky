@@ -1,0 +1,173 @@
+/*service-department*/
+.service__hero {
+  background: url(/img/service-department/service-department-bg.jpg) center no-repeat;
+}
+
+.services-container {
+  padding-top: 40px;
+  max-width: 1200px;
+  margin: 34px auto 0;
+}
+
+.services__heading {
+  font-family: "PFDinTextUniversal-Medium";
+  margin-bottom: 50px;
+}
+
+.services-list {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 85px;
+}
+
+.services-list__item {
+  max-width: 192px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.services-list__icon {
+  width: 192px;
+  height: 192px;
+  background-image: url(/img/service-department/sprite.png);
+  margin-bottom: 35px;
+}
+.services-list__icon_1 {
+  background-position: 0px 0px;
+}
+.services-list__icon_2 {
+  background-position: -320px 0px;
+}
+.services-list__icon_3 {
+  background-position: -640px 0px;
+
+}
+.services-list__icon_4 {
+  background-position: -960px 0px;
+}
+
+.services-list__text {
+  width: 100%;
+  text-align: center;
+}
+
+.services-contact {
+  background-color: #1A4AB3;
+  padding: 50px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.services-contact-list {
+  max-width: 1200px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.services-contact-list_icon {
+  margin-bottom: 10px;
+}
+.services-contact-list__item {
+  width: calc(460/1155*100%);
+}
+.services-contact-list__item:first-child {
+  padding-left: 70px;
+  position: relative;
+}
+.services-contact-list__item:first-child:after {
+  position: absolute;
+  top: 10px;
+  left: 0;
+  width: 38px;
+  height: 57px;
+  content: url(/img/service-department/phone-icont.png);
+}
+
+.services-contact-list__text {
+  color: #fff;
+  font-family: "PFDinTextUniversal-Light";
+  font-size: calc(24/16*1rem);
+  line-height: 1.5;
+}
+.services-contact-list__text_medium {
+  font-family: "PFDinTextUniversal-Medium";
+}
+
+.services-contact-list__link {
+  font-family: "PFDinTextUniversal-Light";
+  font-size: calc(24/16*1rem);
+  color: #fff;
+  text-decoration: none;
+}
+.services-contact-list__link_phone {
+  display: inline-block;
+  position: relative;
+  margin-top: 7px;
+  padding-left: 20px;
+  margin-right: 22px;
+  font-family: "PFDinTextUniversal-Medium";
+}
+.services-contact-list__link_phone:before {
+  position: absolute;
+  top: 0px;
+  left: 0;
+  width: 6px;
+  height: 18px;
+  content: url(/img/service-department/phone-icon_2.png);
+}
+.services-contact-list__link_phone:last-child {
+  margin-right: 0;
+}
+
+@media screen and (max-width: 1086px) {
+  .services-list {
+    flex-wrap: wrap;
+  }
+  .services-list__item {
+    width: 50%;
+    margin-bottom: 15px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .services-list {
+    flex-wrap: wrap;
+    margin-bottom: 40px;
+  }
+  .services-list__item {
+    width: 100%;
+    margin-bottom: 40px;
+  }
+
+  .services-contact-list {
+    flex-direction: column;
+    align-items: center;
+    padding-left: 10px;
+    padding-right: 10px;
+    box-sizing: border-box;
+  }
+
+  .services-contact-list__item {
+    width: 90%;
+     margin-bottom: 15px;
+  }
+  .services-contact-list__item:first-child {
+    padding-left: 0;
+    margin-bottom: 20px;
+  }
+  .services-contact-list__item:first-child:after {
+    display: none;
+  }
+
+  .services-contact-list__text {
+    font-size: 1rem;
+  }
+
+  .services-contact-list__link {
+    font-size: 1rem;
+  }
+}
+/*end__service-department*/
