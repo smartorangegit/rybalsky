@@ -6256,6 +6256,7 @@ path.svg-inner_a_1_2 {animation-delay: 2.3s;}
 .parking__hero-heading {
   font-size: 40px; 
   z-index:1;
+  text-align: center;
   }
 
 .parking__container {
