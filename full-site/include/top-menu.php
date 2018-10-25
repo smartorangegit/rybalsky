@@ -308,6 +308,17 @@ $(window).scroll(function(){
  .promotions_btn{left:-98px;}
 }
 </style>
+<style>
+.loader {
+	display:none;
+}
+.loader__inner  {
+	display:none;
+}
+.loader__background {
+	display:none;
+}
+</style>
 	<!--Сквозное лого
 <a href="http://saga-development.com.ua/" class="saga-logo" target="_blank">
 <img src="/img/Saga_white.svg">
