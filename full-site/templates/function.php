@@ -119,7 +119,7 @@ $flat=str_replace("flat", "", $_POST['urls'][3]);
 	}
 
 	function mobiledet(){ GLOBAL $detect, $site,$mes,$sleh, $sec, $plan;
-		if ( $detect->isMobile() && $plan != 'kommercheskaya') {?>
+		if ( $detect->isMobile() && $plan != 'kommercheskaya' && $plan != 'kvartira') {?>
 	<div class="portrait" style="display:none">
 		<div class="port-message">
 	<?//Будь-ласка, поверніть Ваш пристрій для коректного відображення вмісту розділу.?>
