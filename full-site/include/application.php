@@ -24,7 +24,8 @@ function clear_phone($phone){
 		'utm_medium',
 		'utm_campaign' ,
 		'utm_term', 
-		'utm_content' 
+		'utm_content',
+        'clientId'
 		);	
 	$utms=array();	
 	foreach($utm as $key=>$t)
@@ -128,7 +129,8 @@ if ($_POST['typ'] == 8) {
 	'UF_CRM_1517487957'=>$utms[1],
 	'UF_CRM_1517488014'=>$utms[2],
 	'UF_CRM_1517489120'=>$utms[3],
-	'UF_CRM_1517489335'=>$utms[4]
+	'UF_CRM_1517489335'=>$utms[4],
+	'UF_CRM_1542115719'=>$utms[5],
     );
 }
 else{
@@ -155,7 +157,8 @@ else{
 	'UF_CRM_1517487957'=>$utms[1],
 	'UF_CRM_1517488014'=>$utms[2],
 	'UF_CRM_1517489120'=>$utms[3],
-	'UF_CRM_1517489335'=>$utms[4]
+	'UF_CRM_1517489335'=>$utms[4],
+    'UF_CRM_1542115719'=>$utms[5],
     );
 }
 	
