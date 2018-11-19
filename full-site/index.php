@@ -174,7 +174,8 @@ function sound_off () {
     <div class="header">
         <div class="nomobile">
           <div  class="slider">
-            <div class="item"><img <?AltImgAdd($mes['i-mes0']);?>  src="/img/4s.jpg"></div>
+		  	<div class="item"><img <?AltImgAdd($mes['i-mes0']);?>  src="/img/RIBALSKY_NEW YEAR ONE_FINAL.jpeg"></div>
+			<div class="item"><img <?AltImgAdd($mes['i-mes0']);?>  src="/img/4s.jpg"></div>
             <div class="item"><img <?AltImgAdd($mes['i-mes0']);?>  src="/img/0.jpg"></div>
             <div class="item"><img <?AltImgAdd($mes['i-mes0']);?>  src="/img/2s.jpg"></div>
             <!-- <div class="item"><img <?AltImgAdd($mes['i-mes0']);?>  src="/img/3s.jpg"></div> -->

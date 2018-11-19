@@ -73,7 +73,7 @@
       transform: translate(-50%, 0);
       background-color: rgba(255, 255, 255, .7);
       padding: 5px;
-      width: 660px;
+      width: 700px;
     }
     .bxSlider__custom-pager {
       display: flex;
@@ -148,7 +148,8 @@
     <section class="gallery">
       <div class="galery__container">
         <div class="bxslider gallery__bxslider ">
-          <div class="item js-bxSlideritem"><img <?AltImgAdd($mes['i-mes0']);?>  src="/img/4s.jpg"></div>
+	      <div class="item js-bxSlideritem"><img <?AltImgAdd($mes['i-mes0']);?>  src="/img/RIBALSKY_NEW YEAR ONE_FINAL.jpeg"></div>
+		  <div class="item js-bxSlideritem"><img <?AltImgAdd($mes['i-mes0']);?>  src="/img/4s.jpg"></div>
           <div class="item js-bxSlideritem"><img <?AltImgAdd($mes['i-mes0']);?>  src="/img/0.jpg"></div>
           <div class="item js-bxSlideritem"><img <?AltImgAdd($mes['i-mes0']);?>  src="/img/2s.jpg"></div>
           <div class="item js-bxSlideritem"><img <?AltImgAdd($mes['i-mes0']);?>  src="/img/r5.jpg"></div>
