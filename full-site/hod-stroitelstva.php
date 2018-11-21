@@ -554,6 +554,46 @@
 a.fancybox[data-fancybox="group37"][data-caption="<?=\$mes['s-mes52']?>"][href="/img/quart/28_02_2018/$.jpg"]*33.
 */?>
 <!-- начало блока -->
+<div class="stroy_item stroy_item_left stroy69">
+  <div class="stroy_overlay" id='69'>
+    <a id='group69' href="/img/quart/20_11_2018/1.JPG" class="fancybox" data-fancybox="group69" data-caption="<?=$mes['s-mes84']?>"></a>
+    <a href="/img/quart/20_11_2018/2.JPG" class="fancybox" data-fancybox="group69" data-caption="<?=$mes['s-mes84']?>"></a>
+    <a href="/img/quart/20_11_2018/3.JPG" class="fancybox" data-fancybox="group69" data-caption="<?=$mes['s-mes84']?>"></a>
+    <a href="/img/quart/20_11_2018/4.JPG" class="fancybox" data-fancybox="group69" data-caption="<?=$mes['s-mes84']?>"></a>
+    <a href="/img/quart/20_11_2018/5.JPG" class="fancybox" data-fancybox="group69" data-caption="<?=$mes['s-mes84']?>"></a>
+    <a href="/img/quart/20_11_2018/6.JPG" class="fancybox" data-fancybox="group69" data-caption="<?=$mes['s-mes84']?>"></a>
+    <a href="/img/quart/20_11_2018/7.JPG" class="fancybox" data-fancybox="group69" data-caption="<?=$mes['s-mes84']?>"></a>
+	<a href="/img/quart/20_11_2018/8.JPG" class="fancybox" data-fancybox="group69" data-caption="<?=$mes['s-mes84']?>"></a>
+	<a href="/img/quart/20_11_2018/9.JPG" class="fancybox" data-fancybox="group69" data-caption="<?=$mes['s-mes84']?>"></a>
+	<a href="/img/quart/20_11_2018/10.JPG" class="fancybox" data-fancybox="group69" data-caption="<?=$mes['s-mes84']?>"></a>
+	<a href="/img/quart/20_11_2018/11.JPG" class="fancybox" data-fancybox="group69" data-caption="<?=$mes['s-mes84']?>"></a>
+	<a href="/img/quart/20_11_2018/12.JPG" class="fancybox" data-fancybox="group69" data-caption="<?=$mes['s-mes84']?>"></a>
+	<a href="/img/quart/20_11_2018/13.JPG" class="fancybox" data-fancybox="group69" data-caption="<?=$mes['s-mes84']?>"></a>
+	<a href="/img/quart/20_11_2018/14.JPG" class="fancybox" data-fancybox="group69" data-caption="<?=$mes['s-mes84']?>"></a>
+	<a href="/img/quart/20_11_2018/15.JPG" class="fancybox" data-fancybox="group69" data-caption="<?=$mes['s-mes84']?>"></a>
+	<a href="/img/quart/20_11_2018/16.JPG" class="fancybox" data-fancybox="group69" data-caption="<?=$mes['s-mes84']?>"></a>
+	<a href="/img/quart/20_11_2018/17.JPG" class="fancybox" data-fancybox="group69" data-caption="<?=$mes['s-mes84']?>"></a>
+	<a href="/img/quart/20_11_2018/18.JPG" class="fancybox" data-fancybox="group69" data-caption="<?=$mes['s-mes84']?>"></a>
+	<a href="/img/quart/20_11_2018/19.JPG" class="fancybox" data-fancybox="group69" data-caption="<?=$mes['s-mes84']?>"></a>
+	<a href="/img/quart/20_11_2018/20.JPG" class="fancybox" data-fancybox="group69" data-caption="<?=$mes['s-mes84']?>"></a>
+	<a href="/img/quart/20_11_2018/21.JPG" class="fancybox" data-fancybox="group69" data-caption="<?=$mes['s-mes84']?>"></a>
+	<a href="/img/quart/20_11_2018/22.JPG" class="fancybox" data-fancybox="group69" data-caption="<?=$mes['s-mes84']?>"></a>
+	<a href="/img/quart/20_11_2018/23.JPG" class="fancybox" data-fancybox="group69" data-caption="<?=$mes['s-mes84']?>"></a>
+	<a href="/img/quart/20_11_2018/24.JPG" class="fancybox" data-fancybox="group69" data-caption="<?=$mes['s-mes84']?>"></a>
+	<a href="/img/quart/20_11_2018/25.JPG" class="fancybox" data-fancybox="group69" data-caption="<?=$mes['s-mes84']?>"></a>
+	<a href="/img/quart/20_11_2018/26.JPG" class="fancybox" data-fancybox="group69" data-caption="<?=$mes['s-mes84']?>"></a>
+	<a href="/img/quart/20_11_2018/27.JPG" class="fancybox" data-fancybox="group69" data-caption="<?=$mes['s-mes84']?>"></a>
+
+
+</div>
+  <figcaption>
+    <p class="stroy_date"><?=$mes['s-mes84']?></p>
+    <p class="stroy_name"></p>
+  </figcaption>
+  <style>.stroy69 {background-image: url(/img/quart/20_11_2018/1.JPG);}</style>					  <!-- элемент timeline -->
+</div>
+<!-- конец блока -->
+<!-- начало блока -->
 <div class="stroy_item stroy_item_left stroy68">
   <div class="stroy_overlay" id='68'>
     <a id='group68' href="/img/quart/09_11_2018/1.JPG" class="fancybox" data-fancybox="group68" data-caption="<?=$mes['s-mes83']?>"></a>
