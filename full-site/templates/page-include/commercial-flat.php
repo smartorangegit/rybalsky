@@ -310,15 +310,35 @@ $originPage = explode('/', $_SERVER['REQUEST_URI'])[$parametr];
                 </div>
                 <div class="buttons_block">
                   <div class="ch-link">
-         
-                      <a onclick="$('#id_reservations').css('opacity','1').css('z-index', '99999').css('pointer-events', 'auto');" id="id_reservations_button" ><?=$mes['pl-mes8']?></a>
-   
+                      <div class="google-test">
+                      <? if(COMERC):?>
+                      <!-- <a class="commerc_show_form_btn">Забронювати</a> -->
+                      <?/* include_once('include/commerc_form.php'); */?>
+                        <a class="google__btn_1" onclick="$('#id_reservations').css('opacity','1').css('z-index', '99999').css('pointer-events', 'auto');" id="id_reservations_button" ><?=$mes['pl-mes8']?></a>
+                        <a class="google__btn_2" onclick="$('#id_reservations').css('opacity','1').css('z-index', '99999').css('pointer-events', 'auto');" id="id_reservations_button" ><?=$mes['pl-mes8_test']?></a>
+                      <? else: ?>
+                        <a class="google__btn_1" onclick="$('#id_reservations').css('opacity','1').css('z-index', '99999').css('pointer-events', 'auto');" id="id_reservations_button" ><?=$mes['pl-mes8']?></a>
+                        <a class="google__btn_2" onclick="$('#id_reservations').css('opacity','1').css('z-index', '99999').css('pointer-events', 'auto');" id="id_reservations_button" ><?=$mes['pl-mes8_test']?></a>
+                      <? endif; ?>
+                      </div>
                       <?
                       $imgs='<span class="span-img-popup" style="text-align: center;">'.TEXT_FLOOR.' '.$flat.' '.$mb.'</span> <div class="open-imp-popup"><img style="height:100%; max-width: 100%; padding: 40px"  src="'.$site.'img/houses/house'.$plan.'BIG/'.$s['img'].'.png" alt="'.TEXT_FLOOR.'"></div>';
                       ?>
                   </div>
+				  <style>
+				  a.google__btn_2{
+                    display: none;
+                  }
+                  .google a.google__btn_1{
+                    display: none;
+                  }
+                  .google a.google__btn_2{
+                    display: block;
+                  }
+                </style>
                   <!-- <div class="ch-print-save"> -->
-                    <a  class="save" onclick="$('#id_save').css({'opacity':'1', 'z-index': '1000', 'pointer-events' : 'auto'});" id="id_save_button" ><img <?AltImgAdd($mes['alt-logo'])?> <?AltImgAdd($mes['pl-mes9'])?> src="<?=$site?>img/pdf.png" alt="print"> <?=$mes['pl-mes9']?><?//Зберегти PDF?></a>
+                   <? /* <a  class="save" onclick="$('#id_save').css({'opacity':'1', 'z-index': '1000', 'pointer-events' : 'auto'});" id="id_save_button" ><img <?AltImgAdd($mes['alt-logo'])?> <?AltImgAdd($mes['pl-mes9'])?> src="<?=$site?>img/pdf.png" alt="print"> <?=$mes['pl-mes9']?><?//Зберегти PDF?></a> */ ?>
+					<a  class="save"  id="id_save_button" href="https://rybalsky.com.ua/pdf/inv.php" ><img <?AltImgAdd($mes['alt-logo'])?> <?AltImgAdd($mes['pl-mes9'])?> src="<?=$site?>img/pdf.png" alt="print"> <?=$mes['pl-mes9']?><?//Зберегти PDF?></a>
                   <!-- </div> -->
                 </div>
               </div>
