@@ -116,6 +116,10 @@ header('Last-Modified: '. $LastModified);
               <a class="jur-doc__item_link" href="/img/jurdoc/pdf/build-permiss-3.pdf" target="_blank"><img src="/img/jurdoc/permit-jurdoc-thumb-3.jpg" alt=""></a>
               <p><?=$mes['jur-mes12']?></p>
             </div>
+			<div class="jur-doc__item_pict">
+              <a class="jur-doc__item_link" href="/img/jurdoc/pdf/1925_001.pdf" target="_blank"><img src="/img/jurdoc/permit-jurdoc-thumb-1.jpg" alt=""></a>
+              <p></p>
+            </div>
           </div>
           <div class="jur-doc__item">
             <h3 class="jur-doc__item_title"><?=$mes['jur-mes10']?></h3>
@@ -162,15 +166,18 @@ header('Last-Modified: '. $LastModified);
     </div>
     <div class="empty-block"></div>
       <footer class="footer1" >
-        <div class="foot-wrap">
-          <div class="allright">
-             <p><?=$mes['v01']?></p>
+          <div class="foot-wrap">
+            <div class="allright">
+               <p>
+                 <?=$mes['v01']?>
+                </p>
+            </div>
+            <div class="web">
+              <a href="https://smarto.agency/" rel="nofollow" target="_blank"><img <?AltImgAdd('SmartorOrange')?>  src="/img/logo-smart.png" /></a>
+            </div>
+			
+            <a href="https://smarto.agency/" rel="nofollow" target="_blank" class="smarto_agency"><span><?=$mes['v02']?></span></a>
           </div>
-           <div class="web">
-            <a href="http://smartorange.com.ua" rel="nofollow" target="_blank"><img <?AltImgAdd('SmartOrange')?>   src="/img/logo-smart.png"  width="55px" /></a>
-          </div>
-          <span><?=$mes['v02']?></span>
-        </div>
       </footer>
   </div>
   <script src="/js/scripts.js"></script>
