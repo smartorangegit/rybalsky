@@ -562,7 +562,7 @@ a.fancybox[data-fancybox="group37"][data-caption="<?=\$mes['s-mes52']?>"][href="
     <a href="/img/quart/21_01_2019/4.jpg" class="fancybox" data-fancybox="group76" data-caption="<?=$mes['s-mes91']?>"></a>
     <a href="/img/quart/21_01_2019/5.jpg" class="fancybox" data-fancybox="group76" data-caption="<?=$mes['s-mes91']?>"></a>
     <a href="/img/quart/21_01_2019/6.jpg" class="fancybox" data-fancybox="group76" data-caption="<?=$mes['s-mes91']?>"></a>
-    <a href="/img/quart/2/7.jpg" class="fancybox" data-fancybox="group76" data-caption="<?=$mes['s-mes91']?>"></a>
+    <a href="/img/quart/21_01_2019/7.jpg" class="fancybox" data-fancybox="group76" data-caption="<?=$mes['s-mes91']?>"></a>
 	<a href="/img/quart/21_01_2019/8.jpg" class="fancybox" data-fancybox="group76" data-caption="<?=$mes['s-mes91']?>"></a>
 	<a href="/img/quart/21_01_2019/9.jpg" class="fancybox" data-fancybox="group76" data-caption="<?=$mes['s-mes91']?>"></a>
 	<a href="/img/quart/21_01_2019/10.jpg" class="fancybox" data-fancybox="group76" data-caption="<?=$mes['s-mes91']?>"></a>
