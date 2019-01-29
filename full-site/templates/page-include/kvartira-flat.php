@@ -138,7 +138,7 @@ WHERE buld=$plan AND `sec`=$sec AND visible=1 AND  (`floor`=$floor[0]-$flat_leve
                       <polygon class="activeArrowBg" points="311,59 499,59 511,39 499,19 311,19 324,39  "/>
                     <?=$mes['tl-mes3']?>
                   <?php else: ?>
-                    <a xmlns:xlink="http://www.w3.org/1999/xlink" style="cursor:pointer;" class="op_ajax" href="/plan<?=$plan?>/sections<?=$sec?>/floor<?=$floor[0]?>">
+                    <a xmlns:xlink="http://www.w3.org/1999/xlink" style="cursor:pointer;" class="op_ajax" href="/plan<?=$plan?>/sections<?=$sec?>/floor<?=$floor[0]?>/">
                     <polygon class="tl0" points="152,59 283,59 295,39 283,19 152,19 165,39 "/>
                     </a>
                     <?=$mes['tl-mes2']?>

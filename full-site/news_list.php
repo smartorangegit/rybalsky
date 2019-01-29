@@ -16,7 +16,10 @@ if($_POST['lang']==''){$lg='ua';}else{$lg=substr($_POST['lang'], 0,2);}
 
 				foreach($s as $key=>$k){			$rez[$key]=$k;	}
 
-	 $ReaNews=$rez;  }
+	 $ReaNews=$rez; 
+	 $ReaNews['text'] = str_replace('src="../../', 'src="/', $ReaNews['text']);
+
+	}
 
 	 $i=0;
 
@@ -303,7 +306,7 @@ padding:10px;
 				<div class="news__item_header">
 
 					<div class="news__picture">
-					<?if(count($ReaNewsImgs)>1){?><a href="<?=$ReaNews['img_news']?>" class="fancybox"  rel="<?=$ReaNewsImgs[0]['date']?>"><?}?>
+					<?if(count($ReaNewsImgs)>1){?><a href="<?=$ReaNews['img_news']?>"   rel="<?=$ReaNewsImgs[0]['date']?>"><?}?>
 						<img src="<?=$ReaNews['img_news']?>" <?AltImgAdd($ReaNews['name_news'])?> class="news__picture_body">
 					<?if(count($ReaNewsImgs)>1){?></a><?}?>
 
@@ -394,20 +397,18 @@ padding:10px;
 
 		</style>
 		<footer>
-			<div class="foot-wrap">
-              <div class="allright">
-                <p>
-                  <?=$mes['v01']?>
+          <div class="foot-wrap">
+            <div class="allright">
+               <p>
+                 <?=$mes['v01']?>
                 </p>
-              </div>
-
-              <div class="web">
-                <a href="http://smartorange.com.ua" rel="nofollow" target="_blank"><img <?AltImgAdd('SmartOrange')?>   src="/img/logo-smart.png"  width="55px" /></a>
-              </div>
-			  <a class="footer__jurdoc_link" href="<?=$l?>documents/"><?=$mes['jur-mes-menu']?></a>
-              <span><?=$mes['v02']?></span>
-
             </div>
+            <div class="web">
+              <a href="https://smarto.agency/" rel="nofollow" target="_blank"><img <?AltImgAdd('SmartorOrange')?>  src="/img/logo-smart.png" /></a>
+            </div>
+			<a class="footer__jurdoc_link" href="<?=$l?>documents/"><?=$mes['jur-mes-menu']?></a>
+            <a href="https://smarto.agency/" rel="nofollow" target="_blank" class="smarto_agency"><span><?=$mes['v02']?></span></a>
+          </div>
 		</footer>
 	</section>
 			<script src="/js/owl.carousel.min.js"></script>
