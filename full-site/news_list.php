@@ -16,20 +16,25 @@ if($_POST['lang']==''){$lg='ua';}else{$lg=substr($_POST['lang'], 0,2);}
 
 				foreach($s as $key=>$k){			$rez[$key]=$k;	}
 
-	 $ReaNews=$rez;  }
+	 $ReaNews=$rez; 
+	 $ReaNews['text'] = str_replace('src="../../', 'src="/', $ReaNews['text']);
+
+	}
 
 	 $i=0;
 
 	$marka = $ReaNews['mark'];
-	$result = $db->prepare("select mark,min_i,id_n,date,fname,filename from pic_news WHERE mark='$marka'");
+
+	$result = $db->prepare("select mark,min_i,id_n,date,fname,filename FROM pic_news WHERE mark='$marka'");
 	$result->execute();
 	$result->bind_result($s['mark'],$s['min_i'],$s['id_n'],$s['date'],$s['fname'],$s['filename']);
 	 while ($result->fetch()) { $s['img']="/admin/pic/images/".$s['date']."/".$s['filename'];
 								$s['img-min']="/admin/pic/images/".$s['date']."/min/".$s['filename'];
 
-				foreach($s as $key=>$k){			$rez[$key]=$k;	}
-		 $ReaNewsImgs[$i]=$rez;
-	 $i++; }
+			//	foreach($s as $key=>$k){			$rez[$key]=$k;	}
+		 $ReaNewsImgs[$i]=$s;
+		$i++; 
+	 }
 	 //echo '<pre>'; print_r($ReaNewsImgs); echo '</pre>';
 	 //Last News//
 	 $i=0;
@@ -303,12 +308,12 @@ padding:10px;
 				<div class="news__item_header">
 
 					<div class="news__picture">
-					<?if(count($ReaNewsImgs)>1){?><a href="<?=$ReaNews['img_news']?>" class="fancybox"  rel="<?=$ReaNewsImgs[0]['date']?>"><?}?>
+					<?if(count($ReaNewsImgs)>1){?><a href="<?=$ReaNews['img_news']?>"  class="fancybox" rel="<?=$ReaNewsImgs[0]['date']?>"><?}?>
 						<img src="<?=$ReaNews['img_news']?>" <?AltImgAdd($ReaNews['name_news'])?> class="news__picture_body">
 					<?if(count($ReaNewsImgs)>1){?></a><?}?>
 
 					<?if(count($ReaNewsImgs)>1){?>
-					<div class="magic">
+					<div class="magic ">
 						<? foreach($ReaNewsImgs as $key=>$s): ?>
 							<a style="display: inline-block;" class="fancybox" rel="<?=$s['date']?>" src="<?=$s['img']?>" href="<?=$s['img']?>">
 								<img style="width:100%" alt="<?=$ReaNews['name_news']?>" src="<?=$s['img-min']?>">
@@ -334,6 +339,7 @@ padding:10px;
 				</div>
 				<div class="news__item_text">
 					<?=$ReaNews['text']?>
+					<?$test_opros=explode ("?", $_SERVER['REQUEST_URI']);if($test_opros[0] == '/how-many-percent-are-you-an-urbanist/'){include_once('include/test-opros.php');/* подключение тест-опроса для новости */}?>
 					<div class="news__buttons">
 						<ul class="news__buttons_list">
 							<li><a class="news__buttons_link" href="/<?=$_POST['lang']?>news/"> <img src="/img/icons/Arrow-ico.png" alt="arrow"><?=$mes['tonyws']?></a></li>
@@ -394,20 +400,18 @@ padding:10px;
 
 		</style>
 		<footer>
-			<div class="foot-wrap">
-              <div class="allright">
-                <p>
-                  <?=$mes['v01']?>
+          <div class="foot-wrap">
+            <div class="allright">
+               <p>
+                 <?=$mes['v01']?>
                 </p>
-              </div>
-
-              <div class="web">
-                <a href="http://smartorange.com.ua" rel="nofollow" target="_blank"><img <?AltImgAdd('SmartOrange')?>   src="/img/logo-smart.png"  width="55px" /></a>
-              </div>
-			  <a class="footer__jurdoc_link" href="<?=$l?>documents/"><?=$mes['jur-mes-menu']?></a>
-              <span><?=$mes['v02']?></span>
-
             </div>
+            <div class="web">
+              <a href="https://smarto.agency/" rel="nofollow" target="_blank"><img <?AltImgAdd('SmartorOrange')?>  src="/img/logo-smart.png" /></a>
+            </div>
+			<a class="footer__jurdoc_link" href="<?=$l?>documents/"><?=$mes['jur-mes-menu']?></a>
+            <a href="https://smarto.agency/" rel="nofollow" target="_blank" class="smarto_agency"><span><?=$mes['v02']?></span></a>
+          </div>
 		</footer>
 	</section>
 			<script src="/js/owl.carousel.min.js"></script>
@@ -578,7 +582,7 @@ background: rgba(0,0,0,0.4);
   padding: 20px; 
 }
 a.fancybox{
-/* position: absolute; */
+/*position: absolute;*/
     width: 100%;
    height: 100%;
     font-size: 0;
@@ -606,6 +610,9 @@ a.fancybox{
    height: 280px;
    } 
    }
+
+
 </style>
+
 </body>
 </html>

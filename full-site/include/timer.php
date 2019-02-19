@@ -1,6 +1,6 @@
 <div class="modal_window__clock">
 <div class="underprice" style="display:none">ПІДВИЩЕННЯ ЦІН</div>
-        <div class="mesage"><p><?=$mes['text_timer']?>  <span id="clock-close"><img src=/img/icons/close_w.svg alt="close" width="30px"></span></p>
+        <div class="mesage"><p class="mesage_p"><?=$mes['text_timer']?>  <span id="clock-close"><img src=/img/icons/close_w.svg alt="close" width="30px"></span></p>
           <div class="clock2">
           </div>
         </div>

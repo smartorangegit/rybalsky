@@ -294,68 +294,68 @@
 
 </div>
 
-    <script>
-      var sagapreloaderAnimation = (function() {
-        var preloaderContainer = document.querySelector('.preloader-container');
-          function init() {
-              // sessionStorage.setItem('preloaderRan', true);
-              var circle = document.querySelector('.svg-circle');
-              var loadingCircle = document.querySelector('.svg-loading-circle');
-              var loadingCircleText = document.querySelector('.svg-loading-circle__text');
+<script>
+  var sagapreloaderAnimation = (function() {
+    var preloaderContainer = document.querySelector('.preloader-container');
+      function init() {
+          // sessionStorage.setItem('preloaderRan', true);
+          var circle = document.querySelector('.svg-circle');
+          var loadingCircle = document.querySelector('.svg-loading-circle');
+          var loadingCircleText = document.querySelector('.svg-loading-circle__text');
 
-              var currentOffset = 236;
-              var startingOffset = currentOffset;
-              var step = 2.5;
+          var currentOffset = 236;
+          var startingOffset = currentOffset;
+          var step = 2.5;
 
-              preloaderContainer.style.display = 'block';
+          preloaderContainer.style.display = 'block';
 
-              // js based animation starts here
-              circle.addEventListener('animationstart', animateLoadingCircle);
-              function calculatePercents(current) {
-                  return Math.ceil((100 - (current / startingOffset) * 100));
-              };
-              function animateLoadingCircle() {
-                  currentOffset -= step;
-                  loadingCircle.style.strokeDashoffset = currentOffset;
-                  if(currentOffset >= 0) {
-                      loadingCircleText.innerHTML = calculatePercents(currentOffset) + '%';
-                      requestAnimationFrame(animateLoadingCircle);
-                  } else {
-                      preloaderContainer.classList.add('remove-svg');
-                  }
-              };
-
+          // js based animation starts here
+          circle.addEventListener('animationstart', animateLoadingCircle);
+          function calculatePercents(current) {
+              return Math.ceil((100 - (current / startingOffset) * 100));
+          };
+          function animateLoadingCircle() {
+              currentOffset -= step;
+              loadingCircle.style.strokeDashoffset = currentOffset;
+              if(currentOffset >= 0) {
+                  loadingCircleText.innerHTML = calculatePercents(currentOffset) + '%';
+                  requestAnimationFrame(animateLoadingCircle);
+              } else {
+                  preloaderContainer.classList.add('remove-svg');
+              }
           };
 
-          function checkDate() {
-            if(localStorage.getItem('preloader')===null) {
-              localStorage.setItem('preloader', Date.now());
-              return true;
-            }
-            var hour = 3600 * 1000;  
-            if(Date.now() - localStorage.getItem('preloader') < hour) {
-              return false;
-            } else {
-              localStorage.setItem('preloader', Date.now());
-              return true;
-            }
-          }
+      };
 
-          return {
-            init: init,
-            preloaderContainer: preloaderContainer,
-            checkDate: checkDate
-          };
-
-      })();
-
-      // if(!sessionStorage.getItem('preloaderRan')) {
-      //     sagapreloaderAnimation.init();
-      // }
-
-      if(sagapreloaderAnimation.checkDate()) {
-        sagapreloaderAnimation.init();
-      } else {
-        sagapreloaderAnimation.preloaderContainer.style.display = 'none';
+      function checkDate() {
+        if(localStorage.getItem('preloader')===null) {
+          localStorage.setItem('preloader', Date.now());
+          return true;
+        }
+        var hour = 3600 * 1000;  
+        if(Date.now() - localStorage.getItem('preloader') < hour) {
+          return false;
+        } else {
+          localStorage.setItem('preloader', Date.now());
+          return true;
+        }
       }
-    </script>
+
+      return {
+        init: init,
+        preloaderContainer: preloaderContainer,
+        checkDate: checkDate
+      };
+
+  })();
+
+  // if(!sessionStorage.getItem('preloaderRan')) {
+  //     sagapreloaderAnimation.init();
+  // }
+
+  if(sagapreloaderAnimation.checkDate() && window.innerWidth > 768) {
+    sagapreloaderAnimation.init();
+  } else {
+    sagapreloaderAnimation.preloaderContainer.style.display = 'none';
+  }
+</script>

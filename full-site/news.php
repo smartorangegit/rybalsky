@@ -54,14 +54,14 @@ if($_POST['lang']==''){
 <html <?=$mes['i-mes8']?>>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="<?if($set_page==1) echo $mes['meta_d']; ?>">
+    <meta name="description" content="<?=$mes['meta_d']; ?> <?if($set_page>1){echo $mes['news-mess1'].$set_page;}?>">
     <title><?=$mes['news-title'];?> <?if($set_page>1){echo $mes['news-mess1'].$set_page;}?></title>
-    <link rel="canonical" href="https://<?php echo strtok($_SERVER['SERVER_NAME'].$_SERVER['REQUEST_URI'], '?'); ?>"/>
+    <link rel="canonical" href="https://<?php echo $_SERVER['SERVER_NAME'].$_SERVER['REQUEST_URI'];/* strtok($_SERVER['SERVER_NAME'].$_SERVER['REQUEST_URI'], '?'); */ ?>"/>
 	<?	echo $pre;
 		echo $nex;
 		?>
 
-
+<?  if (stristr($_SERVER['REQUEST_URI'], '?page=')=== false){}else { echo '<meta name="robots" content="noindex,follow"/>';} ?>
     <!--[if IE]>
 		<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
 	  <![endif]-->
@@ -196,11 +196,8 @@ if($_POST['lang']==''){
       <div class="more_news_link">
         <p class="more_news_link_heading"><?=$mes['q-mes22']?></p>
         <div class="more_news_link_links">
-          <a class="more_news_link_item" href="<?=$l.'kvartira-podol/'?>"><?=$mes['mes-name-8']?></a>
           <a class="more_news_link_item" href="<?=$l.'vidovaya/'?>"><?=$mes['mes-name-7']?></a>
           <a class="more_news_link_item" href="<?=$l.'parking/'?>"><?=$mes['mes-name-6']?></a>
-          <a class="more_news_link_item" href="<?=$l.'novostroyka-center/'?>"><?=$mes['mes-name-5']?></a>
-          <a class="more_news_link_item" href="<?=$l.'novostroyka-podol/'?>"><?=$mes['mes-name-3']?></a>
           <a class="more_news_link_item" href="<?=$l.'naberejnaya/'?>"><?=$mes['mes-name-1']?></a>
           <a class="more_news_link_item" href="<?=$l.'top-planirovok/'?>"><?=$mes['mes-name']?></a>
         </div>
@@ -212,21 +209,20 @@ if($_POST['lang']==''){
   </div>
 
       <div class="content-bottom">
-          <div class="footer">
-            <div class="foot-wrap">
-              <div class="allright">
-                <p>
-                  <?=$mes['v01']?>
-
+      <div class="footer">
+          <div class="foot-wrap">
+            <div class="allright">
+               <p>
+                 <?=$mes['v01']?>
                 </p>
-              </div>
-              <div class="web">
-           <a href="http://smartorange.com.ua/" rel="nofollow" target="_blank"><img <?AltImgAdd('SmartOrange')?>   src="/img/logo-smart.png" width="55px" /></a>
-              </div>
-              <span><?=$mes['v02']?></span>
-			  
             </div>
+            <div class="web">
+              <a href="https://smarto.agency/" rel="nofollow" target="_blank"><img <?AltImgAdd('SmartorOrange')?>  src="/img/logo-smart.png" /></a>
+            </div>
+			<a class="footer__jurdoc_link" href="<?=$l?>documents/"><?=$mes['jur-mes-menu']?></a>
+            <a href="https://smarto.agency/" rel="nofollow" target="_blank" class="smarto_agency"><span><?=$mes['v02']?></span></a>
           </div>
+        </div>
         </div>
 		    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 			<script src="/js/scripts.js"></script>

@@ -28,6 +28,9 @@
   <link rel="stylesheet" type="text/css" href="/css/intlTelInput.css" />
   <link rel="stylesheet" type="text/css" href="/css/style.css" />
   <!-- <link rel="stylesheet" type="text/css" href="/css/kvartira.css" /> -->
+  		<meta property="og:title" content="<?=$mes['ctc-title']; ?>" />
+		<meta property="og:description" content="<?=$mes['ctc-description']; ?>" />
+		<meta property="og:image" content="https://rybalsky.com.ua/img/logo-face.png"/>
 </head>
 <body>
   <style media="screen">
@@ -51,6 +54,7 @@
       <div class="wrap_header">
         <?php include_once('include/top-menu.php'); ?>
         <?php include_once('include/call_my.php'); ?>
+		<?php include_once('include/call_ctc.php'); ?>
         <div class="clearfix"></div>
       </div>
       <div class="hidden_box">
@@ -211,6 +215,9 @@
                     </div>
                   </div>
                 </div>
+				<div class="call-button button-flat ctc-button">
+          <a id="call_ma_please_ctc" ><?=$mes['call_ctc_form']?></a>
+        </div>
               </div>
 
               <style media="screen">
@@ -253,20 +260,22 @@
                 .ctc__footer .ctc_img{height: 80px;}
                 .ctc__footer .ctc_icon{height: 100%;}
               }
-
+			.ctc-button {margin: 0 35%;margin-top:3%;}
               </style>
             </div>
     <footer>
-      <div class="foot-wrap">
-        <div class="allright">
-          <p><?=$mes['v01']?></p>
-        </div>
-        <div class="web">
-          <a href="http://smartorange.com.ua/" rel="nofollow" target="_blank"><img <?AltImgAdd('SmartOrange')?>  src="/img/logo-smart.png" width="55px" /></a>
-        </div>
-        <a class="footer__jurdoc_link" href="<?=$l?>documents/"><?=$mes['jur-mes-menu']?></a>
-        <span><?=$mes['v02']?></span>
-      </div>
+          <div class="foot-wrap">
+            <div class="allright">
+               <p>
+                 <?=$mes['v01']?>
+                </p>
+            </div>
+            <div class="web">
+              <a href="https://smarto.agency/" rel="nofollow" target="_blank"><img <?AltImgAdd('SmartorOrange')?>  src="/img/logo-smart.png" /></a>
+            </div>
+			<a class="footer__jurdoc_link" href="<?=$mes['events_url_documents']?>"><?=$mes['jur-mes-menu']?></a>
+            <a href="https://smarto.agency/" rel="nofollow" target="_blank" class="smarto_agency"><span><?=$mes['v02']?></span></a>
+          </div>
     </footer>
   </body>
 </html>

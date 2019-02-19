@@ -126,7 +126,21 @@ if ($_GET['id']=='/nomobile')
   { 
 	if ( !($detect->isMobile())){header("Location:/");}
   } 
-  
+   elseif ($urls[1]=='spa')
+      {  
+	  	 $site='/'.$lang['site']; $file=site($ur='plan');  
+		 if(!$n){  header("Location:/$get/");}  
+	  }
+	  elseif ($urls[1]=='tile')
+      {  
+	  	 $site='/'.$lang['site']; $file=site($ur='plan');  
+		 if(!$n){  header("Location:/$get/");}  
+	  }
+	  elseif ($urls[1]=='map')
+      {  
+	  	 $site='/'.$lang['site']; $file=site($ur='plan');  
+		 if(!$n){  header("Location:/$get/");}  
+	  }
        
          // elseif (count($urls)==1 AND  $r[0]=='plan')
 		 elseif (count($urls)==1 AND  $r[5]=='kvartira' AND iconv_strlen($urls[0],'UTF-8')==8)

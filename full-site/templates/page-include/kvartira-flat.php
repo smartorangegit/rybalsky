@@ -138,7 +138,7 @@ WHERE buld=$plan AND `sec`=$sec AND visible=1 AND  (`floor`=$floor[0]-$flat_leve
                       <polygon class="activeArrowBg" points="311,59 499,59 511,39 499,19 311,19 324,39  "/>
                     <?=$mes['tl-mes3']?>
                   <?php else: ?>
-                    <a xmlns:xlink="http://www.w3.org/1999/xlink" style="cursor:pointer;" class="op_ajax" href="/plan<?=$plan?>/sections<?=$sec?>/floor<?=$floor[0]?>">
+                    <a xmlns:xlink="http://www.w3.org/1999/xlink" style="cursor:pointer;" class="op_ajax" href="/plan<?=$plan?>/sections<?=$sec?>/floor<?=$floor[0]?>/">
                     <polygon class="tl0" points="152,59 283,59 295,39 283,19 152,19 165,39 "/>
                     </a>
                     <?=$mes['tl-mes2']?>
@@ -270,19 +270,24 @@ WHERE buld=$plan AND `sec`=$sec AND visible=1 AND  (`floor`=$floor[0]-$flat_leve
                 </div>
                 <div class="buttons_block">
                   <div class="ch-link">
+                      <div class="google-test">
                       <? if(COMERC):?>
                       <!-- <a class="commerc_show_form_btn">Забронювати</a> -->
                       <?/* include_once('include/commerc_form.php'); */?>
-                      <a onclick="$('#id_reservations').css('opacity','1').css('z-index', '99999').css('pointer-events', 'auto');" id="id_reservations_button" ><?=$mes['pl-mes8']?></a>
-                        <? else: ?>
-                      <a onclick="$('#id_reservations').css('opacity','1').css('z-index', '99999').css('pointer-events', 'auto');" id="id_reservations_button" ><?=$mes['pl-mes8']?></a>
+                        <a class="google__btn_1" onclick="$('#id_reservations').css('opacity','1').css('z-index', '99999').css('pointer-events', 'auto');" id="id_reservations_button" ><?=$mes['pl-mes8']?></a>
+                        <a class="google__btn_2" onclick="$('#id_reservations').css('opacity','1').css('z-index', '99999').css('pointer-events', 'auto');" id="id_reservations_button" ><?=$mes['pl-mes8_test']?></a>
+                      <? else: ?>
+                        <a class="google__btn_1" onclick="$('#id_reservations').css('opacity','1').css('z-index', '99999').css('pointer-events', 'auto');" id="id_reservations_button" ><?=$mes['pl-mes8']?></a>
+                        <a class="google__btn_2" onclick="$('#id_reservations').css('opacity','1').css('z-index', '99999').css('pointer-events', 'auto');" id="id_reservations_button" ><?=$mes['pl-mes8_test']?></a>
                       <? endif; ?>
+                      </div>
                       <?
                       $imgs='<span class="span-img-popup" style="text-align: center;">'.TEXT_FLOOR.' '.$flat.' '.$mb.'</span> <div class="open-imp-popup"><img style="height:100%; max-width: 100%; padding: 40px"  src="'.$site.'img/houses/house'.$plan.'BIG/'.$s['img'].'.png" alt="'.TEXT_FLOOR.'"></div>';
                       ?>
                   </div>
                   <!-- <div class="ch-print-save"> -->
-                    <a  class="save" onclick="$('#id_save').css({'opacity':'1', 'z-index': '1000', 'pointer-events' : 'auto'});" id="id_save_button" ><img <?AltImgAdd($mes['alt-logo'])?> <?AltImgAdd($mes['pl-mes9'])?> src="<?=$site?>img/pdf.png" alt="print"> <?=$mes['pl-mes9']?><?//Зберегти PDF?></a>
+                   <? /* <a  class="save" onclick="$('#id_save').css({'opacity':'1', 'z-index': '1000', 'pointer-events' : 'auto'});" id="id_save_button" ><img <?AltImgAdd($mes['alt-logo'])?> <?AltImgAdd($mes['pl-mes9'])?> src="<?=$site?>img/pdf.png" alt="print"> <?=$mes['pl-mes9']?><?//Зберегти PDF?></a> */ ?>
+					<a  class="save"  id="id_save_button" href="https://rybalsky.com.ua/pdf/inv.php" ><img <?AltImgAdd($mes['alt-logo'])?> <?AltImgAdd($mes['pl-mes9'])?> src="<?=$site?>img/pdf.png" alt="print"> <?=$mes['pl-mes9']?><?//Зберегти PDF?></a>
                   <!-- </div> -->
                 </div>
               </div>
@@ -488,6 +493,19 @@ $_SESSION['svg_min_plan']=$svg_2;
                     .sawinfo {font-size: 18px;  padding: 10px 20px;  width: 240px;  height: 90px;}
                     .sawinfo span {font-size: 20px;}
                   }
+				  
+				  a.google__btn_2{
+                    display: none;
+                  }
+                  .google a.google__btn_1{
+                    display: none;
+                  }
+                  .google a.google__btn_2{
+                    display: block;
+                  }
+				  a.save {
+					text-decoration: none;
+				  }
                 </style>
                 <script type="text/javascript">
                 $(document).ready(function(){

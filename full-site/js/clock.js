@@ -2,10 +2,10 @@
 
 (function(){
     
-  //$(document).ready(initClock);  
+  $(document).ready(initClock);  
   function initClock() {
     var clock2;
-    var deadline = 'April 23 2018 23:59:59 GMT+02:00';
+    var deadline = 'January 31 2019 23:59:59 GMT+02:00';
     // console.log(deadline);
     var t = Date.parse(deadline);
     var time = Date.parse(deadline) - Date.parse(new Date());

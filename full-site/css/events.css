@@ -37,6 +37,7 @@
   -webkit-flex-direction: row-reverse;
 }
 .blue_button{
+  cursor: pointer;
   background: #0035aa;
   padding: 14px 0;
   width: 100%;

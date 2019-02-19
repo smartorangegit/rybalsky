@@ -143,7 +143,7 @@
                   <div class="anonymous-feedback__message">
                     <?=$mes['c-mes26'];?>
                   </div>
-                  <form class="anonymous-feedback__form" method="POST" action="/include/anonimus.php">
+                  <form name="anonymous-feedback" class="anonymous-feedback__form" method="POST" action="/include/anonimus.php" id="anonymous-feedback">
                     <textarea class="anonymous-feedback__textarea" name="anonymous-feedback__message" id="" ></textarea>
                     <button class="anonymous-feedback__submit_btn" type="submit"><?=$mes['c-mes6'];?></button>
                   </form>
@@ -160,45 +160,61 @@
         </div>
         <footer class="foot_static">
           <div class="foot-wrap">
-            <div class="allright"><p> <?=$mes['v01']?></p></div>
-            <div class="web">
-              <a href="http://smartorange.com.ua" rel="nofollow" target="_blank"><img <?AltImgAdd('SmartOrange')?>   src="/img/logo-smart.png" width="55px" /></a>
+            <div class="allright">
+               <p>
+                 <?=$mes['v01']?>
+                </p>
             </div>
-            <a class="footer__jurdoc_link" href="<?=$l?>documents/"><?=$mes['jur-mes-menu']?></a>
-            <span><?=$mes['v02']?></span>
-			    </div>
+            <div class="web">
+              <a href="https://smarto.agency/" rel="nofollow" target="_blank"><img <?AltImgAdd('SmartorOrange')?>  src="/img/logo-smart.png" /></a>
+            </div>
+			<a class="footer__jurdoc_link" href="<?=$mes['events_url_documents']?>"><?=$mes['jur-mes-menu']?></a>
+            <a href="https://smarto.agency/" rel="nofollow" target="_blank" class="smarto_agency"><span><?=$mes['v02']?></span></a>
+          </div>
         </footer>
 
 	  <script type="text/javascript">
       $(document).ready(function(){
-        form('.anonymous-feedback__form');
+        form('#anonymous-feedback');
       }
     );
 
     function form(id){
       $(id).submit(function(event) { //устанавливаем событие отправки для формы
-        event.preventDefault()
-        var form_data = $(this).serialize(); //собераем все данные из формы
-        $.ajax({
-            type: "POST", //Метод отправки
-            url: "/include/anonimus.php", //путь до php фаила отправителя
-            data: form_data,
-            success: function(html) {
-                //код в этом блоке выполняется при успешной отправке сообщения
-                 $('.succses__form_text').html(html);
-                 $('.succses__form_info').fadeIn();
-			      setTimeout(function(){
-           $('.succses__form_info').fadeOut();
-            },5000)
-							$('#contactForm').css ({
-								display: 'none'
-							});
-							$('.callback-form-pupop').css ({
-								display: 'none'
-							});
-							$(id).trigger('reset');
-            }
-        });
+        event.preventDefault();
+        var form_data =  $(id).serialize(); //собераем все данные из формы
+          var x = document.forms["anonymous-feedback"]["anonymous-feedback__message"].value;
+          var y = x.length;
+          console.log(x);
+          console.log(y);
+          console.log(form_data);
+if(y>1) {
+    $.ajax({
+     type: "POST", //Метод отправки
+     url: "/include/anonimus.php", //путь до php фаила отправителя
+     data: form_data,
+     success: function(html) {
+         console.log(html);
+     //код в этом блоке выполняется при успешной отправке сообщения
+         $('.succses__form_text').html(html);
+            $('.succses__form_info').fadeIn();
+             setTimeout(function(){
+             $('.succses__form_info').fadeOut();
+                 $('.anonymous-feedback').removeAttr("style");
+            },3000);
+     $('#contactForm').css ({
+        display: 'none'
+     });
+
+
+
+     $('.anonymous-feedback anonymous-feedback__visible').css ({
+         display: 'none'
+     });
+         $(id).trigger('reset');
+     }
+     });
+}
     });
 }
 </script>

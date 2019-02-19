@@ -78,7 +78,7 @@ $flat=str_replace("flat", "", $_POST['urls'][3]);
 	 $result->close();
 
 			/*Для блоку оберіть секцію*/
-		for($i=1; $i<7; $i++ ){ $SECTSION_CLCAS[$i]='st0'; $SECTSION_CLCAS2[$i]='';
+		for($i=1; $i<9; $i++ ){ $SECTSION_CLCAS[$i]='st0'; $SECTSION_CLCAS2[$i]='';
 		if($sec==$i):$SECTSION_CLCAS[$i]='st1'; $SECTSION_CLCAS2[$i]='st0'; endif;
 		$SECTSION[$i]='/'.$_POST['lang'].PLAN.$plan.'/sections'.$i.'/floor'.$floo.$sleh;
 		}
@@ -91,6 +91,8 @@ $flat=str_replace("flat", "", $_POST['urls'][3]);
 	  }
 	  if($plan == 5) {
 		include_once('img/doma/mini/miniPlan5.php');
+	  } else if($plan == 11) {
+		include_once('img/doma/mini/miniPlan11.php');  
 	  } else {
 		include_once('img/doma/mini/miniPlan3_9.php');
 	  }
@@ -119,8 +121,9 @@ $flat=str_replace("flat", "", $_POST['urls'][3]);
 	}
 
 	function mobiledet(){ GLOBAL $detect, $site,$mes,$sleh, $sec, $plan;
-		if ( $detect->isMobile() && $plan != 'kommercheskaya') {?>
+		if ( $detect->isMobile() && $plan != 'kommercheskaya' && $plan != 'kvartira') {?>
 	<div class="portrait" style="display:none">
+
 		<div class="port-message">
 	<?//Будь-ласка, поверніть Ваш пристрій для коректного відображення вмісту розділу.?>
 	<?=$mes['pl-mes15']?>
@@ -141,13 +144,21 @@ $flat=str_replace("flat", "", $_POST['urls'][3]);
 	function footerAdd(){ 	GLOBAL $mes;?>
 		  <footer>
 			<div class="foot-wrap">
-			  <div class="allright"><p><?=$mes['v01']?></p></div>
-			  <div class="web">
-			   <a href="http://smartorange.com.ua/" rel="nofollow" target="_blank"><img <?AltImgAdd('SmartOrange')?>  src="/img/logo-smart.png"  width="55px" /></a>
-			  </div>
-			  <a class="footer__jurdoc_link" href="/<?=$_POST['lang']?>documents/"><?=$mes['jur-mes-menu']?></a>
-			  <span><?=$mes['v02']?></span>
-			</div>
+	           <div class="allright">
+
+	              <p>
+	                <?=$mes['v01']?>
+
+
+	               </p>
+	           </div>
+	           <div class="web">
+	             <a href="https://smarto.agency/" rel="nofollow" target="_blank"><img <?AltImgAdd('SmartorOrange')?>  src="/img/logo-smart.png" /></a>
+
+	           </div>
+	            <a class="footer__jurdoc_link" href="<?=$mes['events_url_documents']?>"><?=$mes['jur-mes-menu']?></a>
+	           <a href="https://smarto.agency/" rel="nofollow" target="_blank" class="smarto_agency"><span><?=$mes['v02']?></span></a>
+	         </div>
 		  </footer>
 	<?}
 	

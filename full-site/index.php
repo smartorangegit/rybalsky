@@ -174,6 +174,10 @@ function sound_off () {
     <div class="header">
         <div class="nomobile">
           <div  class="slider">
+		  	    <!-- <div class="item"><img <?AltImgAdd($mes['i-mes0']);?>  src="/img/x1.jpg"></div>
+			      <div class="item"><img <?AltImgAdd($mes['i-mes0']);?>  src="/img/x2.jpg"></div>
+			      <div class="item"><img <?AltImgAdd($mes['i-mes0']);?>  src="/img/x3.jpg"></div> -->
+			<div class="item"><img <?AltImgAdd($mes['i-mes0']);?>  src="/img/RIBALSKY_NEW YEAR ONE_FINAL.jpeg"></div>
             <div class="item"><img <?AltImgAdd($mes['i-mes0']);?>  src="/img/4s.jpg"></div>
             <div class="item"><img <?AltImgAdd($mes['i-mes0']);?>  src="/img/0.jpg"></div>
             <div class="item"><img <?AltImgAdd($mes['i-mes0']);?>  src="/img/2s.jpg"></div>
@@ -195,7 +199,8 @@ function sound_off () {
           <style media="screen">
             .wrap_header_abs { position: absolute; width: 100%; height: 100%; left: 0; top: 0;}
             /* .logo-name {  max-width: 600px;} */
-            .main-content--2 .wrap_header{  max-width: 1200px;  margin: 0 auto;}
+            .main-content--2 .wrap_header{  max-width: 1200px;  margin: 0 auto; height: 100%; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: end; -ms-flex-align: end; align-items: flex-end; padding-bottom: 50px; position: relative; z-index: 10;}
+            .main-content--2 { padding-bottom: 50px; }
           </style>
                 <div class="wrap_header">
 								  				                  <div class="header-bottom main">
@@ -213,7 +218,7 @@ function sound_off () {
                     </div>
                   <?php /*Меню*/ $page="/"; include_once('include/top-menu.php'); ?>
                   <?/*Для того чтобы включть счетчик FlipClock расскоменить инклюд, библиотеку внизу и запуск в файле clock.js*/?>
-                  <!-- <?php /*timer*/ include_once('include/timer.php'); ?> -->
+                  <?php /*timer*/    /* include_once('include/timer.php'); */   ?>
                    <div class="nomobile">
                      <?php /*Меню Стрелки include_once('include/arrow.php'); */?>
                    </div>
@@ -223,13 +228,13 @@ function sound_off () {
                   </div>
                 </div>
               </div>
-              <div class="main-content--2">
-                <div class="wrap_header">
+              <div class="main-content--2" id="link">
+                <div class="wrap_header clearfix">
                   <div class="content-layer">
                     <div class="modal_window_wrap">
                       <h1><?=$mes['i-mes9']?></h1>
                       <p><?=$mes['i-mes10']?></p>
-                      <a id="modal-call" href="#"><?=$mes['i-to-read']?> &rarr;</a>
+                      <a id="modal-call" href="#link"><?=$mes['i-to-read']?> &rarr;</a>
                       <!-- <a id="modal-close1" href="#"><?=$mes['i-roll']?> &uarr;</a> -->
                       <div class="wrap_inner">
                         <p><?=$mes['i-mes11']?></p>
@@ -247,6 +252,7 @@ function sound_off () {
                 </div>
 
               </div>
+
 
       <div class="content">
         <div class="content-left ">
@@ -498,10 +504,10 @@ function sound_off () {
                 </p>
             </div>
             <div class="web">
-              <a href="http://smartorange.com.ua/" rel="nofollow" target="_blank"><img <?AltImgAdd('SmartorOrange')?>  src="/img/logo-smart.png" /></a>
+              <a href="https://smarto.agency/" rel="nofollow" target="_blank"><img <?AltImgAdd('SmartorOrange')?>  src="/img/logo-smart.png" /></a>
             </div>
-			         <a class="footer__jurdoc_link" href="<?=$l?>documents/"><?=$mes['jur-mes-menu']?></a>
-            <span><?=$mes['v02']?></span>
+			<a class="footer__jurdoc_link" href="<?=$l?>documents/"><?=$mes['jur-mes-menu']?></a>
+            <a href="https://smarto.agency/" rel="nofollow" target="_blank" class="smarto_agency"><span><?=$mes['v02']?></span></a>
           </div>
         </div>
 
@@ -540,17 +546,24 @@ function sound_off () {
             $('.content-layer').css({'width':'100%', "margin": "0 auto"}),
             $('.modal_window_wrap').addClass('modal_window_wrap__opened'),
             $('.wrap_inner').css({'height':'auto', 'transition':'0.5s'}),
+            //add
+             $('.main-content--2 .wrap_header').css({'align-items':'flex-start'}),
+        	 $('html, body').animate({scrollTop: ($('#link').offset()).top}, "slow");
             $(this).hide(),
             $('#modal-close, #modal-close1').show()
           });
           $('#modal-close, #modal-close1').click(function(e) {
             e.preventDefault();
             if (screen.width > 768){
-              $('.content-layer').css({'width':'40%', "margin": "30vh 0 0 0"})
+              $('.content-layer').css({'width':'40%', "margin": "30vh 0 0 0"}),
+              //add
+              $('.main-content--2 .wrap_header').css({'align-items':'flex-end'})
             }
             else {
               $('.content-layer').css({'width':'100%', "margin": "10vh 0 0 0"})
             }
+            //add
+            $('.main-content--2 .wrap_header').css({'align-items':'flex-end'}),
             $('.wrap_inner').css({'height':'0px','transition':'0.5s'}),
             $('.modal_window_wrap').removeClass('modal_window_wrap__opened'),
             $('#modal-close, #modal-close1').hide(),
@@ -592,7 +605,7 @@ function sound_off () {
 
       </script>
       <script src="/js/jquery.bxslider.min.js"></script>
-      <!-- <script src="/flipclock.js"></script> -->
+      <!--<script src="/flipclock.js"></script>-->
       <script>
       // Из-за поведения FireFox при клике назад данная страница не выполняла JS данная приблуда перезагружает станицу
       // https://developer.mozilla.org/ru/docs/Web/API/WindowEventHandlers/onunload

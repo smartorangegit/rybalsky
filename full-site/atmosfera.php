@@ -28,6 +28,9 @@
   <link rel="stylesheet" type="text/css" href="/css/intlTelInput.css" />
   <link rel="stylesheet" type="text/css" href="/css/style.css" />
   <!-- <link rel="stylesheet" type="text/css" href="/css/kvartira.css" /> -->
+  		<meta property="og:title" content="<?=$mes['atmosfera-title']; ?>" />
+		<meta property="og:description" content="<?=$mes['atmosfera-description']; ?>" />
+		<meta property="og:image" content="https://<?=$_SERVER['SERVER_NAME']?>/img/logo-w.png"/>
 </head>
 <body>
   <style media="screen">
@@ -336,16 +339,18 @@
     <!-- </section> -->
   	</div>
     <footer>
-      <div class="foot-wrap">
-        <div class="allright">
-          <p><?=$mes['v01']?></p>
-        </div>
-        <div class="web">
-          <a href="http://smartorange.com.ua/" rel="nofollow" target="_blank"><img <?AltImgAdd('SmartOrange')?>  src="/img/logo-smart.png" width="55px" /></a>
-        </div>
-        <a class="footer__jurdoc_link" href="<?=$l?>documents/"><?=$mes['jur-mes-menu']?></a>
-        <span><?=$mes['v02']?></span>
-      </div>
+          <div class="foot-wrap">
+            <div class="allright">
+               <p>
+                 <?=$mes['v01']?>
+                </p>
+            </div>
+            <div class="web">
+              <a href="https://smarto.agency/" rel="nofollow" target="_blank"><img <?AltImgAdd('SmartorOrange')?>  src="/img/logo-smart.png" /></a>
+            </div>
+			<a class="footer__jurdoc_link" href="<?=$l?>documents/"><?=$mes['jur-mes-menu']?></a>
+            <a href="https://smarto.agency/" rel="nofollow" target="_blank" class="smarto_agency"><span><?=$mes['v02']?></span></a>
+          </div>
     </footer>
   </body>
 </html>

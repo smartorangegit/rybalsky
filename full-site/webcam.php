@@ -92,9 +92,9 @@
     </a>
     <!-- Camera 1 end -->
     <!-- Camera 2 start -->
-    <a data-fancybox data-type="iframe" data-caption="Вид с вебкамеры №2" data-src="https://macparts.kiev.ua:8415/player.html" href="javascript:;" class="call_web call_web3">
+  <!--  скрыл 10_09_2018<a data-fancybox data-type="iframe" data-caption="Вид с вебкамеры №2" data-src="https://macparts.kiev.ua:8415/player.html" href="javascript:;" class="call_web call_web3">
     <use xlink:href="#camera" transform="matrix(0.12829204,0,0,0.12829204,1050.86448,550.79811)"/>
-    </a>
+    </a> -->
     <!-- Camera 2 end -->
     <!-- Camera 3 start -->
     <!-- <a data-fancybox data-type="iframe" data-caption="Вид с вебкамеры №3" data-src="https://macparts.kiev.ua:8417/player.html" href="javascript:;" class="call_web call_web4">
@@ -111,16 +111,16 @@
   </div>
       <!-- <a data-fancybox data-type="iframe" data-caption="Вид с вебкамеры №2" data-src="https://macparts.kiev.ua:8412/player.html" href="javascript:;" class="call_web call_web1">
         <img src="/img/web_min.png" alt="Webcam 1">
-      </a>
-      <a data-fancybox data-type="iframe" data-caption="Вид с вебкамеры №2" data-src="https://macparts.kiev.ua:8411/player.html" href="javascript:;" class="call_web call_web2">
-        <img src="/img/web_min.png" alt="Webcam 2">
-      </a>
-      <a data-fancybox data-type="iframe" data-caption="Вид с вебкамеры №3" data-src="https://macparts.kiev.ua:8415/player.html" href="javascript:;" class="call_web call_web3">
-        <img src="/img/web_min.png" alt="Webcam 3">
-      </a>
-      <a data-fancybox data-type="iframe" data-caption="Вид с вебкамеры №3" data-src="https://macparts.kiev.ua:8417/player.html" href="javascript:;" class="call_web call_web4">
-        <img src="/img/web_min.png" alt="Webcam 4">
       </a> -->
+     <!-- <a data-fancybox data-type="iframe" data-caption="Вид с вебкамеры №2" data-src="https://macparts.kiev.ua:8411/player.html" href="javascript:;" class="call_web call_web2">
+        <img src="/img/web_min.png" alt="Webcam 2">
+      </a> -->
+     <!-- <a data-fancybox data-type="iframe" data-caption="Вид с вебкамеры №3" data-src="https://macparts.kiev.ua:8415/player.html" href="javascript:;" class="call_web call_web3">
+        <img src="/img/web_min.png" alt="Webcam 3">
+      </a>-->
+       <a data-fancybox data-type="iframe" data-caption="Вид с вебкамеры №3" data-src="https://macparts.kiev.ua:8416/player.html" href="javascript:;" class="call_web call_web4">
+        <img src="/img/web_min.png" alt="Webcam 4">
+      </a> 
     <div class="webcam_wrapper clearfix">
       <?php /*Меню*/ include_once('include/top-menu.php'); ?>
       <?php /*Меню Стрелки include_once('include/arrow.php'); */?>
@@ -171,16 +171,18 @@
     </div>
   </div>
   <footer>
-    <div class="foot-wrap">
-      <div class="allright">
-        <p><?=$mes['v01']?></p>
-      </div>
-      <div class="web">
-        <a href="http://smartorange.com.ua/" rel="nofollow" target="_blank"><img <?AltImgAdd('SmartOrange')?>   src="/img/logo-smart.png" width="55px" /></a>
-      </div>
-      <a class="footer__jurdoc_link" href="<?=$l?>documents/"><?=$mes['jur-mes-menu']?></a>
-      <span><?=$mes['v02']?></span>
-    </div>
+          <div class="foot-wrap">
+            <div class="allright">
+               <p>
+                 <?=$mes['v01']?>
+                </p>
+            </div>
+            <div class="web">
+              <a href="https://smarto.agency/" rel="nofollow" target="_blank"><img <?AltImgAdd('SmartorOrange')?>  src="/img/logo-smart.png" /></a>
+            </div>
+			<a class="footer__jurdoc_link" href="<?=$mes['events_url_documents']?>"><?=$mes['jur-mes-menu']?></a>
+            <a href="https://smarto.agency/" rel="nofollow" target="_blank" class="smarto_agency"><span><?=$mes['v02']?></span></a>
+          </div>
   </footer>
       <style media="screen">
         body{
@@ -208,7 +210,7 @@
         .main_box{  width: 600px;  float: right;}
         .webcam_box{padding-top: 65px;}
         .call_web {position: absolute;cursor:pointer;}
-        .call_web img{width: 44px;}
+        .call_web img{width: 37px;}
         .call_web1{top: 580px; right: 35%;}
         .call_web2{top: 355px; right: 37%;}
         .call_web3{top: 495px; right: 29%;}

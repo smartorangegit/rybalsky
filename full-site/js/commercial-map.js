@@ -243,6 +243,23 @@
             })
         });
 
+        buildingsArray.forEach(function(building) {
+            building.polygon.addListener('mouseover', function() {
+                this.setOptions({
+                    strokeOpacity: 0.9,
+                    fillOpacity: 0.9
+                });
+            })
+        });
+
+        buildingsArray.forEach(function(building) {
+            building.polygon.addListener('mouseout', function() {
+                this.setOptions({
+                    strokeOpacity: 0.4,
+                    fillOpacity: 0.4
+                });
+            })
+        });
         // For development purposes dawing start
         // !!!!!!!!!!!!!!!!!!!!!!!!!!Important!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!111
         // Delete &libraries=drawing from address !!!!!!!!!!!!!!!!after api key in script tag it loads drawing crap!!!!!!!!!!!!!

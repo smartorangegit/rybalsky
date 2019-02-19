@@ -54,7 +54,7 @@ $("#container3").Progress({
 
 //Будинок 3 Загально Будівельні
 $("#container1_0").Progress({
-  percent: 89, // 89%
+  percent: 92, // 92%
   width: 200,
   height: 36,
   backgroundColor: 'transparent',
@@ -84,7 +84,7 @@ $("#container1_1").Progress({
 
 //Будинок 3 Фасад
 $("#container1_2").Progress({
-  percent: 47, // 47%
+  percent: 57, // 57%
   width: 200,
   height: 36,
   backgroundColor: 'transparent',
@@ -99,7 +99,7 @@ $("#container1_2").Progress({
 
 //Будинок 3 Мережі
 $("#container1_3").Progress({
-  percent: 28, // 28%
+  percent: 41, // 41%
   width: 200,
   height: 36,
   backgroundColor: 'transparent',
@@ -114,7 +114,7 @@ $("#container1_3").Progress({
 
 //Будинок 9 Загально Будівельні
 $("#container2_0").Progress({
-  percent: 89, // 89%
+  percent: 90, // 90%
   width: 200,
   height: 36,
   backgroundColor: 'transparent',
@@ -129,7 +129,7 @@ $("#container2_0").Progress({
 
 //Будинок 9 Благоустрій
 $("#container2_1").Progress({
-  percent: 26, // 26%
+  percent: 21, // 21%
   width: 200,
   height: 36,
   backgroundColor: 'transparent',
@@ -144,7 +144,7 @@ $("#container2_1").Progress({
 
 //Будинок 9 Фасад
 $("#container2_2").Progress({
-  percent: 35, // 35%
+  percent: 49, // 49%
   width: 200,
   height: 36,
   backgroundColor: 'transparent',
@@ -158,7 +158,7 @@ $("#container2_2").Progress({
 });
 //Будинок 9 Мережі
 $("#container2_3").Progress({
-  percent: 19, // 19%
+  percent: 37, // 37%
   width: 200,
   height: 36,
   backgroundColor: 'transparent',
@@ -173,7 +173,7 @@ $("#container2_3").Progress({
 
 //Будинок 5 Загально Будівельні
 $("#container5_0").Progress({
-  percent: 10, // 10%
+  percent: 23, // 23%
   width: 200,
   height: 36,
   backgroundColor: 'transparent',
