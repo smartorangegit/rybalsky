@@ -24,15 +24,17 @@ if($_POST['lang']==''){$lg='ua';}else{$lg=substr($_POST['lang'], 0,2);}
 	 $i=0;
 
 	$marka = $ReaNews['mark'];
-	$result = $db->prepare("select mark,min_i,id_n,date,fname,filename from pic_news WHERE mark='$marka'");
+
+	$result = $db->prepare("select mark,min_i,id_n,date,fname,filename FROM pic_news WHERE mark='$marka'");
 	$result->execute();
 	$result->bind_result($s['mark'],$s['min_i'],$s['id_n'],$s['date'],$s['fname'],$s['filename']);
 	 while ($result->fetch()) { $s['img']="/admin/pic/images/".$s['date']."/".$s['filename'];
 								$s['img-min']="/admin/pic/images/".$s['date']."/min/".$s['filename'];
 
-				foreach($s as $key=>$k){			$rez[$key]=$k;	}
-		 $ReaNewsImgs[$i]=$rez;
-	 $i++; }
+			//	foreach($s as $key=>$k){			$rez[$key]=$k;	}
+		 $ReaNewsImgs[$i]=$s;
+		$i++; 
+	 }
 	 //echo '<pre>'; print_r($ReaNewsImgs); echo '</pre>';
 	 //Last News//
 	 $i=0;
@@ -306,12 +308,16 @@ padding:10px;
 				<div class="news__item_header">
 
 					<div class="news__picture">
+<<<<<<< HEAD
 					<?if(count($ReaNewsImgs)>1){?><a href="<?=$ReaNews['img_news']?>"   rel="<?=$ReaNewsImgs[0]['date']?>"><?}?>
+=======
+					<?if(count($ReaNewsImgs)>1){?><a href="<?=$ReaNews['img_news']?>"  class="fancybox" rel="<?=$ReaNewsImgs[0]['date']?>"><?}?>
+>>>>>>> 09eaf810a8dda434a0968fe6ed6f8ff751fb0307
 						<img src="<?=$ReaNews['img_news']?>" <?AltImgAdd($ReaNews['name_news'])?> class="news__picture_body">
 					<?if(count($ReaNewsImgs)>1){?></a><?}?>
 
 					<?if(count($ReaNewsImgs)>1){?>
-					<div class="magic">
+					<div class="magic ">
 						<? foreach($ReaNewsImgs as $key=>$s): ?>
 							<a style="display: inline-block;" class="fancybox" rel="<?=$s['date']?>" src="<?=$s['img']?>" href="<?=$s['img']?>">
 								<img style="width:100%" alt="<?=$ReaNews['name_news']?>" src="<?=$s['img-min']?>">
@@ -337,6 +343,7 @@ padding:10px;
 				</div>
 				<div class="news__item_text">
 					<?=$ReaNews['text']?>
+					<?$test_opros=explode ("?", $_SERVER['REQUEST_URI']);if($test_opros[0] == '/how-many-percent-are-you-an-urbanist/'){include_once('include/test-opros.php');/* подключение тест-опроса для новости */}?>
 					<div class="news__buttons">
 						<ul class="news__buttons_list">
 							<li><a class="news__buttons_link" href="/<?=$_POST['lang']?>news/"> <img src="/img/icons/Arrow-ico.png" alt="arrow"><?=$mes['tonyws']?></a></li>
@@ -579,7 +586,11 @@ background: rgba(0,0,0,0.4);
   padding: 20px; 
 }
 a.fancybox{
+<<<<<<< HEAD
 position: absolute;
+=======
+/*position: absolute;*/
+>>>>>>> 09eaf810a8dda434a0968fe6ed6f8ff751fb0307
     width: 100%;
    height: 100%;
     font-size: 0;
@@ -607,6 +618,9 @@ position: absolute;
    height: 280px;
    } 
    }
+
+
 </style>
+
 </body>
 </html>

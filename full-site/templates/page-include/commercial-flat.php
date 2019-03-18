@@ -391,6 +391,8 @@ foreach($REZULT as $key=>$s){
 		if($s['id']==$flat_id){$clas[$key].=' st-on';  $zamena='" style="'.$st_open; }
 $svg_min_plan = str_replace($clas[$key], $zamena, $svg_min_plan);
 	}
+	
+		$svg_min_plan = str_replace('class="st0  clas', ' style="'.$st_close.'" class="st0  clas', $svg_min_plan);
 
 $search='class="st2"';
 //$st_style=array(2=>' style="fill: #BFBFBF;" ', 3=>' style="fill: #BFBFBF;" ', 4=>' style="fill: #BFBFBF;" '); //Стиль для стін з класами st2 st3 st4

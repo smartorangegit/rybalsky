@@ -173,6 +173,8 @@ table {
 .jur-doc__body {
   width: 83%;
   float: right;
+  display: flex;
+  flex-wrap: wrap;
 }
 /* line 3, ../sass/_mixins.scss */
 .jur-doc__body:before, .jur-doc__body:after {
@@ -242,7 +244,7 @@ table {
 /* line 92, ../sass/_jur-doc.scss */
 .jur-doc__item {
   width: 50%;
-  float: left;
+  /*float: left;*/
 }
 /* line 3, ../sass/_mixins.scss */
 .jur-doc__item:before, .jur-doc__item:after {
@@ -255,9 +257,9 @@ table {
 }
 
 /* line 97, ../sass/_jur-doc.scss */
-.jur-doc__item:last-child {
-  width: 100%;
-}
+/*.jur-doc__item:last-child {*/
+  /*width: 100%;*/
+/*}*/
 
 /* line 101, ../sass/_jur-doc.scss */
 .jur-doc__item_title {
@@ -6336,3 +6338,6 @@ path.svg-inner_a_1_2 {animation-delay: 2.3s;}
 	width: 100%;
     /* height: 200px; */
     margin: 0 auto; } }
+.smarto_agency {
+	color: #fff;
+}

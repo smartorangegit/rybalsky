@@ -151,6 +151,18 @@ header('Last-Modified: '. $LastModified);
               <p><?=$mes['jur-mes11']?></p>
             </div>
           </div>
+		  <div class="jur-doc__item">
+            <h3 class="jur-doc__item_title"><?=$mes['jur-mes12']?></h3>
+            <div class="jur-doc__item_pict">
+              <a class="jur-doc__item_link" href="/img/jurdoc/pdf/RYBALSKY-certificate-1_result.jpg" target="_blank"><img src="/img/jurdoc/pdf/RYBALSKY-certificate-1.jpg" alt=""></a>
+              <p><?/* =$mes['jur-mes4'] */?></p>
+            </div>
+            <div class="jur-doc__item_pict">
+              <a class="jur-doc__item_link" href="/img/jurdoc/pdf/RYBALSKY-certificate_result.jpg" target="_blank"><img src="/img/jurdoc/pdf/RYBALSKY-certificate.jpg" alt=""></a>
+              <p><?/* =$mes['jur-mes6'] */?></p>
+            </div>
+
+          </div>
 
            <!-- **МУО** -->
           <!-- <div class="jur-doc__item">

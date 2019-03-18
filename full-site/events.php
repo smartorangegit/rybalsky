@@ -127,6 +127,7 @@
 
 </div>
   <footer>
+<<<<<<< HEAD
     <div class="foot-wrap">
       <div class="allright">
         <p><?=$mes['v01']?></p>
@@ -137,6 +138,20 @@
       <a class="footer__jurdoc_link" href="<?=$mes['events_url_documents']?>" ><?=$mes['jur-mes-menu']?></a>
       <span><?=$mes['v02']?></span>
     </div>
+=======
+          <div class="foot-wrap">
+            <div class="allright">
+               <p>
+                 <?=$mes['v01']?>
+                </p>
+            </div>
+            <div class="web">
+              <a href="https://smarto.agency/" rel="nofollow" target="_blank"><img <?AltImgAdd('SmartorOrange')?>  src="/img/logo-smart.png" /></a>
+            </div>
+			<a class="footer__jurdoc_link" href="<?=$mes['events_url_documents']?>"><?=$mes['jur-mes-menu']?></a>
+            <a href="https://smarto.agency/" rel="nofollow" target="_blank" class="smarto_agency"><span><?=$mes['v02']?></span></a>
+          </div>
+>>>>>>> 09eaf810a8dda434a0968fe6ed6f8ff751fb0307
   </footer>
   <?php /*Контактна форма*/ include_once('include/call_my.php'); ?>
   <?php /*Залишити заявку на проведення заходу*/ include_once('include/call_events.php'); ?>

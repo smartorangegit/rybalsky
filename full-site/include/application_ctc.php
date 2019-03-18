@@ -4,7 +4,7 @@
 header('Content-Type: text/html; charset=utf-8');
 
 
-$to = "m.gulko@riverside.net.ua"; // почта администратора сайта, на который будут приходить письма
+$to = "l.tromsa@riverside.net.ua"; // почта администратора сайта, на который будут приходить письма
 
 
 if(!empty($_POST["name"]) && !empty($_POST["apartment_number"]) && !empty($_POST["surname"])&& !empty($_POST["tel"]) && !empty($_POST["house_number"])){ // проверка полей на пустоту, если не пустые данные пришли, то идём дальше

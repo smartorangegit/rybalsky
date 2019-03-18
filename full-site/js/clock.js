@@ -5,7 +5,11 @@
   $(document).ready(initClock);  
   function initClock() {
     var clock2;
+<<<<<<< HEAD
     var deadline = 'October 07 2018 23:59:59 GMT+02:00';
+=======
+    var deadline = 'January 31 2019 23:59:59 GMT+02:00';
+>>>>>>> 09eaf810a8dda434a0968fe6ed6f8ff751fb0307
     // console.log(deadline);
     var t = Date.parse(deadline);
     var time = Date.parse(deadline) - Date.parse(new Date());

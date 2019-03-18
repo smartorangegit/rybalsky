@@ -76,11 +76,8 @@
 			<div class="news_nav">
 		      <div class="more_news_link">
                 <p><?=$mes['q-mes22']?></p>
-                <a href="<?=$l.'kvartira-podol/'?>"><?=$mes['mes-name-8']?></a>
                 <a href="<?=$l.'vidovaya/'?>"><?=$mes['mes-name-7']?></a>
                 <a href="<?=$l.'parking/'?>"><?=$mes['mes-name-6']?></a>
-                <a href="<?=$l.'novostroyka-center/'?>"><?=$mes['mes-name-5']?></a>
-                <a href="<?=$l.'novostroyka-podol/'?>"><?=$mes['mes-name-3']?></a>
                 <a href="<?=$l.'naberejnaya/'?>"><?=$mes['mes-name-1']?></a>
 
               </div>

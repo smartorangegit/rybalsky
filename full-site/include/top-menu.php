@@ -27,17 +27,22 @@ if(strripos($_POST['urls'][0],'plan') !== false && count($_POST['urls'][0])==5){
    <?php
    //  setcookie("Name", "Value");
    ?>
+<<<<<<< HEAD
       <? include($_SERVER['DOCUMENT_ROOT'].'include/preloader_new/preloader_new.php');?>
+=======
+      <?  include($_SERVER['DOCUMENT_ROOT'].'include/preloader_new/preloader_vibori.php'); ?>
+
+>>>>>>> 09eaf810a8dda434a0968fe6ed6f8ff751fb0307
    <!-- начало верхнего меню -->
            <div class="top-menu">
              <div class="top-menu__container">
-               <!-- <a href="/" class="top-menu__link" title="RYBALSKY">
+               <a href="/" class="top-menu__link" title="RYBALSKY">
                  <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Layer_1" x="0px" y="0px" viewBox="0 0 131.5 174" style="enable-background:new 0 0 131.5 174;" xml:space="preserve">
                     <g>
                     	<path fill="#FFFFFF"  class="st0" d="M116.1,104.5C116,127.8,97.2,147,73.1,150V76.1h41.5v-13H73.1V48.3c7.7-2.6,13.2-9.5,13.2-17.7    c0-10.4-8.8-18.8-19.7-18.8s-19.7,8.4-19.7,18.8c0,8.2,5.5,15.2,13.2,17.7v14.8H18.6v13h41.5V150c-24.1-3-42.9-22.2-43.1-45.5    l-13,0.1c0.2,32.4,28.2,58.8,62.5,58.8c34.3,0,62.3-26.4,62.5-58.8L116.1,104.5z M66.6,23.3c4.5,0,8.1,3.3,8.1,7.3    s-3.6,7.3-8.1,7.3c-4.5,0-8.1-3.3-8.1-7.3S62.1,23.3,66.6,23.3z"/>
                     </g>
                   </svg>
-               </a> -->
+               </a>
 
              <div class="burger-menu">
                <a id="open_my_menu" style="cursor:pointer;" >
@@ -153,9 +158,12 @@ if(strripos($_POST['urls'][0],'plan') !== false && count($_POST['urls'][0])==5){
             <!--<div style="clear:both"></div>-->
           </div> <!--top-menu__container-->
 		  <?$l="/".$_POST['lang'];?>
-          <div class="promotions_btn">
-            <a href="<?=$l?>new-terms-of-loan-for-rybalsky-03-07-2018/" class="promotions_btn__link"><?=$mes['menu-mes19'];?></a>
-          </div>
+    <div class="promotions_btn">
+        <a href="<?= $mes['menu-mes19-link']; ?>" class="promotions_btn__link"><?= $mes['menu-mes19']; ?></a>
+    </div>
+    <div class="promotions_btn reklama">
+        <a href="<?=$l?>our-balconies-like-bosch-for-space-for-important-things/" class="promotions_btn__link"><?=$mes['menu-mes19-action']?></a>
+    </div>
         </div>
 
 <!-- конец верхнего меню -->
@@ -297,15 +305,81 @@ $(window).scroll(function(){
 
 </script>
 <style media="screen">
-.promotions_btn {color: red; position: fixed; background-color: #d98c70; z-index: 1000; top: 45%; left: -90px; text-align: center; transform: rotate(-90deg); width: 206px; height: 30px; line-height: 35px; border-radius: 2px;}
-.promotions_btn:before { content: ''; width: 0;height: 0;border-left: 4px solid transparent;border-right: 4px solid transparent;border-top: 8px solid #d98c70; position: absolute; top: 0px; right: -4px;}
-.promotions_btn:after { content: ''; width: 0;height: 0;border-left: 4px solid transparent;border-right: 4px solid transparent;border-top: 8px solid #d98c70; position: absolute; top: 0px; left: -4px;}
-.promotions_btn__link {color: white;text-decoration: none;}
- a#tT,a#tT_{ pointer-events: none;color: white;text-decoration:none;}
- .my_menu .left_top_item{box-sizing: border-box;}
-@media screen and (max-width:768px) {
- a#tT{  pointer-events: all;}
- .promotions_btn{left:-98px;}
+    .promotions_btn {
+        color: red;
+        position: fixed;
+        background-color: #d98c70;
+        position: fixed;
+        z-index: 1000;
+        top: calc( 50% - 120px );
+        left: -100px;
+        padding: 8px;
+        line-height: 12px;
+        text-align: center;
+        transform: rotate(-90deg);
+        border-radius: 2px;
+        width: 200px;
+    }
+    .promotions_btn:before {
+        content: '';
+        width: 0;
+        height: 0;
+        border-left: 4px solid transparent;
+        border-right: 4px solid transparent;
+        border-top: 8px solid #d98c70;
+        position: absolute;
+        top: 0px;
+        right: -4px;
+    }
+
+    .promotions_btn:after {
+        content: '';
+        width: 0;
+        height: 0;
+        border-left: 4px solid transparent;
+        border-right: 4px solid transparent;
+        border-top: 8px solid #d98c70;
+        position: absolute;
+        top: 0px;
+        left: -4px;
+    }
+    .reklama {
+        top: calc( 50% + 120px );
+    }
+    .promotions_btn__link {
+        color: white;
+        text-decoration: none;
+    }
+
+    a#tT, a#tT_ {
+        pointer-events: none;
+        color: white;
+        text-decoration: none;
+    }
+
+    .my_menu .left_top_item {
+        box-sizing: border-box;
+    }
+
+    @media screen and (max-width: 768px) {
+        a#tT {
+            pointer-events: all;
+        }
+
+        .promotions_btn {
+            padding: 4px;
+        }
+    }
+</style>
+<style>
+.loader {
+	display:none;
+}
+.loader__inner  {
+	display:none;
+}
+.loader__background {
+	display:none;
 }
 </style>
 <style>

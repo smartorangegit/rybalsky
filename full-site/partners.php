@@ -261,14 +261,18 @@
   </div> -->
     </div>
     <footer class="foot_static">
-      <div class="foot-wrap">
-        <div class="allright"><p><?=$mes['v01']?></p></div>
-        <div class="web">
-          <a href="http://smartorange.com.ua" rel="nofollow" target="_blank"><img <?AltImgAdd('SmartOrange')?>   src="/img/logo-smart.png" width="55px" /></a>
-        </div>
-        <a class="footer__jurdoc_link" href="<?=$l?>documents/"><?=$mes['jur-mes-menu']?></a>
-        <span><?=$mes['v02']?></span>
-      </div>
+          <div class="foot-wrap">
+            <div class="allright">
+               <p>
+                 <?=$mes['v01']?>
+                </p>
+            </div>
+            <div class="web">
+              <a href="https://smarto.agency/" rel="nofollow" target="_blank"><img <?AltImgAdd('SmartorOrange')?>  src="/img/logo-smart.png" /></a>
+            </div>
+			<a class="footer__jurdoc_link" href="<?=$mes['events_url_documents']?>"><?=$mes['jur-mes-menu']?></a>
+            <a href="https://smarto.agency/" rel="nofollow" target="_blank" class="smarto_agency"><span><?=$mes['v02']?></span></a>
+          </div>
     </footer>
     <script src="/js/scripts.js?v=1.21"></script>
 

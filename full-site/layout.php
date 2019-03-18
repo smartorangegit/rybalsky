@@ -116,7 +116,13 @@ $site=$_POST['site'];
     <link rel="alternate" hreflang="uk" href="https://rybalsky.com.ua<?php echo $url_origin;?>" />
     <link rel="alternate" hreflang="en" href="https://rybalsky.com.ua/en<?php echo $url_origin;?>" />
 	<?php } ?>
+<<<<<<< HEAD
 
+=======
+	<meta property="og:title" content="<?=$title; ?>" />
+	<meta property="og:description" content="<?=$description; ?>" />
+	<meta property="og:image" content="/img/4s.jpg.pagespeed.ce.14YQyKGuMS.jpg"/>
+>>>>>>> 09eaf810a8dda434a0968fe6ed6f8ff751fb0307
   </head>
   <body id='class_beg' <?if ($content=='flat') {echo 'class="boby-plans"';}?>>
 <?/*

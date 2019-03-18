@@ -94,11 +94,8 @@
                       <li><a href="<?=$l.$menu_t[13]?>"><?=$menu['text'][13]?></a></li>
                       <li><a href="<?=$l.'top-planirovok/'?>"><?=$mes['mes-name']?></a></li>
                       <li><a href="<?=$l.'naberejnaya/'?>"><?=$mes['mes-name-1']?></a></li>
-                      <li><a href="<?=$l.'novostroyka-podol/'?>"><?=$mes['mes-name-3']?></a></li>
-                      <li><a href="<?=$l.'novostroyka-center/'?>"><?=$mes['mes-name-5']?></a></li>
                       <li><a href="<?=$l.'parking/'?>"><?=$mes['mes-name-6']?></a></li>
                       <li><a href="<?=$l.'vidovaya/'?>"><?=$mes['mes-name-7']?></a></li>
-					  <li><a href="<?=$l.'kvartira-podol/'?>"><?=$mes['mes-name-8']?></a></li>
                     </ul>
                   </div>
                 </div>
@@ -108,16 +105,15 @@
         <footer class="clearfix">
           <div class="foot-wrap">
             <div class="allright">
-              <p>
-                <?=$mes['v01']?>
-              </p>
+               <p>
+                 <?=$mes['v01']?>
+                </p>
             </div>
-
             <div class="web">
-              <a href="http://smartorange.com.ua/" rel="nofollow" target="_blank"><img <?AltImgAdd($mes['SmartOrange'])?>   src="/img/logo-smart.png" width="55px" /></a>
+              <a href="https://smarto.agency/" rel="nofollow" target="_blank"><img <?AltImgAdd('SmartorOrange')?>  src="/img/logo-smart.png" /></a>
             </div>
-			<a class="footer__jurdoc_link" href="<?=$l?>documents/"><?=$mes['jur-mes-menu']?></a>
-            <span><?=$mes['v02']?></span>
+			<a class="footer__jurdoc_link" href="<?=$mes['events_url_documents']?>"><?=$mes['jur-mes-menu']?></a>
+            <a href="https://smarto.agency/" rel="nofollow" target="_blank" class="smarto_agency"><span><?=$mes['v02']?></span></a>
           </div>
         </footer>
   <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>

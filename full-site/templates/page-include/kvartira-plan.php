@@ -213,6 +213,12 @@
 input,textarea {
 	color: black;
 }
+<<<<<<< HEAD
+=======
+#new_app {
+	min-height: 100vh;
+}
+>>>>>>> 09eaf810a8dda434a0968fe6ed6f8ff751fb0307
 </style>
 	<!--END-->
 <?	//echo  $content;?>

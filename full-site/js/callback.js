@@ -1,4 +1,5 @@
-    window.scrollTo('0', '0');
+	
+	window.scrollTo('0', '0');
 
     // Убираем скролл у боди чтобы не прокручивать его при открытой форме
     function preventBodyFromScrollig() {
@@ -56,15 +57,16 @@
     //----------------------------------------------------
     });
 
-$('.submit').on('click', function (e) {
-    e.preventDefault();
-    sendForm($(this).data('id'), $('#call_my_forms').data('lang'));
-    // console.log($(this).data('id'), $('#call_my_forms').data('lang'));
-    return false;
+$(document).ready(function() {
+	$('.submit').on('click', function (e) {
+		e.preventDefault();
+		sendForm($(this).data('id'), $('#call_my_forms').data('lang'));
+		// console.log($(this).data('id'), $('#call_my_forms').data('lang'));
+		return false;
+	});
 });
 
 function sendForm(id, d){
-
     var elem = $('#' + id);
     var data = elem.serialize();
 

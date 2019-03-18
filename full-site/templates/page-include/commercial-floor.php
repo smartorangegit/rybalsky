@@ -324,7 +324,7 @@ $originPage = explode('/', $_SERVER['REQUEST_URI'])[$parametr];
   <!-- всплывайка с информацией -->
 <div id="appInfo" style="visibility:hidden;">
   <div class="wrap_appInfo">
-      <p>Прміщення: <span class="info_value" id="InfoNumber">3</span></p>
+      <p>Приміщення: <span class="info_value" id="InfoNumber">3</span></p>
       <p>Загальна площа: <span class="info_value" id="InfoSquare">120</span><span class="info_value"> м<sup>2</sup></span></p>
       <p><span id="InfoType"></span></p>
       <span id="soldText">Продано</span>
